@@ -1,0 +1,181 @@
+[user]
+	name = Matthew Hinton
+	email = matthew.hinton@commongroundpublishing.com
+[color]
+  ui = auto
+  diff = auto
+  status = auto
+  branch = auto
+[branch]
+  autosetuprebase = always
+  autosetupmerge = always
+[rerere]
+  # Remember my merges
+  # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
+  enabled = true
+[format]
+  # pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
+  pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+[alias]
+  standup = log --since yesterday --oneline --author "Matthew Hinton" # changes made since yesterday
+
+  # add
+  a = add
+  aa = add --all
+  chunkyadd = add --patch           # stage commits chunk by chunk
+
+  # status
+  st = status
+  stsb = status -sb                 # abbreviated status
+
+  # commit
+  c = commit -m                     # commit with message
+  ca = commit -am                   # commit all with message
+  cv = commit -av                   # commit all and view changes
+  ci = commit                       # commit
+  amend = commit --amend
+
+  # commit info
+  type = cat-file -t
+  dump = cat-file -p
+
+  # checkout
+  co = checkout
+  nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
+
+  # cherry-pick
+  cp = cherry-pick -x               # grab a change from a branch
+
+  # diff
+  d = diff
+  dc = diff --cached
+  last = diff HEAD^                 # diff last committed change
+
+  # log aliases
+  h = log -10 --graph --abbrev-commit --date=relative
+  head = log -1 --abbrev-commit --date=relative
+  lg = log --graph --abbrev-commit --date=relative
+  recent = log -10 --abbrev-commit --date=relative
+  oneline = log --oneline --decorate
+  changes = log -10 -p 
+
+  # branch
+  lsunmerged = "branch --no-merged" # list unmerged branches
+  lsbr = "branch -a" # list all branches, even remote ones
+  mkbr = "branch" # create branch if you specify a branch name after it, e.g. git mkbr upgrading_rails
+  rmbr = "branch -d"                # remove branch named after it, e.g. git rmbr upgrading_rails
+  mvbr = "branch -m"                # rename branch from one name to another
+  track = "branch --track"          # track branch
+  prune-all = !git remote | xargs -n 1 git remote prune # prune all tracking local branches that have been removed from remote
+
+  # divergence (commits we added and commits remote added)
+  div = divergence
+
+  # goodness (summary of diff lines added/removed/total)
+  gn = goodness
+  gnc = goodness --cached
+
+  # reset
+  unstage = reset HEAD              # remove files from index (tracking)
+  uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
+  unmerge = reset --hard ORIG_HEAD  #
+  filelog = log -u                  # show changes to a file
+  mt = mergetool                    # fire up the merge tool
+
+  # stash
+  ss = stash                        # stash changes
+  sl = stash list                   # list stashes
+  sa = stash apply                  # apply stash (restore changes)
+  sd = stash drop                   # drop stashes (destory changes)
+
+  # misc
+  ff = merge --ff-only
+  pullff = pull --ff-only
+  noff = merge --no-ff
+  fa = fetch --all
+  up = !git fetch origin && git rebase origin/master
+  ir = !git rebase -i origin/master
+  pom = push origin master
+  done = !git fetch && git rebase origin/master && git checkout master && git merge @{-1} && rake spec && git push
+
+  # remote
+  r = remote -v                     # show remotes (verbose)
+
+  # tag
+  t = "tag -n"                      # show tags with <n> lines of each tag message
+  lstag = "tag -l"                  # list all tags, to keep commands consistent
+  mktag = "tag -a"                  # create a new tag based on specified commit
+  rmtag = "tag -d"                  # remove existing tag by name
+  mvtag = "tag -m"                  # rename tag from one name to another
+
+  # create new remote repository for project
+  mkrem = "remote add"
+  # initialize all submodules
+  modinit = "submodule init"
+  # update all submodules
+  modup = "submodule update"
+  # show status of all submodules
+  modst = "submodule status"
+  # add new submodule, i.e. git modadd module-name url
+  modadd = "submodule add"
+
+  # search alias
+  search = "log --pretty=short -S"
+
+  # word diff
+  wdiff = "diff --word-diff"
+  # prints out the branches a commit is on
+  whbr = "branch -a --contains"
+  # prints commits from a branch are already present upstream
+  whci = "cherry -v"
+  # prints out the tags a commit is a part of
+  whtag = "name-rev --name-only"
+	conflicts = !git ls-files -u | cut -f 2 | sort -u
+
+[core]
+	quotepath = false
+	excludesfile = /Users/matthew/.gitignore_global
+	pager = less -r
+[push]
+  default = tracking
+
+[github]
+	user = mhinton
+	token = 063438a7c34d07ebf6aa9a1e62e6fbe0
+[merge]
+  #keepBackup = false
+  tool = p4merge
+[mergetool "p4merge"]
+  cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
+  keepTemporaries = false
+  trustExitCode = false
+  keepBackup = false
+[diff]
+  external = p4diff
+  rename = copy
+  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+  # instead of a/b/c/d as prefixes for patches
+  mnemonicprefix = true
+#[merge]
+#  tool = vimdiff
+#  summary = true
+#  verbosity = 1
+#[difftool "sourcetree"]
+#	cmd = /Applications/SourceTree.app/Contents/Resources/araxiscompare-w.sh -2 \"$LOCAL\" \"$REMOTE\"
+#	path = 
+#[mergetool "sourcetree"]
+#	cmd = /Applications/SourceTree.app/Contents/Resources/araxisgitmerge-w.sh \"$REMOTE\" \"$BASE\" \"$LOCAL\" \"$MERGED\"
+#	trustExitCode = true
+#[mergetool]
+#	keepBackup = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+	trustExitCode = true

@@ -1,0 +1,66 @@
+
+set nocompatible               " be iMproved
+filetype off                   " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+
+source ~/.vim/vundles.vim
+
+" Source:
+source ~/.vim/global.vim
+source ~/.vim/functions.vim
+source ~/.vim/keybindings.vim
+source ~/.vim/plugin_config.vim
+source ~/.vim/auto_commands.vim
+
+set t_Co=256
+set background=dark
+
+" COLOR SUPPORT
+if has("gui_running")
+  " colorscheme vwilight
+
+  " make liquidcarbon look better
+  "let g:liquidcarbon_high_contrast=1
+  "colorscheme liquidcarbon
+
+  " colorscheme idleFingers
+  "let g:solarized_degrade=1
+  " colorscheme solarized+
+  "colorscheme badwolf+
+  " colorscheme codeschool+
+  colorscheme grb256
+else
+  " if &t_Co >= 8
+  " colorscheme vividchalk
+  " endif
+
+  if &t_Co == 256
+    let g:solarized_termcolors=256
+    " colorscheme solarized
+    " colorscheme badwolf+
+    colorscheme grb256
+  endif
+endif
+
+
+if filereadable(expand("~/.vim/custom_vimrc"))
+  source ~/.vim/custom_vimrc
+endif
+
+if filereadable(expand("~/.vim/custom_keybindings.vim"))
+  source ~/.vim/custom_keybindings.vim
+endif
+
+"Use the bar-shaped cursor for insert mode, Even through tmux.
+if exists('$TMUX')
+  let &t_SI = "\<ESC>Ptmux;\<ESC>\<ESC>]50;CursorShape=1\x7\<ESC>\\"
+  let &t_EI = "\<ESC>Ptmux;\<ESC>\<ESC>]50;CursorShape=0\x7\<ESC>\\"
+else
+  let &t_SI = "\<ESC>]50;CursorShape=1\x7"
+  let &t_EI = "\<ESC>]50;CursorShape=0\x7"
+endif

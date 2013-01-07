@@ -1,0 +1,27 @@
+" Font: Choose font and enable anti-aliasing
+" set guifont=MesloLGM:h13
+" set guifont=Meslo\ LG\ M\ DZ\ for\ Powerline:h13
+set guifont=Source\ Code\ Pro\ for\ Powerline:h15
+" set guifont=Inconsolata-dz\ for\ Powerline:h14,Menlo:h14
+" set guifont=Inconsolata-g:h14
+set linespace=2
+set antialias
+
+" Maximize: Vert and Horiz by default
+set fuoptions=maxvert,maxhorz
+
+" Hide toolbar and menus.
+set guioptions-=T
+set guioptions-=m
+
+" Scrollbar is on
+set guioptions+=rL
+
+" Don't use console style tab labels
+set guioptions+=e
+
+" Command-Return for fullscreen
+macmenu Window.Toggle\ Full\ Screen\ Mode key=<D-CR>
+
+" Command-Shift-F for Ack
+map <D-F> :Ack<space>

@@ -1,0 +1,185 @@
+
+let g:Powerline_symbols = "fancy"
+" let g:Powerline_theme = "mhinton"
+" let g:Powerline_colorscheme = "mhinton"
+" let g:Powerline_colorscheme = "skwp"
+let g:Powerline_colorscheme = "default"
+
+" User defined colors for the statusline User1, User2, ..., User9
+hi User1 ctermfg=cyan ctermbg=NONE guifg=cyan guibg=NONE
+hi User2 ctermfg=green ctermbg=NONE guifg=green guibg=NONE
+hi User3 ctermfg=yellow ctermbg=NONE guifg=yellow guibg=NONE
+hi User4 ctermfg=red ctermbg=NONE guifg=red guibg=NONE
+
+""""""""""""""""""""""""""""""
+" =>  Statusline
+""""""""""""""""""""""""""""""
+" I got most of this statusline format from Steve Losh
+" https://bitbucket.org/sjl/dotfiles/src/2e25b11e75fc/vim/.vimrc#cl-86
+set statusline=\ %<%.99f " Path
+set statusline+=%#error#
+set statusline+=%*                           " Reset highlighting.
+set statusline+=\    " Space.
+set statusline+=%2*  " Use the User1 defined color
+set statusline+=%m   " Modified flag.
+set statusline+=%*                          " Reset highlighting.
+set statusline+=%r   " Readonly flag.
+set statusline+=%w   " Preview window flag.
+set statusline+=\    " Space.
+set statusline+=%*                          " Reset highlighting.
+set statusline+=%#warningmsg#                " Highlight the following as a warning.
+set statusline+=%{SyntasticStatuslineFlag()} " Syntastic errors.
+set statusline+=%*                          " Reset highlighting.
+set statusline+=%{fugitive#statusline()}\ 
+set statusline+=%{rvm#statusline()}\ 
+set statusline+=%*                           " Reset highlighting.
+set statusline+=%=   " Right align.
+" File format, encoding and type.  Ex: "(unix/utf-8/ruby)"
+set statusline+=(
+set statusline+=%{&ff}                        " Format (unix/DOS).
+set statusline+=/
+set statusline+=%{strlen(&fenc)?&fenc:&enc}   " Encoding (utf-8).
+set statusline+=/
+set statusline+=%{&ft}                        " Type (python).
+set statusline+=)
+" Line and column position and counts.
+set statusline+=\ (line\ %l\/%L,\ col\ %03c)\ %3P\ 
+
+" Misc settings
+set hidden															" hide buffers without forcing a write
+set backspace=indent,eol,start					" allow backspaing over everything in insert mode
+set autoindent													" always set autoindenting on
+set copyindent													" copy the previous indentation on autoindenting
+set showmatch														" set show matching parenthesis
+set ignorecase													" ignore case when searching
+set smartcase														" ignore case if search pattern is all lowercase, case-sensitive otherwise
+set smarttab														" insert tabs on the start of a line according to shiftwidth, not tabstop
+set hlsearch														" highlight search
+set sidescroll=1                        " don't scroll horizontally by jumps
+set sidescrolloff=7                     " leave some space between the cursor position and the visible buffer edge
+
+" http://stevelosh.com/blog/2012/10/why-i-two-space/
+set cpo+=J                              " tell Vim I am using 2 spaces after periods
+
+" sessions
+set sessionoptions=buffers,curdir,resize,tabpages,winpos,winsize
+
+" places the cursor in the last place that it was left
+" au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
+
+" set the cursor color
+"highlight Cursor guifg=NONE guibg=#626262 gui=none ctermbg=241
+"highlight Cursor guifg=NONE guibg=#979797 gui=none ctermbg=241
+"highlight iCursor guifg=NONE guibg=steelblue
+"highlight cCursor guifg=NONE guibg=#cd853f
+"set guicursor=n-v:block-Cursor
+"set guicursor+=c:ver100-cCursor
+"set guicursor+=i:ver20-iCursor
+"set guicursor+=n-v-c:blinkon0
+
+" turn off the blinking cursor
+set guicursor=a:blinkon0
+
+" better buffer navigation
+"nnoremap <C-n> :bnext<CR>
+"nnoremap <C-p> :bprevious<CR>
+
+" set foldmethod and map space to toggle folds
+set foldmethod=syntax
+set foldlevelstart=99 " folds should default to open
+"set foldlevelstart=1    " some folds should default to closed
+set foldnestmax=3       " deepest fold is 3 levels
+set fillchars=vert:│,fold:\ " there's a space after that \
+
+" Highlight VCS conflict markers
+match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
+
+
+" vim-session options  - http://github.com/xolox/vim-session
+" let g:session_autoload = 1
+" let g:session_autosave = 1
+
+" This turns off the crazy default regex characters and makes searches use
+" normal regexes by automatically inserting a \v before any string you search for. 
+nnoremap / /\v
+vnoremap / /\v
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Command mode related
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Smart mappings on the command line
+"cno `h e ~/
+"cno `d e ~/Documents/
+"cno `j e ./
+"cno `c e <C-\>eCurrentFileDir("e")<cr>
+"cno `s sp <C-\>eCurrentFileDir("sp")<cr>
+"cno `t <C-\>eCurrentFileDir("tabe")<cr>
+
+" Bash like keys for the command line
+cnoremap <C-A>  <Home>
+cnoremap <C-E>  <End>
+cnoremap <C-K>  <C-U>
+
+func! Cwd()
+  let cwd = getcwd()
+  return "e " . cwd 
+endfunc
+
+func! CurrentFileDir(cmd)
+  return a:cmd . " " . expand("%:p:h") . "/"
+endfunc
+
+" automatically cd into the directory of the current file
+"autocmd BufEnter * lcd %:p:h
+
+
+" don't close window, when deleting a buffer
+command! Bclose call <SID>BufcloseCloseIt()
+
+fu! <SID>BufcloseCloseIt()
+  let l:currentBufNum = bufnr("%")
+  let l:alternateBufNum = bufnr("#")
+
+  if buflisted(l:alternateBufNum)
+    buffer #
+  else
+    bnext
+  endif
+  if bufnr("%") == l:currentBufNum
+    enew
+  endif
+  if buflisted(l:currentBufNum)
+    execute "bdelete! ".l:currentBufNum 
+  endif
+endf
+
+" super paste
+inoremap <D-V> <esc>:set paste<cr>mui<C-R>+<esc>mv'uV'v=:set nopaste<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General Abbrevs
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"iab xdate <c-r>=strftime("%m/%d/%y %H:%M:%S")<cr>
+"iab xdate <c-r>=strftime("%m/%d/%y ")<cr>
+" xdate format DayName, Month DayNumber, Year 
+iab xdate <c-r>=strftime("%a, %b %e, %Y")<cr>
+iab wyr <c-r>=strftime("%U")<cr>
+iab mdsp -------------------
+iab marker <div style="border: solid 2px red;text-align: center;margin: .25em;padding: .25em;width: 50%;">HERE</div>
+iab rlog logger.debug("This is a message for debugging".colorize("red"))
+
+
+""""""""""""""""""""""""""""""
+" =>  Pry
+""""""""""""""""""""""""""""""
+" Add the pry debug line 
+map <leader>bp orequire'pry';binding.pry<esc>:w<cr>
+" Alias for one-handed operation:
+"map <leader><leader>p <Leader>bp
+" …also, Insert Mode as bpry<space>
+iabbr bpry require'pry';binding.pry
+
+" Nab lines from ~/.pry_history (respects "count")
+nmap <leader>ph :<c-u>let pc = (v:count1 ? v:count1 : 1)<cr>:read !tail -<c-r>=pc<cr> ~/.pry_history<cr>:.-<c-r>=pc-1<cr>:norm <c-r>=pc<cr>==<cr>

@@ -7,8 +7,10 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 #ZSH_THEME="robbyrussell"
 # ZSH_THEME="mhinton"
-# ZSH_THEME="oneliner"
-ZSH_THEME="bira-mod"
+#ZSH_THEME="dstufft"
+#ZSH_THEME="jnrowe"
+#ZSH_THEME="bira-mod"
+ZSH_THEME="steeef-mod"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"

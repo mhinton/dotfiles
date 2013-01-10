@@ -137,16 +137,16 @@ def db; DatabaseHelpers; end
 
 # return an array of AR model constants 
 def self.models
-  ActiveRecord::Base
-    .send(:subclasses)
-    .map { |model| model.name.constantize }
+  ActiveRecord::Base.
+    send(:subclasses).
+    map { |model| model.name.constantize }
 end
  
 # return an array of controller constants 
 def self.controllers
-  Rails.application.routes.routes
-    .select  { |r| r.defaults[:controller].present? }
-    .uniq    { |r| r.defaults[:controller] }
-    .sort_by { |r| r.defaults[:controller] }
-    .map     { |r| "#{r.defaults[:controller].split('/').map { |x| x.capitalize }.join("::").camelize }Controller".constantize }
+  Rails.application.routes.routes.
+    select  { |r| r.defaults[:controller].present? }.
+    uniq    { |r| r.defaults[:controller] }.
+    sort_by { |r| r.defaults[:controller] }.
+    map     { |r| "#{r.defaults[:controller].split('/').map { |x| x.capitalize }.join("::").camelize }Controller".constantize }
 end

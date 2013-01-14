@@ -236,8 +236,8 @@ map <leader>u <C-w>T:tabp<CR>
 " Make the tab key match bracket pairs
 nnoremap <tab> %
 vnoremap <tab> %
-" nmap <tab> %
-" vmap <tab> %
+nmap <tab> %
+vmap <tab> %    " something is stomping on this so vmap doesn't work 1/14/2013
 
 " Space to toggle folds
 " nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>

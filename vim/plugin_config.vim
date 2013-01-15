@@ -123,7 +123,7 @@ let g:syntastic_quiet_warnings=1
 
 
 " CtrlP:
-" let g:ctrlp_map = '<c-p>' # this is the default
+"let g:ctrlp_map = '<c-p>' " this is the default
 let g:ctrlp_custom_ignore = '\.git$\|\.hg$\|\.svn$'
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_match_window_reversed = 0
@@ -139,5 +139,6 @@ let g:ctrlp_max_height = 20
 " let g:ctrlp_extensions = ['tag']
 " nnoremap <leader>. :CtrlPTag<cr>
 " nnoremap <c-p> :CtrlP<cr>
+nnoremap <leader>t :CtrlP<cr>
 nnoremap <leader>b :CtrlPBuffer<cr>
 nnoremap <D-b> :CtrlPBuffer<cr>

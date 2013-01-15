@@ -163,7 +163,8 @@ set wildignore+=*.pyc,*.pyo            " Ignore compiled Python files
 """"""""""""""""""""""""""""""
 " =>  Better Completion
 """"""""""""""""""""""""""""""
-set complete=.,b,u,]
+" set complete=.,b,u,]
+set complete=.,w,b,u,t,i
 "set completeopt=longest,menuone,preview
 set completeopt=menu,menuone,preview
 " Insert Mode Completion

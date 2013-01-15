@@ -51,4 +51,4 @@ rvm_project_rvmrc=1
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin

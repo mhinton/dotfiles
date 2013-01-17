@@ -131,7 +131,14 @@
   whci = "cherry -v"
   # prints out the tags a commit is a part of
   whtag = "name-rev --name-only"
-	conflicts = !git ls-files -u | cut -f 2 | sort -u
+
+  # find conflicted files
+  conflicts = !git ls-files -u | cut -f 2 | sort -u
+
+  # use Kaleidoscope to compare a feature branch with master or another branch
+  # git ksreview <- compares feature branch to master
+  # git ksreview feature-branch-name-or-sha mainline-branch-name
+  ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
 
 [core]
 	quotepath = false

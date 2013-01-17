@@ -48,14 +48,14 @@ let g:syntastic_javascript_checker = "jshint"
 
 
 " VCS:
-" NERDCommenter overrides <leader>cc so map it to something else
-map <leader>vc :VCSCommit<CR>
-map <leader>vu :VCSUpdate<CR>
-map <leader>vr :VCSRevert<CR>
-map <leader>vs :VCSStatus<CR>
-map <leader>va :VCSAdd<CR>
-map <leader>vb :VCSBlame<CR>
-map <leader>vd :VCSVimDiff<CR>
+"" NERDCommenter overrides <leader>cc so map it to something else
+" map <leader>vc :VCSCommit<CR>
+" map <leader>vu :VCSUpdate<CR>
+" map <leader>vr :VCSRevert<CR>
+" map <leader>vs :VCSStatus<CR>
+" map <leader>va :VCSAdd<CR>
+" map <leader>vb :VCSBlame<CR>
+" map <leader>vd :VCSVimDiff<CR>
 
 
 " Fugitive:
@@ -83,12 +83,14 @@ let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
 let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 
+
 " UltiSnips:
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
 " let g:UltiSnipsDontReverseSearchPath="1"
+
 
 " Gundo:
 let g:gundo_width = 45
@@ -142,3 +144,6 @@ let g:ctrlp_max_height = 20
 nnoremap <leader>t :CtrlP<cr>
 nnoremap <leader>b :CtrlPBuffer<cr>
 nnoremap <D-b> :CtrlPBuffer<cr>
+
+" YankRing:
+let g:yankring_history_dir = '$VIM'

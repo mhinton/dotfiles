@@ -6,7 +6,7 @@ if v:version >= 703
 endif
 
 set vb t_vb=                            " Disable visual bell
-set autoread                            " Set to auto read when a file is changed from the outside
+" set autoread                            " Set to auto read when a file is changed from the outside " set in vim-sensible
 set nobackup                            " Do not create backup files when saving over existing files
 set nowritebackup                       " A little paranoid, but disable the writebackup function as well
 set noswapfile                          " No swap files when editing please
@@ -17,7 +17,7 @@ set splitright                          " Open new vertical split windows to the
 set switchbuf=useopen,usetab,split      " Don't change my current buffer on quickfix
 
 " StatusBar
-set laststatus=2    " Always show status bar
+" set laststatus=2    " Always show status bar " set in vim-sensible
 
 " Fancy statusline
 set statusline=\ "
@@ -54,16 +54,13 @@ set matchtime=3
 
 " Searching
 set hlsearch
-set incsearch
+" set incsearch "set in vim-sensible
 set ignorecase
 set wrapscan
 
 " Keep search matches in the middle of the window and pulse the line when moving to them.
 nnoremap n nzzzv
 nnoremap N Nzzzv
-
-" Status bar
-set laststatus=2
 
 " CTags
 " map <Leader>rt :!ctags --extra=+f -R *<CR><CR> " commenting out for now as this mapping has a conflict
@@ -104,7 +101,7 @@ au BufRead,BufNewFile *.txt call s:setupWrapping()
 au FileType python set softtabstop=4 tabstop=4 shiftwidth=4 textwidth=79
 
 " allow backspacing over everything in insert mode
-set backspace=indent,eol,start
+" set backspace=indent,eol,start " set in vim-sensible
 
 " load the plugin and indent settings for the detected filetype
 filetype plugin indent on
@@ -137,11 +134,11 @@ set modelines=10
 let macvim_hig_shift_movement = 1
 
 " % to bounce from do to end etc.
-runtime! macros/matchit.vim
+" runtime! macros/matchit.vim " set in vim-sensible
 set matchpairs+=<:>                     " Also match angle brackets
 
 " Show (partial) command in the status line
-set showcmd
+" set showcmd " set in vim-sensible
 
 " Window Heights
 set helpheight=10
@@ -150,7 +147,7 @@ set helpheight=10
 set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 "set nowildmenu                         " Disable the wild menu
-set wildmenu
+" set wildmenu " set in vim-sensible
 set wildmode=longest,list:longest
 "set wildmode=list:longest,full         " Better completion
 set wildignore=.svn,CVS,.git           " Ignore VCS files

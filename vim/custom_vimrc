@@ -48,12 +48,12 @@ set statusline+=\ (line\ %l\/%L,\ col\ %03c)\ %3P\
 " Misc settings
 set hidden															" hide buffers without forcing a write
 set backspace=indent,eol,start					" allow backspaing over everything in insert mode
-set autoindent													" always set autoindenting on
+" set autoindent													" always set autoindenting on "set in vim-sensible
 set copyindent													" copy the previous indentation on autoindenting
-set showmatch														" set show matching parenthesis
+" set showmatch														" set show matching parenthesis "set in vim-sensible
 set ignorecase													" ignore case when searching
-set smartcase														" ignore case if search pattern is all lowercase, case-sensitive otherwise
-set smarttab														" insert tabs on the start of a line according to shiftwidth, not tabstop
+" set smartcase														" ignore case if search pattern is all lowercase, case-sensitive otherwise "set in vim-sensible
+" set smarttab														" insert tabs on the start of a line according to shiftwidth, not tabstop "set in vim-sensible
 set hlsearch														" highlight search
 set sidescroll=1                        " don't scroll horizontally by jumps
 set sidescrolloff=7                     " leave some space between the cursor position and the visible buffer edge

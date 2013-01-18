@@ -215,7 +215,7 @@ map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 
 
 " <leader><space> clears search
-nnoremap <leader><space> :noh<cr>
+" nnoremap <leader><space> :noh<cr> " use the <c-l> from vim-sensible
 
 " Keybindings
 " Stupid shift key fixes

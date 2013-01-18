@@ -10,6 +10,7 @@
 " My Bundles here:
 "
 " original repos on github
+Bundle 'tpope/vim-sensible'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'tpope/vim-git'

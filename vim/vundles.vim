@@ -53,6 +53,7 @@ Bundle 'vim-scripts/YankRing.vim'
 " Colorschemes:
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'noahfrederick/Hemisu'
+Bundle 'sjl/badwolf'
 
 " vim-scripts repos
 Bundle 'L9'

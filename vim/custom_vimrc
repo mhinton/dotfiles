@@ -52,7 +52,7 @@ set backspace=indent,eol,start					" allow backspaing over everything in insert 
 set copyindent													" copy the previous indentation on autoindenting
 " set showmatch														" set show matching parenthesis "set in vim-sensible
 set ignorecase													" ignore case when searching
-" set smartcase														" ignore case if search pattern is all lowercase, case-sensitive otherwise "set in vim-sensible
+set smartcase														" ignore case if search pattern is all lowercase, case-sensitive otherwise
 " set smarttab														" insert tabs on the start of a line according to shiftwidth, not tabstop "set in vim-sensible
 set hlsearch														" highlight search
 set sidescroll=1                        " don't scroll horizontally by jumps

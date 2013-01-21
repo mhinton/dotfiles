@@ -8,21 +8,21 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 Documents/Work\ Notes/weekly_report-2013.md
+badd +1 Documents/Work\ Notes/weekly_report-2013.md
 silent! argdel *
-set lines=40 columns=129
+set lines=40 columns=98
 winpos 135 22
 edit Documents/Work\ Notes/weekly_report-2013.md
 set splitbelow splitright
 wincmd t
 set winheight=1 winwidth=1
 argglobal
-let s:l = 11 - ((10 * winheight(0) + 19) / 38)
+let s:l = 7 - ((6 * winheight(0) + 19) / 38)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-11
-normal! 09l
+7
+normal! 03l
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf

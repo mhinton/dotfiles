@@ -148,8 +148,8 @@ set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
 "set nowildmenu                         " Disable the wild menu
 " set wildmenu " set in vim-sensible
-set wildmode=longest,list:longest
-"set wildmode=list:longest,full         " Better completion
+" set wildmode=longest,list:longest
+set wildmode=list:longest,full         " Better completion
 set wildignore=.svn,CVS,.git           " Ignore VCS files
 set wildignore+=*.o,*.a,*.so           " Ignore compiled binaries
 set wildignore+=*.jpg,*.png,*.gif      " Ignore images

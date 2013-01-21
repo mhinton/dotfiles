@@ -75,10 +75,11 @@ let g:ackprg="$HOME/bin/ack -H --nocolor --nogroup --column"
 
 
 " SuperTab:
-"let g:SuperTabDefaultCompletionType = "context" "<- this was my default
-let g:SuperTabDefaultCompletionType = "<c-x><c-n>" " testing setting
+let g:SuperTabDefaultCompletionType = "context" "<- this was my default
+let g:SuperTabContextDefaultCompletionType = "<c-p>"
+" let g:SuperTabDefaultCompletionType = "<c-x><c-n>" " testing setting
 let g:SuperTabLongestHighlight = 0
-"let g:SuperTabContextDefaultCompletionType = "<c-n>"
+let g:SuperTabLongestEnhanced = 0
 let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
 let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]

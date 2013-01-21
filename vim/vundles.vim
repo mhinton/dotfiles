@@ -49,14 +49,14 @@ Bundle 'danchoi/virb'
 Bundle 'ap/vim-css-color'
 Bundle 'SirVer/ultisnips'
 Bundle 'vim-scripts/YankRing.vim'
+" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " Colorschemes:
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'noahfrederick/Hemisu'
 Bundle 'sjl/badwolf'
-" these paths don't seem to work
-Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}   " this path don't seem to work
+Bundle 'goatslacker/mango.vim'
 
 " vim-scripts repos
 Bundle 'L9'

@@ -55,7 +55,7 @@ Bundle 'vim-scripts/YankRing.vim'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'noahfrederick/Hemisu'
 Bundle 'sjl/badwolf'
-Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}   " this path don't seem to work
+" Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}   " this path don't seem to work
 Bundle 'goatslacker/mango.vim'
 
 " vim-scripts repos

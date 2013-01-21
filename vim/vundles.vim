@@ -55,7 +55,7 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'noahfrederick/Hemisu'
 Bundle 'sjl/badwolf'
 " these paths don't seem to work
-" Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}
+Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
 " vim-scripts repos

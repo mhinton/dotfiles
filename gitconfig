@@ -17,7 +17,8 @@
   # pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
   pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
 [alias]
-  standup = log --since yesterday --oneline --author "Matthew Hinton" # changes made since yesterday
+  # standup = log --since yesterday --oneline --author \"Matthew Hinton\" # changes made since yesterday
+  standup = log --since yesterday --pretty=medium --author \"Matthew Hinton\" # changes made since yesterday
 
   # add
   a = add

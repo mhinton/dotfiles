@@ -143,15 +143,13 @@ set matchpairs+=<:>                     " Also match angle brackets
 " Window Heights
 set helpheight=10
 
-"" WildMenuModeConfig:
-set wildignore+=*.o,*.obj,.git,*.rbc,*.class,.svn,vendor/gems/*
 
-"set nowildmenu                         " Disable the wild menu
 " set wildmenu " set in vim-sensible
 " set wildmode=longest,list:longest
 set wildmode=list:longest,full         " Better completion
 set wildignore=.svn,CVS,.git           " Ignore VCS files
 set wildignore+=*.o,*.a,*.so           " Ignore compiled binaries
+set wildignore+=*.obj,*.class          " Ignore compiled binaries
 set wildignore+=*.jpg,*.png,*.gif      " Ignore images
 set wildignore+=*.pdf                  " Ignore PDF files
 set wildignore+=*.rbc                  " Ignore compiled Ruby files
@@ -162,8 +160,8 @@ set wildignore+=*.pyc,*.pyo            " Ignore compiled Python files
 """"""""""""""""""""""""""""""
 " set complete=.,b,u,]
 set complete=.,w,b,u,t,i
-"set completeopt=longest,menuone,preview
-set completeopt=menu,menuone,preview
+" insert the longest common string, show the menu and preview info
+set completeopt=longest,menu,preview 
 " Insert Mode Completion
 inoremap <c-Space> <c-x><c-n>
 inoremap <c-f> <c-x><c-f>

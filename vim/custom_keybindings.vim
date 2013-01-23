@@ -273,7 +273,7 @@ nnoremap ' `
 nnoremap ` '
 
 " bind control-l to hashrocket
-"imap <C-l> <Space>=><Space>
+imap <C-l> <Space>=><Space>
 
 
 " run specs in current file

@@ -61,7 +61,7 @@ let g:Powerline#Colorschemes#mhinton#colorscheme = Pl#Colorscheme#Init([
                 \ }),
         \
         \ Pl#Hi#Segments(['fileinfo', 'filename'], {
-                \ 'n': ['white', 'gray4', ['bold']],
+                \ 'n': ['white', 'gray3', ['bold']],
                 \ 'N': ['gray7', 'gray2', ['bold']],
                 \ 'i': ['white', 'darkblue', ['bold']],
                 \ }),

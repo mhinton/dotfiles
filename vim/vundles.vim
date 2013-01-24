@@ -51,6 +51,11 @@ Bundle 'SirVer/ultisnips'
 Bundle 'vim-scripts/YankRing.vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 
+" Clojure related packages
+Bundle 'guns/vim-clojure-static'
+Bundle 'kien/rainbow_parentheses.vim'
+Bundle 'tpope/vim-foreplay'
+
 " Colorschemes:
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'noahfrederick/Hemisu'

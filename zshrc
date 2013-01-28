@@ -10,7 +10,7 @@ ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="dstufft"
 # ZSH_THEME="jnrowe"
 # ZSH_THEME="bira-mod"
-ZSH_THEME="steeef-mod"
+ZSH_THEME="../../custom-zsh/themes/steeef-mod"
 # ZSH_THEME="avit-mod"
 # ZSH_THEME="zanshin"
 

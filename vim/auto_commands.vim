@@ -6,7 +6,7 @@ function! CustomMarkdownSettings()
   " set filetype=mkd
   set wrap
   set linebreak
-  set nolist
+  set list
   set textwidth=80
   set formatoptions+=l
   syntax region markdownFold start="^\z(#\+\) " end="\(^#\(\z1#*\)\@!#*[^#]\)\@=" transparent fold
@@ -15,6 +15,9 @@ function! CustomMarkdownSettings()
   setlocal nofoldenable
   setlocal foldlevel=0
   setlocal foldcolumn=0
+
+  " use tabs in markdown for correct rendering
+  set noexpandtab
 endfunction
 
 function! CustomMarkupSettings()

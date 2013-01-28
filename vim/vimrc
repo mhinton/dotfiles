@@ -67,7 +67,7 @@ else
 endif
 
 " if exists('$TMUX')
-"   set clipboard+=unnamed
+  set clipboard+=unnamed
 " endif
 
 " override vim-markdown flagging an intraword underscore as an error

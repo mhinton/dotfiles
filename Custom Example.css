@@ -7,15 +7,15 @@
    Description: Basic description of the theme.
 */
 
-/* @import url(http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic|Oxygen:700); */
-@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Oxygen:400,700);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic|Gentium+Basic:400,700);
+/* @import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic|Oxygen:400,700); */
 
 body
 {
     -webkit-font-smoothing:antialiased;
     /* font:normal 1em/1.5em Arial,Verdana,sans-serif; */
     /* font-family: 'Lora', serif; */
-    font: normal 1em/1.5em 'Libre Baskerville', sans-serif;
+    font: normal 1em/1.5em 'Source Sans Pro', sans-serif;
     margin:0;
     background-color: #2b2b2b;
 }
@@ -33,6 +33,7 @@ li
 li li
 {
     font-size:100%;
+    margin-top: 0.25em;
     margin-left: -1em;
 }
 
@@ -48,11 +49,11 @@ h1,h2,h3,h4,h5,h6
 }
 h1,h2
 {
-    font: bold 1em/1.5em 'Oxygen', sans-serif;
+    font: bold 1em/1.5em 'Gentium Basic', sans-serif;
 }
 h3,h4,h5,h6
 {
-    font: normal 1em/1.5em 'Oxygen', sans-serif;
+    font: normal 1em/1.5em 'Gentium Basic', sans-serif;
     padding-bottom: 2px;
     border-bottom: solid 1px #888;
 }

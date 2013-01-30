@@ -50,6 +50,7 @@ Bundle 'ap/vim-css-color'
 Bundle 'SirVer/ultisnips'
 Bundle 'vim-scripts/YankRing.vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'robmiller/vim-movar'
 
 " Clojure related packages
 Bundle 'guns/vim-clojure-static'

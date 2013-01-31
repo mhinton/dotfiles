@@ -54,29 +54,30 @@ let g:colors_name = "badwolf+"
 ""let s:bwc.coffee    = ['c7915b', 173]
 ""let s:bwc.darkroast = ['88633f', 95]
 
-hi Comment guifg=#998f84 " lightgravel 
+hi Comment guifg=#998f84  " lightgravel
+hi LineNr guibg=#242321  " darkgravel
 
-hi rubyClass guifg=#ff2c4b guibg=NONE gui=bold " taffy 
+hi rubyClass guifg=#ff2c4b guibg=NONE gui=bold  " taffy 
 hi link rubyDefine rubyClass
 hi link rubyConditional rubyClass
 hi link rubyControl rubyClass
 " hi rubyConditional guifg=#ff2c4b gui=NONE
 hi link rubyConstant rubyRailsUserClass
-hi rubySymbol guifg=#0a9dff guibg=NONE gui=NONE  " tardis
+hi rubySymbol guifg=#00B7AA guibg=NONE gui=NONE  
 hi link rubyStringDelimiter String
 
 " hi rubyFunction  guifg=#ffdd00 guibg=NONE gui=NONE
 " hi rubyInterpolationDelimiter  guifg=NONE guibg=NONE gui=NONE
 " hi rubySymbol  guifg=#ff628c guibg=NONE gui=NONE
 " hi rubyBlockParameter  guifg=#cccccc guibg=NONE gui=NONE
-hi rubyInstanceVariable  guifg=#0a9dff guibg=NONE gui=NONE
+hi rubyInstanceVariable  guifg=#0a9dff guibg=NONE gui=NONE  " tardis
 " hi rubyInclude  guifg=#ff9d00 guibg=NONE gui=NONE
 " hi rubyGlobalVariable  guifg=#cccccc guibg=NONE gui=NONE
 " hi rubyRegexp  guifg=#80ffc2 guibg=NONE gui=NONE
 " hi rubyRegexpDelimiter  guifg=#80ffc2 guibg=NONE gui=NONE
 " hi rubyEscape  guifg=#ff628c guibg=NONE gui=NONE
 " hi rubyClassVariable  guifg=#cccccc guibg=NONE gui=NONE
-hi rubyOperator  guifg=#f8f6f2 guibg=NONE gui=NONE " plain
+hi rubyOperator  guifg=#f8f6f2 guibg=NONE gui=NONE  " plain
 " hi rubyException  guifg=#ff9d00 guibg=NONE gui=NONE
 " hi rubyPseudoVariable  guifg=#ff80e1 guibg=NONE gui=NONE
 " hi rubyRailsUserClass  guifg=#80ffbb guibg=NONE gui=NONE

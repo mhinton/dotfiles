@@ -1,4 +1,4 @@
 vim/bundle/
-!./vim/bundle/vundle/
+!vim/bundle/vundle/
 vim/ftplugin/
 vim/plugin/

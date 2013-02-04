@@ -53,9 +53,10 @@ Bundle 'vim-scripts/YankRing.vim'
 Bundle 'robmiller/vim-movar'
 
 " Clojure related packages
-Bundle 'guns/vim-clojure-static'
-Bundle 'kien/rainbow_parentheses.vim'
-Bundle 'tpope/vim-foreplay'
+" removed for now to see if these are slowing vim down
+" Bundle 'guns/vim-clojure-static'
+" Bundle 'kien/rainbow_parentheses.vim'
+" Bundle 'tpope/vim-foreplay'
 
 " Colorschemes:
 Bundle 'altercation/vim-colors-solarized'

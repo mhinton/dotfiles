@@ -52,6 +52,10 @@ Bundle 'vim-scripts/YankRing.vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'robmiller/vim-movar'
 
+" testing YouCompleteMe   https://github.com/Valloric/YouCompleteMe
+" http://valloric.github.com/YouCompleteMe/
+" Bundle 'Valloric/YouCompleteMe'
+
 " Clojure related packages
 " removed for now to see if these are slowing vim down
 " Bundle 'guns/vim-clojure-static'

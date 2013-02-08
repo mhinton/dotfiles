@@ -93,3 +93,5 @@ hi erubyDelimiter  guifg=#ffa724 guibg=NONE gui=NONE " orange
 hi rubyRailsFilterMethod guifg=#f4cf86 " dirtyblonde
 
 hi link htmlString String
+
+hi Directory gui=NONE

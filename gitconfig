@@ -34,7 +34,7 @@
   ca = commit -am                   # commit all with message
   cv = commit -av                   # commit all and view changes
   ci = commit                       # commit
-  amend = commit --amend
+  amend = commit --amend -C HEAD    # amend the staged changes to your last commit
 
   # commit info
   type = cat-file -t
@@ -52,6 +52,7 @@
   dc = diff --cached
   dt = difftool 
   last = diff HEAD^                 # diff last committed change
+  ds = diff --staged                # review the changes you are going to commit
 
   # log aliases
   h = log -10 --graph --abbrev-commit --date=relative
@@ -146,7 +147,7 @@
 	excludesfile = /Users/matthew/.gitignore_global
 	pager = less -r
 [push]
-  default = tracking
+  default = upstream
 
 [github]
 	user = mhinton

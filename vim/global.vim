@@ -146,7 +146,7 @@ set helpheight=10
 
 " set wildmenu " set in vim-sensible
 " set wildmode=longest,list:longest
-set wildmode=list:longest,full         " Better completion
+set wildmode=list:longest,list:full    " Better completion
 set wildignore=.svn,CVS,.git           " Ignore VCS files
 set wildignore+=*.o,*.a,*.so           " Ignore compiled binaries
 set wildignore+=*.obj,*.class          " Ignore compiled binaries
@@ -159,7 +159,8 @@ set wildignore+=*.pyc,*.pyo            " Ignore compiled Python files
 " =>  Better Completion
 """"""""""""""""""""""""""""""
 " set complete=.,b,u,]
-set complete=.,w,b,u,t,i
+" set complete=.,w,b,u,t,i
+set complete=.,w,b,t
 " insert the longest common string, show the menu and preview info
 set completeopt=longest,menu,preview 
 " Insert Mode Completion

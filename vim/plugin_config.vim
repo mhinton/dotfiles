@@ -146,5 +146,30 @@ nnoremap <leader>t :CtrlP<cr>
 nnoremap <leader>b :CtrlPBuffer<cr>
 nnoremap <D-b> :CtrlPBuffer<cr>
 
+
 " YankRing:
 let g:yankring_history_dir = '$VIM'
+
+
+" vim-ruby-xmpfilter:
+let g:rct_completion_use_fri = 1
+let g:rct_completion_info_max_len = 20
+
+" Gvim
+nmap <buffer> <M-r> <Plug>(xmpfilter-run)
+xmap <buffer> <M-r> <Plug>(xmpfilter-run)
+imap <buffer> <M-r> <Plug>(xmpfilter-run)
+
+nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
+xmap <buffer> <M-m> <Plug>(xmpfilter-mark)
+imap <buffer> <M-m> <Plug>(xmpfilter-mark)
+
+" Terminal
+nmap <buffer> <F7> <Plug>(xmpfilter-run)
+xmap <buffer> <F7> <Plug>(xmpfilter-run)
+imap <buffer> <F7> <Plug>(xmpfilter-run)
+
+nmap <buffer> <F8> <Plug>(xmpfilter-mark)
+xmap <buffer> <F8> <Plug>(xmpfilter-mark)
+imap <buffer> <F8> <Plug>(xmpfilter-mark)
+

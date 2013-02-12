@@ -51,6 +51,7 @@ Bundle 'SirVer/ultisnips'
 Bundle 'vim-scripts/YankRing.vim'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'robmiller/vim-movar'
+Bundle 't9md/vim-ruby-xmpfilter'
 
 " testing YouCompleteMe   https://github.com/Valloric/YouCompleteMe
 " http://valloric.github.com/YouCompleteMe/

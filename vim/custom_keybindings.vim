@@ -2,6 +2,13 @@
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" disable escape (force use of <C-c>) 
+"inoremap <esc> <nop> 
+" make C-c act like esc for stuff like :normal I (that's capital i) 
+" inoremap <C-c> <esc> 
+" disable backspace (force use of <C-h>, and <C-w>) 
+" :inoremap <bs> <nop> 
+
 " make some kinds of autocomplete easier to activate
 "inoremap <c-l> <c-x><c-l>
 "inoremap <c-f> <c-x><c-f>

@@ -27,6 +27,9 @@ alias la='ls -ah'
 alias ll='ls -lh'
 alias lla='ls -alh'
 
+# recursive directory listing
+alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\'' -e '\''s/^/   /'\'' -e '\''s/-/|/'\'''
+
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
@@ -44,6 +47,9 @@ alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET
 # File size
 alias fs="stat -f \"%z bytes\""
 
+# find the largest file in a directory
+alias ds='du -ks * | sort -n'
+
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
@@ -57,6 +63,15 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 function fn() { ls **/*$1* }
 
 function hgrep() { history | grep $1 -} 
+
+# create a .rvmrc file
+function rvmrc() {
+  if [[ -n "$1" && -n "$2" ]]; then
+    rvm --rvmrc --create $1@$2
+  else
+    echo "proper usage: rvmrc <ruby version> <gemset name>"
+  fi
+}
 
 # PS
 alias psg="ps -aux | grep "

@@ -1,9 +1,9 @@
 " Add RebuildTagsFile function/command
 function! s:RebuildTagsFile()
-  " silent !ctags -R --exclude=coverage --exclude=files --exclude=public --exclude=log --exclude=tmp --exclude=vendor --exclude=*.sql *
   silent !/usr/local/bin/ctags -R --langmap="ruby:+.rake.builder.rjs" --exclude=coverage --exclude=log --exclude=tmp --languages=-sql --languages=-javascript *
 endfunction
 command! -nargs=0 RebuildTagsFile call s:RebuildTagsFile()
+
 
 " quickly toggle relative line numbers
 function! NumberToggle()
@@ -13,6 +13,7 @@ function! NumberToggle()
     set relativenumber
   endif
 endfunc
+
 
 " Window Killer
 " Use Q to intelligently close a window 
@@ -27,3 +28,11 @@ function! CloseWindowOrKillBuffer()
     bdelete
   endif
 endfunction
+
+
+" run the rspec spec on the cursor line
+function! RunSingleSpec()
+  exec '!rspec % -l ' . line('.')
+endfunction
+map <leader>rt :call RunSingleSpec()<CR>
+

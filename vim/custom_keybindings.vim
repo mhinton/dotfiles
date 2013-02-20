@@ -2,6 +2,9 @@
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
+" toggle paste mode
+map <leader>o <esc>:set invpaste paste?<cr>
+
 " disable escape (force use of <C-c>) 
 "inoremap <esc> <nop> 
 " make C-c act like esc for stuff like :normal I (that's capital i) 

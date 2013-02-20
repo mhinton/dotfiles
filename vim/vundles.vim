@@ -70,6 +70,10 @@ Bundle 'sjl/badwolf'
 " Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}   " this path don't seem to work
 Bundle 'goatslacker/mango.vim'
 
+" check this occasionally for new colorschemes
+" don't use it all the time because some are duplicates
+"Bundle 'flazz/vim-colorschemes'    
+
 " vim-scripts repos
 Bundle 'L9'
 

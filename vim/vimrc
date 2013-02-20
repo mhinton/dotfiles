@@ -33,8 +33,8 @@ if has("gui_running")
 
   " colorscheme idleFingers
   " colorscheme codeschool+
-  colorscheme badwolf+
-  " colorscheme grb256
+  " colorscheme badwolf+
+  colorscheme grb256
 else
   " if &t_Co >= 8
   " colorscheme vividchalk

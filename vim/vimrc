@@ -9,6 +9,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 source ~/.vim/vundles.vim
+highlight clear SignColumn
 
 " Source:
 source ~/.vim/global.vim

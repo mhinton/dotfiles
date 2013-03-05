@@ -9,7 +9,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 source ~/.vim/vundles.vim
-highlight clear SignColumn
 
 " Source:
 source ~/.vim/global.vim
@@ -73,4 +72,7 @@ endif
 
 " override vim-markdown flagging an intraword underscore as an error
 hi! def link markdownError  Normal
+
+" reset the SignColumn colors vim-gitgutter uses
+hi clear SignColumn
 

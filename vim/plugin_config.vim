@@ -71,7 +71,8 @@ nnoremap <leader>gr :Gremove<cr>
 
 
 " Ack:
-let g:ackprg="ack -H --nocolor --nogroup --column"
+"let g:ackprg="ack -H --nocolor --nogroup --column"
+let g:ackprg = "ag --nogroup --nocolor --column"
 
 
 " SuperTab:

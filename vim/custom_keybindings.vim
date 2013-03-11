@@ -116,11 +116,11 @@ nnoremap <silent> ,F :let word=expand("<cword>")<CR>:vsp<CR>:wincmd w<cr>:exec("
 " use ,gf to go to file in a vertical split
 nnoremap <silent> ,gf :vertical botright wincmd f<CR>
 
+"" using ragtag or vim-rails for these now
 " create <%= foo %> erb tags using Ctrl-k in edit mode
-imap <silent> <C-K> <%=   %><Esc>3hi
-
+"imap <silent> <C-K> <%=   %><Esc>3hi
 " create <%= foo %> erb tags using Ctrl-j in edit mode
-imap <silent> <C-J> <%  %><Esc>2hi
+"imap <silent> <C-J> <%  %><Esc>2hi
 
 " ,q to toggle quickfix window (where you have stuff like GitGrep)
 " ,oq to open it back up (rare)

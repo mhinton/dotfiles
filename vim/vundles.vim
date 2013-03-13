@@ -28,6 +28,7 @@ Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-obsession'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
@@ -49,11 +50,13 @@ Bundle 'skalnik/vim-vroom'
 Bundle 'danchoi/virb'
 Bundle 'ap/vim-css-color'
 Bundle 'SirVer/ultisnips'
-Bundle 'vim-scripts/YankRing.vim'
+" Bundle 'vim-scripts/YankRing.vim'
+Bundle 'maxbrunsfeld/vim-yankstack'
 " Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'robmiller/vim-movar'
 Bundle 't9md/vim-ruby-xmpfilter'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'ecomba/vim-ruby-refactoring'
 
 " testing YouCompleteMe   https://github.com/Valloric/YouCompleteMe
 " http://valloric.github.com/YouCompleteMe/

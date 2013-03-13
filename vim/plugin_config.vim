@@ -88,6 +88,7 @@ let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-n>", "&omnifunc
 
 " UltiSnips:
 let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<tab>"
 let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
@@ -151,6 +152,11 @@ nnoremap <D-b> :CtrlPBuffer<cr>
 " YankRing:
 " let g:yankring_history_dir = '$VIM'
 let g:yankring_history_dir = '~/.vim'
+
+" Yankstack:
+" keybinds for YankStack to work in both Terminal and MacVim
+nmap <leader>p <Plug>yankstack_substitute_older_paste
+nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
 
 " vim-ruby-xmpfilter:

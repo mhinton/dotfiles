@@ -2,12 +2,12 @@
 if has("mac")
   
   " TABS: safari style tab navigation
-  nmap <D-[> :tabprevious<CR>
-  nmap <D-]> :tabnext<CR>
-  map <D-[> :tabprevious<CR>
-  map <D-]> :tabnext<CR>
-  imap <D-[> <C-O>:tabprevious<CR>
-  imap <D-]> <C-O>:tabnext<CR>
+  nmap <D-S-[> :tabprevious<CR>
+  nmap <D-S-]> :tabnext<CR>
+  map <D-S-[> :tabprevious<CR>
+  map <D-S-]> :tabnext<CR>
+  imap <D-S-[> <C-O>:tabprevious<CR>
+  imap <D-S-]> <C-O>:tabnext<CR>
 
   " TABS: Firefox style, open tabs with command-<tab number>
   map <silent> <D-1> :tabn 1<CR>

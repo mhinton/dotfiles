@@ -76,10 +76,6 @@ nmap ,yw yiww
 " FIXME: will not properly repeat when you use a dot (tie into repeat.vim)
 nmap ,ow "_diwhp
 
-" keybinds for YankStack to work in both Terminal and MacVim
-nmap <c-p> <Plug>yankstack_substitute_older_paste
-nmap <c-n> <Plug>yankstack_substitute_newer_paste
-
 " go to the last edit location with ,.
 nnoremap ,. '.'
 
@@ -258,8 +254,8 @@ nmap <leader>n :tabnew<CR>
 map <leader>u <C-w>T:tabp<CR>
 
 " Make the tab key match bracket pairs
-nnoremap <tab> %
-vnoremap <tab> %
+" nnoremap <tab> %
+" vnoremap <tab> %
 nmap <tab> %
 vmap <tab> %    " something is stomping on this so vmap doesn't work 1/14/2013
 

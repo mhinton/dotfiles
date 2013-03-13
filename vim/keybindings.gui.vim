@@ -1,5 +1,6 @@
 " OSX: Specific keybindings
 if has("mac")
+  set macmeta
   
   " TABS: safari style tab navigation
   nmap <D-S-[> :tabprevious<CR>

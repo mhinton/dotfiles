@@ -10,7 +10,6 @@ Bundle 'gmarik/vundle'
 
 source ~/.vim/vundles.vim
 
-set macmeta
 call yankstack#setup()
 
 " Source:

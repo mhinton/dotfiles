@@ -66,7 +66,7 @@ Bundle 'ecomba/vim-ruby-refactoring'
 " removed for now to see if these are slowing vim down
 " Bundle 'guns/vim-clojure-static'
 " Bundle 'kien/rainbow_parentheses.vim'
-" Bundle 'tpope/vim-foreplay'
+" Bundle 'tpope/vim-fireplace'
 
 " Colorschemes:
 Bundle 'altercation/vim-colors-solarized'

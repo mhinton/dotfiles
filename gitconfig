@@ -20,6 +20,8 @@
   # standup = log --since yesterday --oneline --author \"Matthew Hinton\" # changes made since yesterday
   standup = log --since yesterday --pretty=medium --author \"Matthew Hinton\" # changes made since yesterday
 
+  ar = "git ls-files -d -m -o -z --exclude-standard | xargs -0 git update-index --add --remove"
+
   # add
   a = add
   aa = add --all

@@ -1,20 +1,40 @@
-# ruby 1.8.7 compatible
-require 'rubygems'
+require 'rubygems' unless defined? Gem # rubygems is only needed in 1.8
 require 'irb/completion'
-
-# configure irb
-IRB.conf[:PROMPT_MODE] = :SIMPLE
+require 'irb/ext/save-history'
+# require 'irbtools'
 
 # where history is saved
-IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb_history"
-
-# irb history
+IRB.conf[:HISTORY_FILE] = "#{ENV['HOME']}/.irb-history"
+# how many lines to save
 IRB.conf[:SAVE_HISTORY] = 1000
-# IRB.conf[:EVAL_HISTORY] = 1000
 
 # IRB.conf[:AUTO_INDENT]=true
 IRB.conf[:USE_READLINE] = true
 
+# if not in Rails 3 set the prompt
+unless defined?(Rails) && !Rails.env.nil?    # Rails 3.x
+  IRB.conf[:PROMPT][:CUSTOM] = {
+    :PROMPT_I => ">> ",
+    :PROMPT_N => ">> ",   # :PROMPT_N => ".. ",
+    :PROMPT_C => "?> ",   # :PROMPT_C => ".. ",
+    :PROMPT_S => "?> ", # :PROMPT_S => "%l>> ",
+    :RETURN => "=> %s\n"
+  }
+  IRB.conf[:PROMPT_MODE] = :CUSTOM
+else
+  app_name = Rails.application.class.parent_name.downcase
+  app_env  = Rails.env[0...3]
+  IRB.conf[:PROMPT] ||= {}
+  IRB.conf[:PROMPT][:RAILS] = {
+    :PROMPT_I => "#{ app_name }(#{ app_env })> ",
+    :PROMPT_N => "#{ app_name }(#{ app_env })| ",
+    :PROMPT_C => "#{ app_name }(#{ app_env })| ",
+    :PROMPT_S => "#{ app_name }(#{ app_env })%l ",
+    :RETURN => "=> %s\n",
+    :AUTO_INDENT => true,
+  }
+  IRB.conf[:PROMPT_MODE] = :RAILS
+end
 
 ANSI = {}
 ANSI[:RESET]     = "\e[0m"
@@ -29,7 +49,6 @@ ANSI[:BLUE]      = "\e[34m"
 ANSI[:MAGENTA]   = "\e[35m"
 ANSI[:CYAN]      = "\e[36m"
 ANSI[:WHITE]     = "\e[37m"
-
 
 # Loading extensions of the console. This is wrapped
 # because some might not be included in your Gemfile
@@ -47,18 +66,14 @@ rescue LoadError
 end
 $console_extensions = []
 
-# interactive editor: use vim from within irb
-extend_console 'interactive_editor'
-
-# awesome print
-extend_console 'awesome_print' do
-  alias pp ap
-  # AwesomePrint.irb!
-end
-
 extend_console 'irbtools' do
+  #Irbtools.remove_library :looksee # 11/17/11 removing looksee because it has a bug
+  #Irbtools.remove_library :interactive_editor # 11/21/11 removing interactive_editor because it adds an edit method it shouldn't
+  #Irbtools.start
+
   FancyIrb.options[:colorize][:rocket_prompt] = :yellow
   FancyIrb.options[:colorize][:stdout] = :white
+
 end
 
 extend_console 'wirb' do
@@ -136,54 +151,28 @@ extend_console 'wirb' do
   }
 end
 
+# Hirb makes tables easy.
+extend_console 'hirb' do
+  Hirb.enable
+  extend Hirb::Console
+end
+
+# awesome_print is prints prettier than pretty_print
+extend_console 'ap' do
+  # awesome_print is prints prettier than pretty_print
+  alias pp ap
+end
 
 # Show results of all extension-loading
 puts "#{ANSI[:GRAY]}~> Console extensions:#{ANSI[:RESET]} #{$console_extensions.join(' ')}#{ANSI[:RESET]}"
 
 
 class Object
-  def interesting_methods
-    case self.class
-    when Class
-      self.public_methods.sort - Object.public_methods
-    when Module
-      self.public_methods.sort - Module.public_methods
-    else
-      self.public_methods.sort - Object.new.public_methods
-    end
+  def my_methods(include_inherited = false)
+    ignored_methods = include_inherited ? Object.methods : self.class.superclass.instance_methods
+    (self.methods - ignored_methods).sort
   end
-end
-
-# Simple regular expression helper
-# show_regexp - stolen from the pickaxe
-def show_regexp(a, re)
-   if a =~ re
-      "#{$`}<<#{$&}>>#{$'}"
-   else
-      "no match"
-   end
-end
-
-# Convenience method on Regexp so you can do
-# /an/.show_match("banana")
-class Regexp
-  def show_match(a)
-    show_regexp(a, self)
-  end
-end
-
-# toys methods to play with.
-# Stealed from https://gist.github.com/807492
-class Array
-  def self.toy(n=10,&block)
-    block_given? ? Array.new(n,&block) : Array.new(n) {|i| i+1}
-  end
-end   
-
-class Hash
-  def self.toy(n=10)
-    Hash[Array.toy(n){|c| (96+(c+1)).chr.to_sym}.zip(Array.toy(n))]
-  end
+  alias_method :m, :my_methods
 end
 
 # pm - Print methods of objects in irb/console sessions.
@@ -218,23 +207,42 @@ def pm(obj, *options) # Print methods
 end
 
 
+# Simple regular expression helper
+# show_regexp - stolen from the pickaxe
+def show_regexp(a, re)
+   if a =~ re
+      "#{$`}<<#{$&}>>#{$'}"
+   else
+      "no match"
+   end
+end
+
+# Convenience method on Regexp so you can do
+# /an/.show_match("banana")
+class Regexp
+  def show_match(a)
+    show_regexp(a, self)
+  end
+end
+
+# toys methods to play with.
+# Stealed from https://gist.github.com/807492
+class Array
+  def self.toy(n=10,&block)
+    block_given? ? Array.new(n,&block) : Array.new(n) {|i| i+1}
+  end
+end   
+
+class Hash
+  def self.toy(n=10)
+    Hash[Array.toy(n){|c| (96+(c+1)).chr.to_sym}.zip(Array.toy(n))]
+  end
+end
+
+alias qt exit
+
 railsrc_path = File.expand_path("~/.railsrc")
 if ( ENV['RAILS_ENV'] || defined? Rails ) && File.exist?( railsrc_path )
-
-  # set a nice prompt
-  rails_root = File.basename(Dir.pwd)
-  IRB.conf[:PROMPT] ||= {}
-  IRB.conf[:PROMPT][:RAILS] = {
-    :PROMPT_I => "#{rails_root}> ", # normal prompt
-    :PROMPT_S => "#{rails_root}* ", # prompt when continuing a string
-    :PROMPT_C => "#{rails_root}? ", # prompt when continuing a statement
-    :RETURN   => "=> %s\n"          # prefixes output
-  }
-  IRB.conf[:PROMPT_MODE] = :RAILS
-
-  # turn on the loud logging by default
-  IRB.conf[:IRB_RC] = Proc.new { loud_logger }
-
   begin
     load railsrc_path
   rescue Exception

@@ -148,6 +148,12 @@ class Regexp
   end
 end
 
+#Reformat Exception
+Pry.config.exception_handler = proc do |output, exception, _|
+  output.puts "\e[31m#{exception.class}: #{exception.message}"
+  output.puts "from #{exception.backtrace.first}\e[0m"
+end
+
 # === COLOR CUSTOMIZATION ===
 # Everything below this line is for customizing colors, you have to use the ugly
 # color codes, but such is life. 

@@ -117,6 +117,37 @@ class Hash
   end
 end
 
+class Object
+  def interesting_methods
+    case self.class
+    when Class
+      self.public_methods.sort - Object.public_methods
+    when Module
+      self.public_methods.sort - Module.public_methods
+    else
+      self.public_methods.sort - Object.new.public_methods
+    end
+  end
+end
+
+# Simple regular expression helper
+# show_regexp - stolen from the pickaxe
+def show_regexp(a, re)
+   if a =~ re
+      "#{$`}<<#{$&}>>#{$'}"
+   else
+      "no match"
+   end
+end
+
+# Convenience method on Regexp so you can do
+# /an/.show_match("banana")
+class Regexp
+  def show_match(a)
+    show_regexp(a, self)
+  end
+end
+
 # === COLOR CUSTOMIZATION ===
 # Everything below this line is for customizing colors, you have to use the ugly
 # color codes, but such is life. 

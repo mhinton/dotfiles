@@ -57,13 +57,13 @@ let g:colors_name = "badwolf+"
 hi Comment guifg=#998f84  " lightgravel
 hi LineNr guibg=#242321  " darkgravel
 
-hi rubyClass guifg=#ff2c4b guibg=NONE gui=bold  " taffy 
+hi rubyClass guifg=#ff2c4b guibg=NONE gui=NONE  " taffy 
 hi link rubyDefine rubyClass
 hi link rubyConditional rubyClass
 hi link rubyControl rubyClass
 " hi rubyConditional guifg=#ff2c4b gui=NONE
 hi link rubyConstant rubyRailsUserClass
-hi rubySymbol guifg=#00B7AA guibg=NONE gui=NONE  
+hi rubySymbol guifg=#8cffba guibg=NONE gui=NONE  
 hi link rubyStringDelimiter String
 
 " hi rubyFunction  guifg=#ffdd00 guibg=NONE gui=NONE
@@ -92,6 +92,8 @@ hi erubyDelimiter  guifg=#ffa724 guibg=NONE gui=NONE " orange
 
 hi rubyRailsFilterMethod guifg=#f4cf86 " dirtyblonde
 
+hi htmlTagName gui=NONE guifg=#c7915b
 hi link htmlString String
+hi htmlArg guifg=#aeee00
 
 hi Directory gui=NONE

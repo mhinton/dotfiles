@@ -61,7 +61,7 @@ Bundle 'ecomba/vim-ruby-refactoring'
 
 " testing YouCompleteMe   https://github.com/Valloric/YouCompleteMe
 " http://valloric.github.com/YouCompleteMe/
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down

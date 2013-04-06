@@ -87,13 +87,15 @@ let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-n>", "&omnifunc
 
 
 " UltiSnips:
-let g:UltiSnipsExpandTrigger="<tab>"
+" let g:UltiSnipsExpandTrigger="<tab>" " default
 " let g:UltiSnipsListSnippets="<c-tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-let g:UltiSnipsSnippetDirectories=["ultisnips"]
+" let g:UltiSnipsJumpForwardTrigger="<tab>" " default
+" let g:UltiSnipsJumpBackwardTrigger="<s-tab>" " default
 " let g:UltiSnipsDontReverseSearchPath="1"
-
+let g:UltiSnipsExpandTrigger="<c-j>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsSnippetDirectories=["ultisnips"]
 
 " Gundo:
 let g:gundo_width = 45

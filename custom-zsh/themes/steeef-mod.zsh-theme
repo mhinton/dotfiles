@@ -126,3 +126,5 @@ $fg[yellow]%~%{$reset_color%} ${rvm_ruby} $vcs_info_msg_0_
 RPROMPT='' # remove the right hand prompt
 
 ZSH_PROMPT_BASE_COLOR="%{$fg[white]%}"
+
+# zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}

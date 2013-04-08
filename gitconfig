@@ -67,12 +67,21 @@
   browser = open
 
 [alias]
+  # misc aliases
   # standup = log --since yesterday --oneline --author \"Matthew Hinton\" # changes made since yesterday
   standup = log --since yesterday --pretty=medium --author \"Matthew Hinton\" # changes made since yesterday
   ar = "git ls-files -d -m -o -z --exclude-standard | xargs -0 git update-index --add --remove"
   search = log --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset' --full-history -S 
   make-the-fucking-branch-point-at-the-fucking-commit = !sh -c "git checkout $1 && git reset --hard $2" -
   root = rev-parse --show-toplevel
+
+  # aliases from http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
+  assume   = update-index --assume-unchanged
+  unassume = update-index --no-assume-unchanged
+  assumed  = "!git ls-files -v | grep ^h | cut -c 3-"
+  snapshot = !git stash save "snapshot: $(date)" && git stash apply "stash@{0}"
+  ours   = "!f() { git commit --ours $@ && git add $@; }; f"
+  theirs = "!f() { git commit --theirs $@ && git add $@; }; f"
 
   # add
   a = add

@@ -1,26 +1,78 @@
 [user]
 	name = Matthew Hinton
 	email = matthew.hinton@commongroundpublishing.com
+
+[core]
+	quotepath = false
+	excludesfile = /Users/matthew/.gitignore_global
+	pager = less -r
+
 [color]
   ui = auto
   diff = auto
   status = auto
   branch = auto
+
 [branch]
   autosetuprebase = always
   autosetupmerge = always
+
+[push]
+  default = upstream
+
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
   enabled = true
+
 [format]
   # pretty = format:%C(blue)%ad%Creset %C(yellow)%h%C(green)%d%Creset %C(blue)%s %C(magenta) [%an]%Creset
   pretty = format:%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset
+
+[github]
+	user = mhinton
+	token = 063438a7c34d07ebf6aa9a1e62e6fbe0
+
+[difftool]
+  prompt = false
+
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
+#[difftool "sourcetree"]
+#	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE
+#	path = 
+
+[diff]
+  # tool = vimdiff
+  tool = Kaleidoscope
+  rename = copy
+  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
+  # instead of a/b/c/d as prefixes for patches
+  mnemonicprefix = true
+
+[mergetool "Kaleidoscope"]
+	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+
+#[mergetool "sourcetree"]
+#	cmd = /usr/local/bin/ksdiff --merge --output $MERGED --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+#	trustExitCode = true
+
+[merge]
+  #keepBackup = false
+  # tool = vimdiff
+  tool = Kaleidoscope
+
+[web]
+  browser = open
+
 [alias]
   # standup = log --since yesterday --oneline --author \"Matthew Hinton\" # changes made since yesterday
   standup = log --since yesterday --pretty=medium --author \"Matthew Hinton\" # changes made since yesterday
-
   ar = "git ls-files -d -m -o -z --exclude-standard | xargs -0 git update-index --add --remove"
+  search = log --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset' --full-history -S 
+  make-the-fucking-branch-point-at-the-fucking-commit = !sh -c "git checkout $1 && git reset --hard $2" -
+  root = rev-parse --show-toplevel
 
   # add
   a = add
@@ -45,6 +97,7 @@
   # checkout
   co = checkout
   nb = checkout -b                  # create and switch to a new branch (mnemonic: "git new branch branchname...")
+  id = rev-parse
 
   # cherry-pick
   cp = cherry-pick -x               # grab a change from a branch
@@ -55,6 +108,8 @@
   dt = difftool 
   last = diff HEAD^                 # diff last committed change
   ds = diff --staged                # review the changes you are going to commit
+  ksdiff = difftool -y -t Kaleidoscope
+  ksshow = "!sh -c 'git ksdiff $1^..$1;' -"
 
   # log aliases
   h = log -10 --graph --abbrev-commit --date=relative
@@ -63,6 +118,10 @@
   recent = log -10 --abbrev-commit --date=relative
   oneline = log --oneline --decorate
   changes = log -10 -p 
+  l   = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+  ll  = log     --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
+  gl  = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
+  gll = log     --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(%cr by %an)%Creset%C(yellow bold)%d%Creset%n'
 
   # branch
   lsunmerged = "branch --no-merged" # list unmerged branches
@@ -144,47 +203,3 @@
   # git ksreview feature-branch-name-or-sha mainline-branch-name
   ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
 
-[core]
-	quotepath = false
-	excludesfile = /Users/matthew/.gitignore_global
-	pager = less -r
-[push]
-  default = upstream
-
-[github]
-	user = mhinton
-	token = 063438a7c34d07ebf6aa9a1e62e6fbe0
-
-[merge]
-  #keepBackup = false
-  # tool = p4merge
-  tool = Kaleidoscope
-#[merge]
-#  tool = vimdiff
-#  summary = true
-#  verbosity = 1
-[mergetool "p4merge"]
-  cmd = p4merge "$BASE" "$LOCAL" "$REMOTE" "$MERGED"
-  keepTemporaries = false
-  trustExitCode = false
-  keepBackup = false
-[diff]
-  # external = p4diff
-  # tool = vimdiff
-  rename = copy
-  # Git diff will use (i)ndex, (w)ork tree, (c)ommit and (o)bject
-  # instead of a/b/c/d as prefixes for patches
-  mnemonicprefix = true
-[difftool]
-  prompt = false
-[difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE
-	path = 
-[mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output $MERGED --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
-	trustExitCode = true
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true

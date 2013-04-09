@@ -24,3 +24,7 @@ set guicursor=a:blinkon0
 if filereadable(expand("~/.vim/custom_gvimrc"))
   source ~/.vim/custom_gvimrc
 endif
+
+if filereadable(expand("~/.vim/local_gvimrc"))
+  source ~/.vim/local_gvimrc
+endif

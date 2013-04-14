@@ -59,9 +59,9 @@ Bundle 't9md/vim-ruby-xmpfilter'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'ecomba/vim-ruby-refactoring'
 
-" testing YouCompleteMe   https://github.com/Valloric/YouCompleteMe
-" http://valloric.github.com/YouCompleteMe/
+" Experimental plugins
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'terryma/vim-multiple-cursors'
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down
@@ -73,7 +73,6 @@ Bundle 'Valloric/YouCompleteMe'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'sjl/badwolf'
 " Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}   " this path don't seem to work
-
 " check this occasionally for new colorschemes
 " don't use it all the time because some are duplicates
 "Bundle 'flazz/vim-colorschemes'    

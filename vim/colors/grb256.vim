@@ -7,7 +7,8 @@ let g:colors_name = "grb256"
 hi Normal           guifg=#f6f3f6     guibg=#202020       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Folded guibg=NONE gui=italic
 hi NonText guibg=NONE
-hi LineNr guifg=#868386 guibg=#282828 ctermfg=darkgray
+" hi LineNr guifg=#868386 guibg=#282828 ctermfg=darkgray
+hi LineNr guifg=#a0a097 guibg=#2e2e2e ctermfg=gray
 
 hi pythonSpaceError ctermbg=red guibg=red
 

@@ -44,3 +44,5 @@ hi link markdownH5 markdownH3
 " hi markdownHeadingDelimiter guifg=#93a1a1
 
 hi org_shade_stars guifg=#d6d3c8
+
+hi Todo guifg=#fade3e

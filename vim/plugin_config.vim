@@ -160,6 +160,15 @@ let g:yankring_history_dir = '~/.vim'
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
 
+" Tabular:
+if exists(":Tabularize")
+  nmap <leader>a= :Tabularize /=<cr>
+  vmap <leader>a= :Tabularize /=<cr>
+  nmap <leader>a> :Tabularize /=><cr>
+  vmap <leader>a> :Tabularize /=><cr>
+  nmap <leader>a: :Tabularize /:\zs<cr>
+  vmap <leader>a: :Tabularize /:\zs<cr>
+endif
 
 " vim-ruby-xmpfilter:
 let g:rct_completion_use_fri = 1

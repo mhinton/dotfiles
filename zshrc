@@ -36,6 +36,10 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export EDITOR=vim
+# both emacs and vi are set to off so turn emacs on so command line editing will work
+set -o emacs
+bind-key '\C-x\C-e' edit-command-line # fix this so it uses bind-key instead of bindkey
+
 export PAGER=less
 #export LESS='-RM' # -R print color escapes to the screen, -M user very verbose prompt
 

@@ -1,11 +1,55 @@
 # === EDITOR ===
 # Pry.editor = 'vim'
 Pry.config.editor = 'vim'
+Pry.config.color = true
+Pry.config.history.should_save = true
+Pry.config.should_load_local_rc = Dir.pwd != Dir.home
+
+if Readline::VERSION =~ /editline/i
+  warn "Warning: Using Editline instead of Readline."
+end
+
+# tell Readline when the window resizes
+old_winch = trap 'WINCH' do
+  if `stty size` =~ /\A(\d+) (\d+)\n\z/
+    Readline.set_screen_size $1.to_i, $2.to_i
+  end
+  old_winch.call unless old_winch.nil?
+end
+
+def pbcopy(data)
+  IO.popen 'pbcopy', 'w' do |io|
+    io << data
+  end
+  nil
+end
+
+def pbpaste
+  `pbpaste`
+end
+
+# wrap ANSI codes so Readline knows where the prompt ends
+def colour(name, text)
+  if Pry.color
+    "\001#{Pry::Helpers::Text.send name, '{text}'}\002".sub '{text}', "\002#{text}\001"
+  else
+    text
+  end
+end
 
 # === CUSTOM PROMPT ===
 # This prompt shows the ruby version (useful for RVM)
-Pry.prompt = [proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} > " }, proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} * " }]
-Pry.config.prompt = Pry::NAV_PROMPT
+# Pry.prompt = [proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} > " }, proc { |obj, nest_level, _| "#{RUBY_VERSION} (#{obj}):#{nest_level} * " }]
+# Pry.config.prompt = Pry::NAV_PROMPT
+
+# pretty prompt
+Pry.config.prompt = [
+  proc do |object, nest_level, pry|
+    prompt  = colour :bright_red, Pry.view_clip(object)
+    prompt += ":#{nest_level}" if nest_level > 0
+    prompt += colour :cyan, ' » '
+  end, proc { |object, nest_level, pry| colour :cyan, '» ' }
+]
 
 # === Pry Debugger ===
 begin

@@ -94,52 +94,9 @@ alias cl='clear'
 alias ps='ps aux'
 alias cdb='cd -'
 
-# Git Aliases
-# alias gs='git status'
-#alias gstsh='git stash'
-# alias gsh='git show'
-#alias gi='vi .gitignore'
-# alias gcm='git ci -m'
-#alias gcim='git ci -m'
-# alias gci='git ci'
-# alias gco='git co'
-#alias ga='git add -A'
-#alias guns='git unstage'
-#alias gunc='git uncommit'
-#alias gm='git merge'
-#alias gms='git merge --squash'
-#alias gam='git amend'
-#alias gr='git rebase'
-# alias gra='git rebase --abort'
-# alias grc='git rebase --continue'
-# alias gbi='git rebase --interactive'
-# alias gl='git l'
-# alias glg='git l'
-#alias co='git co'
-# alias gf='git fetch'
-#alias gd='git diff'
-# alias gb='git b'
-#alias gdc='git diff --cached'
-# alias gpl='git pull'
-# alias gplr='git pull --rebase'
-# alias gps='git push'
-# alias gnb='git nb' # new branch aka checkout -b
-#alias grs='git reset' 
-#alias grsh='git reset --hard'
-#alias gcln='git clean'
-#alias gclndf='git clean -df'
-# alias gsm='git submodule'
-# alias gsmi='git submodule init'
-# alias gsmu='git submodule update'
-# alias gt='git t'
 alias glr="git log -10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
-
 alias cds='cd /Users/matthew/Sites/scholar'
-alias cdsa='cd /Users/matthew/Sites/scholar/cg_author'
-alias cdsp='cd /Users/matthew/Sites/scholar/cg_publisher'
-alias cdsi='cd /Users/matthew/Sites/scholar/cg_identity'
-alias cdsc='cd /Users/matthew/Sites/scholar/cg_community'
 
 alias octo='cd /Users/matthew/Dropbox/Sites/octopress'
 alias projects='cd /Users/matthew/Dropbox/Projects'
@@ -151,9 +108,12 @@ alias rsa='rs -p 3001'
 alias rsp='rs -p 3002'
 alias usa='bundle exec unicorn_rails -p 3001'
 alias usp='bundle exec unicorn_rails -p 3002'
-alias psi='bundle exec puma -p 3000'
-alias psa='bundle exec puma -p 3001'
-alias psp='bundle exec puma -p 3002'
 
 alias rls='bundle exec rails s -p 4000'
 alias rlp='bundle exec puma -p 4000'
+
+alias t="script/test $*"
+alias f="script/features $*"
+function mcd() { mkdir -p $1 && cd $1 }
+function cdf() { cd *$1*/ } # stolen from @topfunky
+

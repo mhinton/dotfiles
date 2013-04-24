@@ -31,6 +31,7 @@ Bundle 'tpope/vim-commentary'
 " Bundle 'tpope/vim-obsession'
 Bundle 'tpope/vim-dispatch'
 Bundle 'vim-ruby/vim-ruby'
+Bundle 'elzr/vim-json'
 Bundle 'scrooloose/nerdtree'
 Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
@@ -60,11 +61,15 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'othree/html5.vim'
 Bundle 'godlygeek/tabular.git'
+Bundle 'itspriddle/vim-marked'
 Bundle 'jc00ke/vim-tomdoc'
+Bundle 'mutewinter/nginx.vim'
+Bundle 'mutewinter/tomdoc.vim'
 
 " Experimental plugins
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'terryma/vim-multiple-cursors'
+Bundle 'pangloss/vim-javascript'
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down

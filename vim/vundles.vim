@@ -60,6 +60,7 @@ Bundle 'airblade/vim-gitgutter'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'othree/html5.vim'
 Bundle 'godlygeek/tabular.git'
+Bundle 'jc00ke/vim-tomdoc'
 
 " Experimental plugins
 Bundle 'Valloric/YouCompleteMe'

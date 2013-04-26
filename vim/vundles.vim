@@ -67,7 +67,7 @@ Bundle 'mutewinter/nginx.vim'
 Bundle 'mutewinter/tomdoc.vim'
 
 " Experimental plugins
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'pangloss/vim-javascript'
 

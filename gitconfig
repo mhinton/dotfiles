@@ -18,7 +18,8 @@
   autosetupmerge = always
 
 [push]
-  default = upstream
+  # default = upstream
+  default = tracking
 
 [rerere]
   # Remember my merges
@@ -62,6 +63,7 @@
   #keepBackup = false
   # tool = vimdiff
   tool = Kaleidoscope
+  defaultToUpstream = true
 
 [web]
   browser = open

@@ -4,6 +4,7 @@ alias -g less='less -R'
 # don't have zsh try and expand brackets [ ] with rake
 alias rake="noglob rake"
 alias bundle="noglob bundle"
+alias -g drspec="rspec -d "
 
 alias -g be="bundle exec"
 alias -g bi="bundle install"

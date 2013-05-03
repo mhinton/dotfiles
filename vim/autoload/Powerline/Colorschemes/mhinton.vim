@@ -2,6 +2,9 @@ call Pl#Hi#Allocate({
         \ 'black'          : 16,
         \ 'white'          : 231,
         \
+        \ 'custom1'        : 130,
+        \ 'custom2'        : 144,
+        \
         \ 'darkestgreen'   : 22,
         \ 'darkgreen'      : 28,
         \ 'mediumgreen'    : 70,
@@ -47,7 +50,7 @@ let g:Powerline#Colorschemes#mhinton#colorscheme = Pl#Colorscheme#Init([
                 \ }),
         \
         \ Pl#Hi#Segments(['mode_indicator'], {
-                \ 'n': ['darkestgreen', 'brightgreen', ['bold']],
+                \ 'n': ['white', 'custom1', ['bold']],
                 \ 'i': ['darkestcyan', 'white', ['bold']],
                 \ 'v': ['darkred', 'brightorange', ['bold']],
                 \ 'r': ['white', 'brightred', ['bold']],

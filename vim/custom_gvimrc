@@ -1,7 +1,8 @@
 " Font: Choose font and enable anti-aliasing
+" guifont set in local_gvimrc now
 " set guifont=MesloLGM:h13
 " set guifont=Meslo\ LG\ M\ DZ\ for\ Powerline:h13
-set guifont=Source\ Code\ Pro\ for\ Powerline:h15
+" set guifont=Source\ Code\ Pro\ for\ Powerline:h15
 
 set linespace=2
 set antialias

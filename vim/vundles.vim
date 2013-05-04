@@ -76,6 +76,7 @@ Bundle 'pangloss/vim-javascript'
 " Bundle 'guns/vim-clojure-static'
 " Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'tpope/vim-fireplace'
+" Bundle 'dgrnbrg/vim-redl' " new vim integration with clojure
 
 " Colorschemes:
 Bundle 'altercation/vim-colors-solarized'

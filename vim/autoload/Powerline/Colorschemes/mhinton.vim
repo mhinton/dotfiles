@@ -51,7 +51,7 @@ let g:Powerline#Colorschemes#mhinton#colorscheme = Pl#Colorscheme#Init([
                 \ }),
         \
         \ Pl#Hi#Segments(['mode_indicator'], {
-                \ 'n': ['custom3', 'custom1', ['bold']],
+                \ 'n': ['gray0', 'custom1', ['bold']],
                 \ 'i': ['darkestcyan', 'white', ['bold']],
                 \ 'v': ['darkred', 'brightorange', ['bold']],
                 \ 'r': ['white', 'brightred', ['bold']],
@@ -59,7 +59,7 @@ let g:Powerline#Colorschemes#mhinton#colorscheme = Pl#Colorscheme#Init([
                 \ }),
         \
         \ Pl#Hi#Segments(['branch', 'raw', 'filesize'], {
-                \ 'n': ['mediumcyan', 'gray2'],
+                \ 'n': ['mediumcyan', 'gray3'],
                 \ 'N': ['gray4', 'gray2'],
                 \ 'i': ['mediumcyan', 'darkestblue'],
                 \ }),

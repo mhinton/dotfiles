@@ -14,7 +14,7 @@
   branch = auto
 
 [branch]
-  autosetuprebase = always
+  # autosetuprebase = always
   autosetupmerge = always
 
 [push]

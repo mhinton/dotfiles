@@ -64,6 +64,7 @@
   # tool = vimdiff
   tool = Kaleidoscope
   defaultToUpstream = true
+	ff = no
 
 [web]
   browser = open

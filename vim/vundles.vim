@@ -70,6 +70,7 @@ Bundle 'mutewinter/tomdoc.vim'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'pangloss/vim-javascript'
+" Bundle 'FredKSchott/CoVim' " collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down

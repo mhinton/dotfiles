@@ -129,3 +129,6 @@ zstyle ':completion:*:manuals.(^1*)' insert-sections   true
 # Cache
 zstyle ':completion:*' use-cache off
 
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"

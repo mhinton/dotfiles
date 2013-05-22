@@ -40,7 +40,8 @@ Bundle 'Lokaltog/vim-easymotion'
 Bundle 'Lokaltog/vim-powerline'
 " Bundle 'vim-scripts/vcscommand.vim'
 Bundle 'sjl/gundo.vim'
-Bundle 'gregsexton/gitv'
+" http://www.gregsexton.org/portfolio/gitv/
+Bundle 'gregsexton/gitv'  
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'Raimondi/delimitMate'
 Bundle 'kana/vim-textobj-user'
@@ -70,7 +71,9 @@ Bundle 'mutewinter/tomdoc.vim'
 " Bundle 'Valloric/YouCompleteMe'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'pangloss/vim-javascript'
-" Bundle 'FredKSchott/CoVim' " collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
+" CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
+" Bundle 'FredKSchott/CoVim' 
+Bundle 'mattdbridges/bufkill.vim'
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down

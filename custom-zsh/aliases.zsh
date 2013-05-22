@@ -6,6 +6,14 @@ alias rake="noglob rake"
 alias bundle="noglob bundle"
 alias -g drspec="rspec -d "
 
+# no spelling correction on these
+alias mv='nocorrect mv'       
+alias cp='nocorrect cp'
+alias mkdir='nocorrect mkdir'
+alias spec='nocorrect spec'
+alias rspec='nocorrect rspec'
+alias heroku='nocorrect heroku'
+
 alias -g be="bundle exec"
 alias -g bi="bundle install"
 alias -g bl="bundle list"

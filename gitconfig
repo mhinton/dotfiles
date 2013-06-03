@@ -160,7 +160,7 @@
   uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
   unmerge = reset --hard ORIG_HEAD  #
   filelog = log -u                  # show changes to a file
-  mt = mergetool                    # fire up the merge tool
+  mt = mergetool -y                 # fire up the merge tool
 
   # stash
   ss = stash                        # stash changes

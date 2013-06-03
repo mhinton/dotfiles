@@ -44,7 +44,7 @@ nnoremap - :Switch<cr>
 
 
 " Syntastic:
-let g:syntastic_javascript_checker = "jshint"
+let g:syntastic_javascript_checkers = ['jshint']
 
 
 " VCS:

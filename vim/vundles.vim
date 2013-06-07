@@ -68,7 +68,7 @@ Bundle 'mutewinter/nginx.vim'
 Bundle 'mutewinter/tomdoc.vim'
 
 " Experimental plugins
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'pangloss/vim-javascript'
 " CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
@@ -77,9 +77,11 @@ Bundle 'mattdbridges/bufkill.vim'
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down
+" http://clojure-doc.org/articles/tutorials/vim_fireplace.html
 " Bundle 'guns/vim-clojure-static'
-" Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'tpope/vim-fireplace'
+" Bundle 'tpope/vim-classpath'
+" Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'dgrnbrg/vim-redl' " new vim integration with clojure
 
 " Colorschemes:

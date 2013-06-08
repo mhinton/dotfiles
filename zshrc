@@ -7,12 +7,8 @@ ZSH=$HOME/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 # ZSH_THEME="robbyrussell"
 #ZSH_THEME="mhinton"
-# ZSH_THEME="dstufft"
-# ZSH_THEME="jnrowe"
 # ZSH_THEME="bira-mod"
 ZSH_THEME="../../custom-zsh/themes/steeef-mod"
-# ZSH_THEME="avit-mod"
-# ZSH_THEME="zanshin"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -47,29 +43,20 @@ export PAGER=less
 # Always pushd when changing directory
 setopt auto_pushd
 
-# ruby perf settings
-export RUBY_HEAP_MIN_SLOTS=1000000
-export RUBY_HEAP_SLOTS_INCREMENT=1000000
-export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
-export RUBY_GC_MALLOC_LIMIT=1000000000
-export RUBY_HEAP_FREE_MIN=500000
-
-# Setup rvm
-rvm_project_rvmrc=1
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
-
-
-
 # COMPLETION
 zmodload -i zsh/complist
-zstyle ':completion:*' use-perl on
+
+# zstyle ':completion:*' use-perl on
 zstyle ':completion:*' menu select
+zstyle ':completion:*' accept-exact '*(N)'
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zshcache
+
+# ignore completion functions (until the _ignored completer)
+zstyle ':completion:*:functions' ignored-patterns '_*'
 
 #http://geoff.greer.fm/lscolors/
-export LS_COLORS='di=36;40:ln=32;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
+export LS_COLORS='di=33;40:ln=32;40:so=32;40:pi=33;40:ex=31;40:bd=34;46:cd=34;43:su=0;41:sg=0;46:tw=0;42:ow=0;43:'
 zstyle ':completion:*' list-colors  ${(s.:.)LS_COLORS}
 
 # insert all expansions for expand completer
@@ -93,20 +80,20 @@ zstyle ':completion::*:(git|less|rm|emacs)' ignore-line true
 # SSH Completion
 zstyle ':completion:*:scp:*' tag-order files 'hosts:-domain:domain'
 zstyle ':completion:*:scp:*' group-order files all-files users hosts-domain hosts-host hosts-ipaddr
-zstyle ':completion:*:ssh:*' tag-order 'hosts:-domain:domain'
+zstyle ':completion:*:ssh:*' tag-order hosts users
 zstyle ':completion:*:ssh:*' group-order hosts-domain hosts-host users hosts-ipaddr
  
 ### highlight parameters with uncommon names
-zstyle ':completion:*:parameters' list-colors "=[^a-zA-Z]*=$color[red]"
+# zstyle ':completion:*:parameters' list-colors "=[^a-zA-Z]*=$color[red]"
 
 ### highlight aliases
-zstyle ':completion:*:aliases' list-colors "=*=$color[green]"
+# zstyle ':completion:*:aliases' list-colors "=*=$color[green]"
 
 ### highlight the original input.
-zstyle ':completion:*:original' list-colors "=*=$color[red];$color[bold]"
+# zstyle ':completion:*:original' list-colors "=*=$color[red];$color[bold]"
 
 ### highlight words like 'esac' or 'end'
-zstyle ':completion:*:reserved-words' list-colors "=*=$color[red]"
+# zstyle ':completion:*:reserved-words' list-colors "=*=$color[red]"
 
 ### colorize hostname completion
 zstyle ':completion:*:*:*:*:hosts' list-colors "=*=$color[cyan];$color[bg-black]"
@@ -115,8 +102,10 @@ zstyle ':completion:*:*:*:*:hosts' list-colors "=*=$color[cyan];$color[bg-black]
 zstyle ':completion:*' users off
 
 ## add colors to processes for kill completion
+zstyle ':completion:*:*:*:*:processes' command "ps -u `whoami` -o pid,user,comm -w -w"
 zstyle ':completion:*:*:kill:*' verbose yes
-zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#) #([^ ]#)*=$color[cyan]=$color[yellow]=$color[green]"
+# zstyle ':completion:*:*:kill:*:processes' list-colors "=(#b) #([0-9]#) #([^ ]#)*=$color[cyan]=$color[yellow]=$color[green]"
+zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#) ([0-9a-z-]#)*=01;34=0=01'
 
 ## With commands like `rm' it's annoying if one gets offered the same filename
 ## again even if it is already on the command line. To avoid that:
@@ -126,6 +115,26 @@ zstyle ':completion:*:rm:*' ignore-line yes
 zstyle ':completion:*:manuals'       separate-sections true
 zstyle ':completion:*:manuals.(^1*)' insert-sections   true
 
-# Cache
-zstyle ':completion:*' use-cache off
 
+
+# ruby perf settings
+export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_HEAP_SLOTS_INCREMENT=1000000
+export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
+export RUBY_GC_MALLOC_LIMIT=1000000000
+export RUBY_HEAP_FREE_MIN=500000
+
+# Setup rvm
+rvm_project_rvmrc=1
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+
+
+# remove duplicates in $PATH
+typeset -aU path

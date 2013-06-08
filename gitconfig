@@ -21,6 +21,9 @@
   # default = upstream
   default = tracking
 
+[rebase]
+  autosquash = true
+
 [rerere]
   # Remember my merges
   # http://gitfu.wordpress.com/2008/04/20/git-rerere-rereremember-what-you-did-last-time/
@@ -34,8 +37,8 @@
 	user = mhinton
 	token = 063438a7c34d07ebf6aa9a1e62e6fbe0
 
-[difftool]
-  prompt = false
+# [difftool]
+#   prompt = false
 
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
@@ -77,6 +80,7 @@
   search = log --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset' --full-history -S 
   make-the-fucking-branch-point-at-the-fucking-commit = !sh -c "git checkout $1 && git reset --hard $2" -
   root = rev-parse --show-toplevel
+  add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
 
   # aliases from http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
   assume   = update-index --assume-unchanged
@@ -156,7 +160,7 @@
   uncommit = reset --soft HEAD^     # go back before last commit, with files in uncommitted state
   unmerge = reset --hard ORIG_HEAD  #
   filelog = log -u                  # show changes to a file
-  mt = mergetool                    # fire up the merge tool
+  mt = mergetool -y                 # fire up the merge tool
 
   # stash
   ss = stash                        # stash changes

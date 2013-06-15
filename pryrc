@@ -1,5 +1,4 @@
 # === EDITOR ===
-# Pry.editor = 'vim'
 Pry.config.editor = 'vim'
 Pry.config.color = true
 Pry.config.history.should_save = true

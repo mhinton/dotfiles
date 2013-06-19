@@ -79,11 +79,13 @@ let g:ackprg = "ag --nogroup --nocolor --column"
 "" let g:SuperTabDefaultCompletionType = "context" "<- this was my default
 "" let g:SuperTabContextDefaultCompletionType = "<c-n>"
 " let g:SuperTabLongestHighlight = 0
-let g:SuperTabDefaultCompletionType = "<c-x><c-n>" " testing setting
-let g:SuperTabLongestEnhanced = 1
-let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
-let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-n>", "&omnifunc:<c-x><c-o>"]
+
+" Remove SuperTab when using YouCompleteMe
+"let g:SuperTabDefaultCompletionType = "<c-x><c-n>" " testing setting
+"let g:SuperTabLongestEnhanced = 1
+"let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
+"let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
+"let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-n>", "&omnifunc:<c-x><c-o>"]
 
 
 " UltiSnips:

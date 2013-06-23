@@ -47,7 +47,6 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'AndrewRadev/switch.vim'
-Bundle 'ervandew/supertab'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'skalnik/vim-vroom'
 Bundle 'danchoi/virb'
@@ -66,6 +65,7 @@ Bundle 'itspriddle/vim-marked'
 Bundle 'jc00ke/vim-tomdoc'
 Bundle 'mutewinter/nginx.vim'
 Bundle 'mutewinter/tomdoc.vim'
+" Bundle 'ervandew/supertab'  " Remove SuperTab when using YouCompleteMe
 
 " Experimental plugins
 Bundle 'Valloric/YouCompleteMe'

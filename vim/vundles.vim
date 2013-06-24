@@ -74,6 +74,8 @@ Bundle 'pangloss/vim-javascript'
 " CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
 " Bundle 'FredKSchott/CoVim' 
 Bundle 'mattdbridges/bufkill.vim'
+" this requires to work http://robots.thoughtbot.com/post/53022241323/seamlessly-navigate-vim-and-tmux-splits
+" Bundle 'christoomey/vim-tmux-navigator' " this broke vim window nav for me
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down

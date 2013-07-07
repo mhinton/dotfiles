@@ -197,10 +197,11 @@ xmap <buffer> <F8> <Plug>(xmpfilter-mark)
 imap <buffer> <F8> <Plug>(xmpfilter-mark)
 
 " Airline:
-let g:airline_theme='dark'
 let g:airline_enable_fugitive=1
 let g:airline_enable_syntastic=1
 let g:airline_powerline_fonts=0
+let g:airline_exclude_filetypes=['netrw','diff','undotree','gundo','tagbar']
+let g:airline_theme='dark'
 let g:airline_left_sep = '»'
 " let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'

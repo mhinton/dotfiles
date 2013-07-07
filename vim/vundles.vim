@@ -75,6 +75,8 @@ Bundle 'pangloss/vim-javascript'
 " Bundle 'FredKSchott/CoVim' 
 Bundle 'mattdbridges/bufkill.vim'
 Bundle 'bling/vim-airline'
+" this requires to work http://robots.thoughtbot.com/post/53022241323/seamlessly-navigate-vim-and-tmux-splits
+" Bundle 'christoomey/vim-tmux-navigator' " this broke vim window nav for me
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down

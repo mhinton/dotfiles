@@ -202,10 +202,10 @@ map <D-R> :SweetVimRspecRunFocused<CR>
 map <D-R> :SweetVimRspecRunFocused<CR>
 
 " Easy window navigation
-map <c-h> <c-w>h
-map <c-j> <c-w>j
-map <c-k> <c-w>k
-map <c-l> <c-w>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
 
 " Show syntax highlighting groups for word under cursor
 nmap <leader>? :call <SID>SynStack()<CR>

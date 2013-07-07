@@ -37,7 +37,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'scrooloose/syntastic'
 Bundle 'jistr/vim-nerdtree-tabs'
 Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Lokaltog/vim-powerline'
+" Bundle 'Lokaltog/vim-powerline'
 " Bundle 'vim-scripts/vcscommand.vim'
 Bundle 'sjl/gundo.vim'
 " http://www.gregsexton.org/portfolio/gitv/
@@ -74,6 +74,7 @@ Bundle 'pangloss/vim-javascript'
 " CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
 " Bundle 'FredKSchott/CoVim' 
 Bundle 'mattdbridges/bufkill.vim'
+Bundle 'bling/vim-airline'
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down

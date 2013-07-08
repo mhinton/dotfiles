@@ -229,7 +229,7 @@ let g:airline#themes#dark#normal = {
       \ 'inactive':       [ '#afafaf' , '#3f3f3f' , 239     , 236     , ''     ] ,
       \ }
 let g:airline#themes#dark#normal_modified = {
-      \ 'info_separator': [ '#444444' , '#5f005f' , 238     , 127     , 'bold' ] ,
+      \ 'info_separator': [ s:N2[1]   , s:N3[1]   , s:N2[3] , s:N3[3] , 'bold' ] ,
       \ 'statusline':     [ '#ffffff' , s:N3[1]   , 255     , s:N3[3] , ''     ] ,
       \ }
 let s:I1 = [ '#00005f' , '#ffffff' , 15  , 45  ]

@@ -236,12 +236,12 @@ let g:airline#themes#dark#normal = airline#themes#generate_color_map(s:N1, s:N2,
 " let g:airline#themes#dark#normal.file = [ '#ff0000' , '#1c1c1c' , 160 , 233 , '' ]
 " let g:airline#themes#dark#normal.statusline = [ '#d0d0d0' , '#202020' ,  252 , 234 , '' ]
 let g:airline#themes#dark#normal = {
-      \ 'mode':           [ '#1c1c1c' , '#dfff00' ,  233    , 155     , 'bold' ] ,
-      \ 'mode_separator': [ '#dfff00' , '#444444' ,  155    , 238     , 'bold' ] ,
+      \ 'mode':           [ '#1c1c1c' , '#d9fb87' ,  233    , 191     , 'bold' ] ,
+      \ 'mode_separator': [ '#d9fb87' , '#444444' ,  191    , 238     , 'bold' ] ,
       \ 'info':           [ '#ffffff' , '#444444' ,  255    , 238     , ''     ] ,
-      \ 'info_separator': [ '#444444' , '#202020' ,  238    , 234     , 'bold' ] ,
+      \ 'info_separator': [ '#444444' , '#303030' ,  238    , 236     , 'bold' ] ,
       \ 'file':           [ '#ff0000' , '#1c1c1c' ,  160    , 233     , ''     ] ,
-      \ 'statusline':     [ '#d0d0d0' , '#202020' ,  252    , 234     , ''     ]
+      \ 'statusline':     [ '#d0d0d0' , '#303030' ,  252    , 236     , ''     ]
       \ }
 
 let g:airline#themes#dark#normal_modified = {

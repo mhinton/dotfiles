@@ -196,6 +196,15 @@ nmap <buffer> <F8> <Plug>(xmpfilter-mark)
 xmap <buffer> <F8> <Plug>(xmpfilter-mark)
 imap <buffer> <F8> <Plug>(xmpfilter-mark)
 
+
+" Powerline:
+" let g:Powerline_symbols = "fancy"
+" let g:Powerline_colorscheme = "default"
+" let g:Powerline_theme = "mhinton"
+" let g:Powerline_colorscheme = "mhinton"
+" let g:Powerline_colorscheme = "badwolf"
+
+
 " Airline:
 let g:airline_enable_fugitive=1
 let g:airline_enable_syntastic=1

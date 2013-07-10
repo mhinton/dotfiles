@@ -272,7 +272,14 @@ let s:V1 = [ '#000000' , '#ffaf00' , 232 , 214 ]
 let s:V2 = [ '#000000' , '#ff5f00' , 232 , 202 ]
 let s:V3 = [ '#ffffff' , '#5f0000' , 15  , 52  ]
 let g:airline#themes#dark#visual = airline#themes#generate_color_map(s:V1, s:V2, s:V3)
+" let g:airline#themes#dark#visual_modified = {
+"       \ 'info_separator': [ '#ff5f00' , '#5f005f' , 202     , 53      , ''     ] ,
+"       \ 'statusline':     [ '#ffffff' , '#5f005f' , 255     , 53      , ''     ] ,
+"       \ }
 let g:airline#themes#dark#visual_modified = {
-      \ 'info_separator': [ '#ff5f00' , '#5f005f' , 202     , 53      , ''     ] ,
-      \ 'statusline':     [ '#ffffff' , '#5f005f' , 255     , 53      , ''     ] ,
+      \ 'mode': ['#000000', '#ffaf00', 232, 214, 'bold'],
+      \ 'mode_separator': ['#ffaf00', '#ff5f00', 214, 202, 'bold'],
+      \ 'info': ['#000000', '#ff5f00', 232, 202, ''],
+      \ 'info_separator': ['#ff5f00', '#5f0000', 202, 52, 'bold'],
+      \ 'statusline': ['#ffffff', '#5f0000', 15, 52, ''],
       \ }

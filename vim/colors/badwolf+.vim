@@ -97,3 +97,4 @@ hi link htmlString String
 hi htmlArg guifg=#aeee00
 
 hi Directory gui=NONE
+hi! link markdownCodeBlock normal

@@ -27,15 +27,15 @@ if has("gui_running")
   " colorscheme vwilight
 
   " make liquidcarbon look better
-  "let g:liquidcarbon_high_contrast=1
-  "colorscheme liquidcarbon
+  " let g:liquidcarbon_high_contrast=1
+  " colorscheme liquidcarbon
 
   " let g:solarized_degrade=1
   " colorscheme solarized+
 
   " colorscheme idleFingers
   " colorscheme codeschool+
-  " colorscheme badwolf+
+  " colorscheme badwolf
   colorscheme grb256
   " colorscheme molokai-sjl
 else
@@ -46,7 +46,7 @@ else
   if &t_Co == 256
     let g:solarized_termcolors=256
     " colorscheme solarized
-    " colorscheme badwolf+
+    " colorscheme badwolf
     colorscheme grb256
   endif
 endif

@@ -245,8 +245,8 @@ let g:airline#themes#dark#normal = {
       \ }
 
 let g:airline#themes#dark#normal_modified = {
-      \ 'mode':           [ '#1c1c1c' , '#dfff00' ,  233    , 155     , 'bold' ] ,
-      \ 'mode_separator': [ '#dfff00' , '#444444' ,  155    , 238     , 'bold' ] ,
+      \ 'mode':           [ '#1c1c1c' , '#d9fb87' ,  233    , 191     , 'bold' ] ,
+      \ 'mode_separator': [ '#dfff00' , '#444444' ,  191    , 238     , 'bold' ] ,
       \ 'info_separator': [ '#444444' , '#202020' ,  238    , 234     , 'bold' ] ,
       \ 'statusline':     [ '#d0d0d0' , '#202020' ,  252    , 234     , ''     ] ,
       \ }

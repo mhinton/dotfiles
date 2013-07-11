@@ -92,6 +92,8 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'sjl/badwolf'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'morhetz/gruvbox'
+Bundle 'jonathanfilip/vim-lucius'
+Bundle 'goatslacker/mango.vim'
 " Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}   " this path don't seem to work
 " check this occasionally for new colorschemes
 " don't use it all the time because some are duplicates

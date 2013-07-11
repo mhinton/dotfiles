@@ -27,11 +27,11 @@ hi WarningMsg     guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16  
 hi SpellBad       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16       ctermbg=160         cterm=NONE
 hi PreProc        guifg=#96CBFE ctermfg=9 
 hi Conditional    guifg=#96CBFE ctermfg=9 
-hi Function       guifg=#f39f1d ctermfg=166
+hi Function       guifg=#e7b15d ctermfg=166
 
 hi htmlTagName     guifg=#64a2df    ctermfg=26
 hi! link rubyControl Conditional
-hi Constant        guifg=#56d9b1    ctermfg=36
+hi Constant        guifg=#5ecdc1    ctermfg=36
 
 " ir_black doesn't highlight operators for some reason
 hi Operator        guifg=#6699CC     guibg=NONE        gui=NONE      ctermfg=lightblue   ctermbg=NONE        cterm=NONE

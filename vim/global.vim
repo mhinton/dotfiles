@@ -158,12 +158,23 @@ set wildignore+=*.pyc,*.pyo            " Ignore compiled Python files
 """"""""""""""""""""""""""""""
 " =>  Better Completion
 """"""""""""""""""""""""""""""
+set omnifunc=syntaxcomplete#Complete
 " set complete=.,b,u,]
 " set complete=.,w,b,u,t,i
 set complete=.,w,b,t
-" insert the longest common string, show the menu and preview info
-set completeopt=longest,menu,preview 
-" Insert Mode Completion
-inoremap <c-Space> <c-x><c-n>
-inoremap <c-f> <c-x><c-f>
 
+" insert the longest common string, show the menu and preview info
+set completeopt=longest,menuone,preview 
+
+" Insert Mode Completion
+" inoremap <C-Space> <C-x><C-o>  " YouCompleteMe: adds this mapping
+inoremap <C-f> <C-x><C-f>
+" inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<cr>"
+" inoremap <expr> <C-n> pumvisible() ? "\<C-n>" : '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"""inoremap <expr> <M-,> pumvisible() ? '<C-n>' : '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"""" open omni completion menu closing previous if open and opening new menu without changing the text
+"""inoremap <expr> <C-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') .
+"""            \ '<C-x><C-o><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'
+"""" open user completion menu closing previous if open and opening new menu without changing the text
+"""inoremap <expr> <S-Space> (pumvisible() ? (col('.') > 1 ? '<Esc>i<Right>' : '<Esc>i') : '') .
+"""            \ '<C-x><C-u><C-r>=pumvisible() ? "\<lt>C-n>\<lt>C-p>\<lt>Down>" : ""<CR>'

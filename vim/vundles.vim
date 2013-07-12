@@ -88,7 +88,7 @@ Bundle 'bling/vim-airline'
 " Bundle 'dgrnbrg/vim-redl' " new vim integration with clojure
 
 " Colorschemes:
-Bundle 'altercation/vim-colors-solarized'
+" Bundle 'altercation/vim-colors-solarized'
 Bundle 'sjl/badwolf'
 Bundle 'w0ng/vim-hybrid'
 Bundle 'morhetz/gruvbox'

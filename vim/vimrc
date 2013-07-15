@@ -38,7 +38,6 @@ if has("gui_running")
   " colorscheme codeschool+
   " colorscheme badwolf
   colorscheme grb256+
-  " colorscheme molokai-sjl
 else
   " if &t_Co >= 8
   " colorscheme vividchalk

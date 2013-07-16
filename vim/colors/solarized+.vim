@@ -1,4 +1,4 @@
-runtime bundle/solarized/colors/solarized.vim
+runtime colors/solarized.vim
 let g:colors_name = "solarized+"
 
 hi  Normal guifg=#d8d8d8 guibg=#202020

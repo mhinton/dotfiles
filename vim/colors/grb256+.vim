@@ -1,7 +1,7 @@
 " Based on
 runtime colors/ir_black.vim
 
-let g:colors_name = "grb256"
+let g:colors_name = "grb256+"
 
 " hi Normal           guifg=#f6f3f6     guibg=black       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE
 hi Normal           guifg=#f6f3f6     guibg=#202020       gui=NONE      ctermfg=NONE        ctermbg=NONE        cterm=NONE

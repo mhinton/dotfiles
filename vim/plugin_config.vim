@@ -45,6 +45,11 @@ nnoremap - :Switch<cr>
 
 " Syntastic:
 let g:syntastic_javascript_checkers = ['jshint']
+" Better :sign interface symbols
+let g:syntastic_error_symbol = '✗'
+let g:syntastic_warning_symbol = '!'
+let g:syntastic_enable_signs = 1
+" let g:syntastic_javascript_jshint_conf = '~/.jshintrc'
 
 
 " VCS:

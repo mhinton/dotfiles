@@ -69,6 +69,7 @@ Bundle 'mutewinter/tomdoc.vim'
 
 " Experimental plugins
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'terryma/vim-multiple-cursors'
 Bundle 'pangloss/vim-javascript'
 " CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it

@@ -2,7 +2,7 @@
 let mapleader = ","
 
 " Yank from the cursor to the end of the line, to be consistent with C and D.
-" nnoremap Y y$ " YankRing doesn't seem to like this " set in vim-sensible
+nnoremap Y y$ " YankRing doesn't seem to like this 
 " nnoremap Y   :<C-U>YRYankCount 'y$'<CR>
 
 " TABS: Navigation

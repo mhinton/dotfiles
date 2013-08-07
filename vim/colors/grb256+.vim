@@ -14,6 +14,7 @@ hi pythonSpaceError ctermbg=red guibg=red
 
 hi Comment ctermfg=darkgray
 
+hi Search         guifg=NONE        guibg=#043a4d     gui=underline ctermfg=NONE        ctermbg=NONE	      cterm=underline
 hi StatusLine     ctermbg=darkgrey ctermfg=white
 hi StatusLineNC   ctermbg=black ctermfg=lightgrey
 hi VertSplit      ctermbg=black ctermfg=lightgrey

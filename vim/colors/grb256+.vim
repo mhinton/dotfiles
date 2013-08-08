@@ -25,7 +25,7 @@ hi Visual         guifg=NONE        guibg=#262D51     gui=NONE      ctermfg=NONE
 hi Error          guifg=NONE        guibg=NONE        gui=undercurl ctermfg=16       ctermbg=red         cterm=NONE     guisp=#FF6C60 " undercurl color
 hi ErrorMsg       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16       ctermbg=red         cterm=NONE
 hi WarningMsg     guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16       ctermbg=red         cterm=NONE
-hi SpellBad       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16       ctermbg=160         cterm=NONE
+hi SpellBad       guifg=NONE        guibg=NONE        gui=BOLD,undercurl      ctermfg=NONE     ctermbg=NONE        cterm=underline
 hi PreProc        guifg=#96CBFE ctermfg=9 
 hi Conditional    guifg=#96CBFE ctermfg=9 
 hi Function       guifg=#e7b15d ctermfg=166

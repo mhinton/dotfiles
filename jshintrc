@@ -58,5 +58,13 @@
     "passfail"      : false,
     "white"         : false,
 
-    "predef"        : [ ]   
+    "predef"        : [
+      "jasmine",
+      "describe",
+      "it",
+      "xit",
+      "beforeEach",
+      "afterEach",
+      "expect"
+    ]   
 }

@@ -12,6 +12,7 @@ set nowritebackup                       " A little paranoid, but disable the wri
 set noswapfile                          " No swap files when editing please
 
 " WindowAndBufferManagement
+set winwidth=50
 set splitbelow                          " Open new horizontal split windows below current
 set splitright                          " Open new vertical split windows to the right
 set switchbuf=useopen,usetab,split      " Don't change my current buffer on quickfix
@@ -141,7 +142,7 @@ set matchpairs+=<:>                     " Also match angle brackets
 " set showcmd " set in vim-sensible
 
 " Window Heights
-set helpheight=10
+set helpheight=10                      " minimum initial height
 
 
 " set wildmenu " set in vim-sensible

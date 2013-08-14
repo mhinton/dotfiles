@@ -53,4 +53,4 @@ hi link markdownH5 markdownH3
 
 hi org_shade_stars guifg=#d6d3c8
 
-hi Todo guifg=#fade3e
+hi Todo term=standout ctermfg=12 guibg=#a22cb1 guifg=#fade3e gui=bold,underline

@@ -81,6 +81,8 @@
   make-the-fucking-branch-point-at-the-fucking-commit = !sh -c "git checkout $1 && git reset --hard $2" -
   root = rev-parse --show-toplevel
   add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
+  incoming = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' ..origin/master)
+  outgoing = !(git fetch --quiet && git log --pretty=format:'%C(yellow)%h %C(white)- %C(red)%an %C(white)- %C(cyan)%d%Creset %s %C(white)- %ar%Creset' origin/master..)
 
   # aliases from http://blog.apiaxle.com/post/handy-git-tips-to-stop-you-getting-fired/
   assume   = update-index --assume-unchanged

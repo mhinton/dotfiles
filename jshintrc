@@ -29,7 +29,6 @@
     "eqnull"        : false,
     "es5"           : false,
     "esnext"        : false,
-    "moz"           : false,
     "evil"          : false,
     "expr"          : false,
     "funcscope"     : false,

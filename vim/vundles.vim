@@ -10,72 +10,83 @@
 " My Bundles here:
 "
 " original repos on github
+
+" Basics
 Bundle 'tpope/vim-sensible'
+Bundle 'tpope/vim-rsi'
+Bundle 'tpope/vim-speeddating'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-eunuch'
+
+" Improvements
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-unimpaired'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
+Bundle 'scrooloose/nerdtree'
+Bundle 'jistr/vim-nerdtree-tabs'
+Bundle 'majutsushi/tagbar'
+Bundle 'sjl/gundo.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'kana/vim-textobj-user'
+Bundle 'SirVer/ultisnips'
+Bundle 'maxbrunsfeld/vim-yankstack'
+Bundle 'bling/vim-airline'
+
+" Programming
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-rvm'
+Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-speeddating'
-Bundle 'tpope/vim-rsi'
-Bundle 'tpope/vim-eunuch'
-Bundle 'tpope/vim-ragtag'
-Bundle 'tpope/vim-repeat'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-rvm'
-Bundle 'tpope/vim-markdown'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-commentary'
-" Bundle 'tpope/vim-obsession'
-" Bundle 'tpope/vim-dispatch'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'elzr/vim-json'
-Bundle 'scrooloose/nerdtree'
-Bundle 'majutsushi/tagbar'
-Bundle 'scrooloose/syntastic'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'Lokaltog/vim-easymotion'
-" Bundle 'Lokaltog/vim-powerline'
-" Bundle 'vim-scripts/vcscommand.vim'
-Bundle 'sjl/gundo.vim'
-" http://www.gregsexton.org/portfolio/gitv/
 Bundle 'gregsexton/gitv'  
+Bundle 'airblade/vim-gitgutter'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'tpope/vim-commentary'
+Bundle 'scrooloose/syntastic'
 Bundle 'wookiehangover/jshint.vim'
 Bundle 'Raimondi/delimitMate'
-Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'AndrewRadev/switch.vim'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'skalnik/vim-vroom'
-Bundle 'danchoi/virb'
 Bundle 'ap/vim-css-color'
-Bundle 'SirVer/ultisnips'
-" Bundle 'vim-scripts/YankRing.vim'
-Bundle 'maxbrunsfeld/vim-yankstack'
-" Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
 Bundle 'robmiller/vim-movar'
-Bundle 't9md/vim-ruby-xmpfilter'
-Bundle 'airblade/vim-gitgutter'
 Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'othree/html5.vim'
+Bundle 'mattn/emmet-vim'
 Bundle 'godlygeek/tabular.git'
-Bundle 'itspriddle/vim-marked'
+Bundle 'michaeljsmith/vim-indent-object'
+Bundle 'pangloss/vim-javascript'
+Bundle 'elzr/vim-json'
+
+" Additional Syntax
+Bundle 'tpope/vim-markdown'
+Bundle 'othree/html5.vim'
 Bundle 'jc00ke/vim-tomdoc'
-Bundle 'mutewinter/nginx.vim'
 Bundle 'mutewinter/tomdoc.vim'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'mutewinter/nginx.vim'
+
+" Integration with other programs
+Bundle 'itspriddle/vim-marked'
+
 " Bundle 'ervandew/supertab'  " Remove SuperTab when using YouCompleteMe
+" Bundle 'tpope/vim-obsession'
+" Bundle 'tpope/vim-dispatch'
+
+" Deactivated plugins
+" Bundle 'skalnik/vim-vroom'
+" Bundle 'danchoi/virb'
+" Bundle 'vim-scripts/YankRing.vim'
+" Bundle 't9md/vim-ruby-xmpfilter'
+" Bundle 'terryma/vim-multiple-cursors'
 
 " Experimental plugins
 Bundle 'Valloric/YouCompleteMe'
-Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'terryma/vim-multiple-cursors'
-Bundle 'pangloss/vim-javascript'
-" CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
-" Bundle 'FredKSchott/CoVim' 
 Bundle 'mattdbridges/bufkill.vim'
-Bundle 'bling/vim-airline'
+Bundle 'csexton/trailertrash.vim'
+" CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
+" Bundle 'FredKSchott/CoVim'
 " this requires to work http://robots.thoughtbot.com/post/53022241323/seamlessly-navigate-vim-and-tmux-splits
 " Bundle 'christoomey/vim-tmux-navigator' " this broke vim window nav for me
 
@@ -92,14 +103,13 @@ Bundle 'bling/vim-airline'
 " Bundle 'altercation/vim-colors-solarized'
 Bundle 'sjl/badwolf'
 Bundle 'w0ng/vim-hybrid'
-Bundle 'morhetz/gruvbox'
 Bundle 'jonathanfilip/vim-lucius'
 Bundle 'goatslacker/mango.vim'
 Bundle 'gregsexton/Muon'
 " Bundle 'daylerees/colour-schemes', {'rtp': 'vim-themes/'}   " this path don't seem to work
 " check this occasionally for new colorschemes
 " don't use it all the time because some are duplicates
-"Bundle 'flazz/vim-colorschemes'    
+"Bundle 'flazz/vim-colorschemes'
 
 " vim-scripts repos
 Bundle 'L9'

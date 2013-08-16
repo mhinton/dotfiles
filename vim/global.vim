@@ -19,6 +19,7 @@ set switchbuf=useopen,usetab,split      " Don't change my current buffer on quic
 
 " StatusBar
 " set laststatus=2    " Always show status bar " set in vim-sensible
+set noshowmode        " turn off the mode indicator message in the command line
 
 " Fancy statusline
 set statusline=\ "

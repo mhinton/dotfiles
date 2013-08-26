@@ -217,3 +217,9 @@ let g:airline_linecolumn_prefix = ' '
 let g:airline_section_z='%3p%% '.g:airline_linecolumn_prefix.'%3l:%c'
 let g:airline_detect_whitespace=0         " turn off the whitespace extension
 let g:airline_theme='powerlineish'
+"enable/disable showing a summary of changed hunks under source control.
+let g:airline#extensions#hunks#enabled = 1
+"enable/disable showing only non-zero hunks.
+let g:airline#extensions#hunks#non_zero_only = 1
+"set hunk count symbols.
+let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']

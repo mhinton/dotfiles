@@ -30,9 +30,9 @@ endfunction
 
 autocmd BufEnter,BufWritePost *.clj   call CustomClojureSettings()
 autocmd BufEnter *.markdown,*.md call CustomMarkdownSettings()
-autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
+" autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
 autocmd BufEnter *.erb,*.html call CustomMarkupSettings()
 
-autocmd FileType javascript setlocal ts=4 sts=4 sw=4
+" autocmd FileType javascript setlocal ts=4 sts=4 sw=4
 
 autocmd FileType gitcommit setlocal spell textwidth=72

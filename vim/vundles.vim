@@ -41,7 +41,7 @@ Bundle 'tpope/vim-rvm'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
-Bundle 'gregsexton/gitv'  
+Bundle 'gregsexton/gitv'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-commentary'
@@ -58,6 +58,7 @@ Bundle 'godlygeek/tabular.git'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'pangloss/vim-javascript'
 Bundle 'elzr/vim-json'
+Bundle 'csexton/trailertrash.vim'
 
 " Additional Syntax
 Bundle 'tpope/vim-markdown'
@@ -83,8 +84,8 @@ Bundle 'itspriddle/vim-marked'
 
 " Experimental plugins
 Bundle 'Valloric/YouCompleteMe'
+Bundle 'marijnh/tern_for_vim'
 Bundle 'mattdbridges/bufkill.vim'
-Bundle 'csexton/trailertrash.vim'
 " CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
 " Bundle 'FredKSchott/CoVim'
 " this requires to work http://robots.thoughtbot.com/post/53022241323/seamlessly-navigate-vim-and-tmux-splits

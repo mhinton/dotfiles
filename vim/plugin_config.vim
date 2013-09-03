@@ -44,11 +44,13 @@ nnoremap - :Switch<cr>
 
 
 " Syntastic:
+let g:syntastic_enable_signs = 1
+let g:syntastic_auto_loc_list=1
+let g:syntastic_quiet_warnings=1
 let g:syntastic_javascript_checkers = ['jshint']
 " Better :sign interface symbols
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
-let g:syntastic_enable_signs = 1
 " let g:syntastic_javascript_jshint_conf = '~/.jshintrc'
 
 
@@ -93,6 +95,10 @@ let g:ackprg = "ag --nogroup --nocolor --column"
 "let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-n>", "&omnifunc:<c-x><c-o>"]
 
 
+" YouCompleteMe:
+let g:ycm_collect_identifiers_from_tags_files = 1
+
+
 " UltiSnips:
 " let g:UltiSnipsExpandTrigger="<tab>" " default
 " let g:UltiSnipsListSnippets="<c-tab>"
@@ -103,6 +109,11 @@ let g:UltiSnipsExpandTrigger="<c-j>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
+
+
+" Emmet:
+let g:use_emmet_complete_tag = 1
+
 
 " Gundo:
 let g:gundo_width = 45
@@ -124,12 +135,6 @@ nnoremap <leader>l :TagbarToggle<CR>
 " ShowMarks:
 " Tell showmarks to not include the various brace marks (),{}, etc
 let g:showmarks_include = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXY"
-
-
-" Syntastic:
-let g:syntastic_enable_signs=1
-let g:syntastic_auto_loc_list=1
-let g:syntastic_quiet_warnings=1
 
 
 " Easymotion:
@@ -160,12 +165,14 @@ nnoremap <D-b> :CtrlPBuffer<cr>
 
 " YankRing:
 " let g:yankring_history_dir = '$VIM'
-let g:yankring_history_dir = '~/.vim'
+" let g:yankring_history_dir = '~/.vim'
+
 
 " Yankstack:
 " keybinds for YankStack to work in both Terminal and MacVim
 nmap <leader>p <Plug>yankstack_substitute_older_paste
 nmap <leader>P <Plug>yankstack_substitute_newer_paste
+
 
 " Tabular:
 if exists(":Tabularize")
@@ -177,9 +184,10 @@ if exists(":Tabularize")
   vmap <leader>a: :Tabularize /:\zs<cr>
 endif
 
+
 " vim-ruby-xmpfilter:
-let g:rct_completion_use_fri = 1
-let g:rct_completion_info_max_len = 20
+" let g:rct_completion_use_fri = 1
+" let g:rct_completion_info_max_len = 20
 
 
 " Gvim

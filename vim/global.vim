@@ -160,13 +160,12 @@ set wildignore+=*.pyc,*.pyo            " Ignore compiled Python files
 """"""""""""""""""""""""""""""
 " =>  Better Completion
 """"""""""""""""""""""""""""""
-set omnifunc=syntaxcomplete#Complete
+" set omnifunc=syntaxcomplete#Complete
 " set complete=.,b,u,]
-" set complete=.,w,b,u,t,i
-set complete=.,w,b,t
-
+set complete=.,w,b,u,t,i
 " insert the longest common string, show the menu and preview info
-set completeopt=longest,menuone,preview 
+" set completeopt=longest,menuone,preview
+set completeopt=menuone
 
 " Insert Mode Completion
 " inoremap <C-Space> <C-x><C-o>  " YouCompleteMe: adds this mapping

@@ -6,7 +6,7 @@ function! CustomMarkdownSettings()
   " set filetype=mkd
   set wrap
   set linebreak
-  set list
+  " set list
   set textwidth=80
   set formatoptions+=l
   syntax region markdownFold start="^\z(#\+\) " end="\(^#\(\z1#*\)\@!#*[^#]\)\@=" transparent fold

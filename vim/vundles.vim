@@ -54,7 +54,7 @@ Bundle 'ap/vim-css-color'
 Bundle 'robmiller/vim-movar'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'mattn/emmet-vim'
-Bundle 'godlygeek/tabular.git'
+" Bundle 'godlygeek/tabular.git'
 Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'pangloss/vim-javascript'
 Bundle 'elzr/vim-json'
@@ -86,6 +86,7 @@ Bundle 'itspriddle/vim-marked'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'mattdbridges/bufkill.vim'
+Bundle 'junegunn/vim-easy-align' " trying out a replacement for Tabular
 " CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
 " Bundle 'FredKSchott/CoVim'
 " this requires to work http://robots.thoughtbot.com/post/53022241323/seamlessly-navigate-vim-and-tmux-splits

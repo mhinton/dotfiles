@@ -5,12 +5,12 @@ nmap <silent> <leader>sv :so $MYVIMRC<CR>
 " toggle paste mode
 map <leader>o <esc>:set invpaste paste?<cr>
 
-" disable escape (force use of <C-c>) 
-"inoremap <esc> <nop> 
-" make C-c act like esc for stuff like :normal I (that's capital i) 
-" inoremap <C-c> <esc> 
-" disable backspace (force use of <C-h>, and <C-w>) 
-" :inoremap <bs> <nop> 
+" disable escape (force use of <C-c>)
+"inoremap <esc> <nop>
+" make C-c act like esc for stuff like :normal I (that's capital i)
+" inoremap <C-c> <esc>
+" disable backspace (force use of <C-h>, and <C-w>)
+" :inoremap <bs> <nop>
 
 " make some kinds of autocomplete easier to activate
 "inoremap <c-l> <c-x><c-l>
@@ -198,7 +198,7 @@ map <F6> :mksession! ~/.vim/sessions/
 nnoremap <F5> :GundoToggle<CR>
 
 " sweet-vim-rspec commands
-map <D-R> :SweetVimRspecRunFocused<CR> 
+map <D-R> :SweetVimRspecRunFocused<CR>
 map <D-R> :SweetVimRspecRunFocused<CR>
 
 " Easy window navigation
@@ -221,7 +221,7 @@ map ,hi :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name") . '> trans<'
 
 
 " <leader><space> clears search
-nnoremap <leader><space> :noh<cr> 
+nnoremap <leader><space> :noh<cr>
 
 " Keybindings
 " Stupid shift key fixes
@@ -281,7 +281,7 @@ nnoremap <D-Right>  <C-w>>
 
 " make working with tags a little easier
 	" open the definition in a new tab
-map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR> 
+map <C-\> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
 	" open the definition in a vertical split
 map <A-]> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
@@ -305,7 +305,7 @@ map <leader>rs :w\|!bundle exec rspec %<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Opens an edit command with the path of the currently edited file filled in
 " Normal mode: <Leader>e
-" speed this up   
+" speed this up
 " map <leader>e :e <C-R>=expand("%:p:h") . "/" <CR>
 
 " Opens an split command with the path of the currently edited file filled in
@@ -319,7 +319,7 @@ map <leader>rs :w\|!bundle exec rspec %<cr>
 " Inserts the path of the currently edited file into a command
 " Command mode: Ctrl+P
 cmap <C-P> <C-R>=expand("%:p:h") . "/" <CR>
- 
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Spell checking
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

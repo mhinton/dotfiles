@@ -191,23 +191,23 @@ endif
 
 
 " Gvim
-nmap <buffer> <M-r> <Plug>(xmpfilter-run)
-xmap <buffer> <M-r> <Plug>(xmpfilter-run)
-imap <buffer> <M-r> <Plug>(xmpfilter-run)
+" nmap <buffer> <M-r> <Plug>(xmpfilter-run)
+" xmap <buffer> <M-r> <Plug>(xmpfilter-run)
+" imap <buffer> <M-r> <Plug>(xmpfilter-run)
 
-nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-xmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-imap <buffer> <M-m> <Plug>(xmpfilter-mark)
+" nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
+" xmap <buffer> <M-m> <Plug>(xmpfilter-mark)
+" imap <buffer> <M-m> <Plug>(xmpfilter-mark)
 
 
 " Terminal
-nmap <buffer> <F7> <Plug>(xmpfilter-run)
-xmap <buffer> <F7> <Plug>(xmpfilter-run)
-imap <buffer> <F7> <Plug>(xmpfilter-run)
+" nmap <buffer> <F7> <Plug>(xmpfilter-run)
+" xmap <buffer> <F7> <Plug>(xmpfilter-run)
+" imap <buffer> <F7> <Plug>(xmpfilter-run)
 
-nmap <buffer> <F8> <Plug>(xmpfilter-mark)
-xmap <buffer> <F8> <Plug>(xmpfilter-mark)
-imap <buffer> <F8> <Plug>(xmpfilter-mark)
+" nmap <buffer> <F8> <Plug>(xmpfilter-mark)
+" xmap <buffer> <F8> <Plug>(xmpfilter-mark)
+" imap <buffer> <F8> <Plug>(xmpfilter-mark)
 
 
 " Powerline:

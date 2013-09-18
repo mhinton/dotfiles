@@ -4,12 +4,12 @@ runtime colors/smyck.vim
 let g:colors_name = "smyck+"
 
 " hi Visual ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#2b788d gui=NONE
-hi Visual ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#028794 gui=NONE
+hi Visual ctermfg=NONE ctermbg=24 cterm=NONE guifg=NONE guibg=#1c5b72 gui=NONE
 hi Folded guifg=#b0b0b0
-hi Search guibg=#028794
-hi IncSearch guibg=#028794 guifg=NONE
+hi Search guibg=#1c5b72
+hi IncSearch guibg=#1c5b72 guifg=NONE
 hi Pmenu                cterm=none ctermbg=8        ctermfg=15      gui=none        guibg=#474747   guifg=#F7F7F7
-hi PmenuSel             cterm=none ctermbg=15       ctermfg=8       gui=none        guibg=#028794   guifg=#F7F7F7
+hi PmenuSel             cterm=none ctermbg=15       ctermfg=8       gui=none        guibg=#1c5b72   guifg=#F7F7F7
 
 hi rubyFunction guifg=#fbb1f9
 

@@ -83,6 +83,7 @@ set foldlevelstart=99 " folds should default to open
 "set foldlevelstart=1    " some folds should default to closed
 set foldnestmax=3       " deepest fold is 3 levels
 set fillchars=vert:│,fold:\ " there's a space after that \
+set fillchars+=stl:\ ,stlnc:\ ,fold:\ 
 
 " Highlight VCS conflict markers
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'

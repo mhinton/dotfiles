@@ -185,46 +185,14 @@ if exists(":Tabularize")
 endif
 
 
-" vim-ruby-xmpfilter:
-" let g:rct_completion_use_fri = 1
-" let g:rct_completion_info_max_len = 20
-
-
-" Gvim
-" nmap <buffer> <M-r> <Plug>(xmpfilter-run)
-" xmap <buffer> <M-r> <Plug>(xmpfilter-run)
-" imap <buffer> <M-r> <Plug>(xmpfilter-run)
-
-" nmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-" xmap <buffer> <M-m> <Plug>(xmpfilter-mark)
-" imap <buffer> <M-m> <Plug>(xmpfilter-mark)
-
-
-" Terminal
-" nmap <buffer> <F7> <Plug>(xmpfilter-run)
-" xmap <buffer> <F7> <Plug>(xmpfilter-run)
-" imap <buffer> <F7> <Plug>(xmpfilter-run)
-
-" nmap <buffer> <F8> <Plug>(xmpfilter-mark)
-" xmap <buffer> <F8> <Plug>(xmpfilter-mark)
-" imap <buffer> <F8> <Plug>(xmpfilter-mark)
-
-
-" Powerline:
-" let g:Powerline_symbols = "fancy"
-" let g:Powerline_colorscheme = "default"
-" let g:Powerline_theme = "mhinton"
-" let g:Powerline_colorscheme = "mhinton"
-" let g:Powerline_colorscheme = "badwolf"
-
-
 " Airline:
 let g:airline_powerline_fonts=1           " use powerline fonts
 let g:airline_exclude_filetypes=['netrw','diff','undotree','gundo','tagbar']
 let g:airline_linecolumn_prefix = ' '
 let g:airline_section_z='%3p%% '.g:airline_linecolumn_prefix.'%3l:%c'
 let g:airline_detect_whitespace=0         " turn off the whitespace extension
-let g:airline_theme='powerlineish'
+" let g:airline_theme='powerlineish'
+let g:airline_theme='simple'
 "enable/disable showing a summary of changed hunks under source control.
 let g:airline#extensions#hunks#enabled = 1
 "enable/disable showing only non-zero hunks.

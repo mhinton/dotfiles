@@ -45,7 +45,7 @@
 
 #[difftool "sourcetree"]
 #	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE
-#	path = 
+#	path =
 
 [diff]
   # tool = vimdiff
@@ -77,7 +77,7 @@
   # standup = log --since yesterday --oneline --author \"Matthew Hinton\" # changes made since yesterday
   standup = log --since yesterday --pretty=medium --author \"Matthew Hinton\" # changes made since yesterday
   ar = "git ls-files -d -m -o -z --exclude-standard | xargs -0 git update-index --add --remove"
-  search = log --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset' --full-history -S 
+  search = log --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset' --full-history -S
   make-the-fucking-branch-point-at-the-fucking-commit = !sh -c "git checkout $1 && git reset --hard $2" -
   root = rev-parse --show-toplevel
   add-untracked = !"git status --porcelain | awk '/\\?\\?/{ print $2 }' | xargs git add"
@@ -121,9 +121,10 @@
   cp = cherry-pick -x               # grab a change from a branch
 
   # diff
+  df = diff --ignore-space-at-eol -b -w --ignore-blank-lines
   d = diff
   dc = diff --cached
-  dt = difftool 
+  dt = difftool
   last = diff HEAD^                 # diff last committed change
   ds = diff --staged                # review the changes you are going to commit
   ksdiff = difftool -y -t Kaleidoscope
@@ -135,7 +136,7 @@
   lg = log --graph --abbrev-commit --date=relative
   recent = log -10 --abbrev-commit --date=relative
   oneline = log --oneline --decorate
-  changes = log -10 -p 
+  changes = log -10 -p
   l   = log -18 --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
   ll  = log     --color=always --all --topo-order --pretty='format:%Cgreen%h%Creset %s%Cred%d%Creset %C(black bold)(by %an)%Creset'
   gl  = log -12 --color=always --all --graph --topo-order --pretty='format:%Cgreen%h%Creset %s %C(black bold)(by %an)%Creset%C(yellow bold)%d%Creset%n'
@@ -221,3 +222,9 @@
   # git ksreview feature-branch-name-or-sha mainline-branch-name
   ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
 
+[difftool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE
+	path =
+[mergetool "sourcetree"]
+	cmd = /usr/local/bin/ksdiff --merge --output $MERGED --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+	trustExitCode = true

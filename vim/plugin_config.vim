@@ -97,6 +97,7 @@ let g:ackprg = "ag --nogroup --nocolor --column"
 
 " YouCompleteMe:
 let g:ycm_collect_identifiers_from_tags_files = 1
+let g:ycm_min_num_of_chars_for_completion = 3
 
 
 " UltiSnips:

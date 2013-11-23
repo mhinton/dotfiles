@@ -7,7 +7,7 @@ alias bundle="noglob bundle"
 alias -g drspec="rspec -d "
 
 # no spelling correction on these
-alias mv='nocorrect mv'       
+alias mv='nocorrect mv'
 alias cp='nocorrect cp'
 alias mkdir='nocorrect mkdir'
 alias spec='nocorrect spec'
@@ -42,6 +42,10 @@ alias lr='ls -R | grep ":$" | sed -e '\''s/:$//'\'' -e '\''s/[^-][^\/]*\//--/g'\
 # Enable aliases to be sudo’ed
 alias sudo='sudo '
 
+# tmux helpers
+alias tma='tmux attach -d -t'
+alias git-tmux='tmux new -s $(basename $(pwd))'
+
 # IP addresses
 alias localip="ipconfig getifaddr en1"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
@@ -67,11 +71,11 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 # Functions
 #
 # (f)ind by (n)ame
-# usage: fn foo 
+# usage: fn foo
 # to find all files containing 'foo' in the name
 function fn() { ls **/*$1* }
 
-function hgrep() { history | grep $1 -} 
+function hgrep() { history | grep $1 -}
 
 # create a .rvmrc file
 function rvmrc() {

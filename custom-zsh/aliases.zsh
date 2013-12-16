@@ -1,5 +1,5 @@
 alias vim='/usr/local/bin/mvim -v'
-alias -g less='less -RN'
+alias -g less='less -R'
 
 # don't have zsh try and expand brackets [ ] with rake
 alias rake="noglob rake"

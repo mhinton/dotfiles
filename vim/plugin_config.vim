@@ -40,7 +40,7 @@ let g:rails_statusline=0  " Turn off rails bits of statusbar
 
 
 " Switch:
-nnoremap - :Switch<cr>
+nnoremap <leader>- :Switch<cr>
 
 
 " Syntastic:

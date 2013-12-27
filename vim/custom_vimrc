@@ -24,7 +24,7 @@ set statusline+=%#warningmsg#                " Highlight the following as a warn
 set statusline+=%{SyntasticStatuslineFlag()} " Syntastic errors.
 set statusline+=%*                          " Reset highlighting.
 set statusline+=%{fugitive#statusline()}\ 
-set statusline+=%{rvm#statusline()}\ 
+" set statusline+=%{rvm#statusline()}\ 
 set statusline+=%*                           " Reset highlighting.
 set statusline+=%=   " Right align.
 " File format, encoding and type.  Ex: "(unix/utf-8/ruby)"

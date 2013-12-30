@@ -36,3 +36,6 @@ autocmd BufEnter *.erb,*.html call CustomMarkupSettings()
 " autocmd FileType javascript setlocal ts=4 sts=4 sw=4
 
 autocmd FileType gitcommit setlocal spell textwidth=72
+
+" turn off automatic comment markers
+autocmd FileType * setlocal formatoptions-=r formatoptions-=o

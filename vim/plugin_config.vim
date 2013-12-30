@@ -188,7 +188,8 @@ endif
 
 " Airline:
 let g:airline_powerline_fonts=1           " use powerline fonts
-let g:airline_exclude_filetypes=['netrw','diff','undotree','gundo','tagbar']
+" let g:airline_exclude_filetypes=['netrw', 'diff', 'undotree', 'gundo', 'tagbar']
+let g:airline_exclude_filetypes=['diff', 'undotree', 'gundo', 'tagbar']
 let g:airline_linecolumn_prefix = ' '
 let g:airline_section_z='%3p%% '.g:airline_linecolumn_prefix.'%3l:%c'
 let g:airline_detect_whitespace=0         " turn off the whitespace extension

@@ -60,6 +60,7 @@ Bundle 'michaeljsmith/vim-indent-object'
 Bundle 'pangloss/vim-javascript'
 Bundle 'elzr/vim-json'
 Bundle 'csexton/trailertrash.vim'
+Bundle 'sjl/strftimedammit.vim'
 
 " Additional Syntax
 Bundle 'tpope/vim-markdown'

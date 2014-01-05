@@ -34,6 +34,9 @@ Bundle 'kana/vim-textobj-user'
 " Bundle 'SirVer/ultisnips'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'bling/vim-airline'
+" Focused writing mode
+Bundle 'junegunn/goyo.vim'
+Bundle 'amix/vim-zenroom2'
 
 " Programming
 Bundle 'tpope/vim-rails'

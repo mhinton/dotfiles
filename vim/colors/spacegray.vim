@@ -119,6 +119,8 @@ hi link markdownH3 markdownH1
 hi link markdownH4 markdownH1
 hi markdownHeadingDelimiter ctermfg=109 guifg=#8fa1b3
 hi link markdownListMarker Normal
+hi markdownBold gui=bold
+hi markdownItalic gui=italic
 
 hi SignColumn ctermfg=102 ctermbg=59 cterm=NONE guifg=#767b85 guibg=#2a2f3a gui=NONE
 hi GitGutterAdd ctermfg=2 ctermbg=59 guifg=#009900 guibg=#2a2f3a gui=NONE

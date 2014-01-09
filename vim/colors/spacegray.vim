@@ -29,7 +29,7 @@ hi Directory ctermfg=144 ctermbg=NONE cterm=NONE guifg=#a3be8c guibg=NONE gui=NO
 hi Folded ctermfg=60 ctermbg=23 cterm=NONE guifg=#65737e guibg=#2b303b gui=NONE
 
 " hi Normal ctermfg=152 ctermbg=23 cterm=NONE guifg=#c0c5ce guibg=#2b303b gui=NONE
-hi Normal ctermfg=152 ctermbg=23 cterm=NONE guifg=#c0c5ce guibg=#1d2027 gui=NONE
+hi Normal ctermfg=152 ctermbg=23 cterm=NONE guifg=#c5cace guibg=#1d2027 gui=NONE
 hi Boolean ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 hi Character ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 hi Comment ctermfg=60 ctermbg=NONE cterm=NONE guifg=#65737e guibg=NONE gui=NONE
@@ -112,3 +112,14 @@ hi cssClassName ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui
 hi cssValueLength ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 hi cssCommonAttr ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 hi cssBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+
+hi markdownH1 ctermfg=144 guifg=#a3be8c
+hi link markdownH2 markdownH1
+hi link markdownH3 markdownH1
+hi link markdownH4 markdownH1
+hi markdownHeadingDelimiter ctermfg=109 guifg=#8fa1b3
+hi link markdownListMarker Normal
+
+hi SignColumn ctermfg=102 ctermbg=59 cterm=NONE guifg=#767b85 guibg=#2a2f3a gui=NONE
+hi GitGutterAdd ctermfg=2 ctermbg=59 guifg=#009900 guibg=#2a2f3a gui=NONE
+hi GitGutterChange ctermfg=3 ctermbg=59 guifg=#bbbb00 guibg=#2a2f3a gui=NONE

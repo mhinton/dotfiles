@@ -125,3 +125,5 @@ hi markdownItalic gui=italic
 hi SignColumn ctermfg=102 ctermbg=59 cterm=NONE guifg=#767b85 guibg=#2a2f3a gui=NONE
 hi GitGutterAdd ctermfg=2 ctermbg=59 guifg=#009900 guibg=#2a2f3a gui=NONE
 hi GitGutterChange ctermfg=3 ctermbg=59 guifg=#bbbb00 guibg=#2a2f3a gui=NONE
+hi GitGutterChangeDelete ctermfg=3 ctermbg=59 guifg=#bbbb00 guibg=#2a2f3a gui=NONE
+hi GitGutterDelete ctermfg=1 ctermbg=59 guifg=#ff2222  guibg=#2a2f3a gui=NONE

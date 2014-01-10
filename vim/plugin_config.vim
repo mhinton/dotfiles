@@ -46,7 +46,8 @@ nnoremap <leader>- :Switch<cr>
 " Syntastic:
 let g:syntastic_enable_signs = 1
 let g:syntastic_auto_loc_list=1
-let g:syntastic_quiet_warnings=1
+" let g:syntastic_quiet_warnings=1
+let g:syntastic_quiet_messages = {'level': 'warnings'}
 let g:syntastic_javascript_checkers = ['jshint']
 " Better :sign interface symbols
 let g:syntastic_error_symbol = '✗'
@@ -194,7 +195,8 @@ let g:airline_linecolumn_prefix = ' '
 let g:airline_section_z='%3p%% '.g:airline_linecolumn_prefix.'%3l:%c'
 let g:airline_detect_whitespace=0         " turn off the whitespace extension
 " let g:airline_theme='powerlineish'
-let g:airline_theme='simple_mod'
+" let g:airline_theme='simple_mod'
+let g:airline_theme='base16'
 "enable/disable showing a summary of changed hunks under source control.
 let g:airline#extensions#hunks#enabled = 1
 "enable/disable showing only non-zero hunks.

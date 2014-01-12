@@ -14,12 +14,13 @@
   branch = auto
 
 [branch]
-  # autosetuprebase = always
-  autosetupmerge = always
+  autosetuprebase = always
+
+[pull]
+	rebase = preserve
 
 [push]
-  # default = upstream
-  default = tracking
+  default = upstream
 
 [rebase]
   autosquash = true

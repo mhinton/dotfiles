@@ -178,8 +178,8 @@ nnoremap K h/[^ ]<cr>"zd$jyyP^v$h"zpJk:s/\v +$//<cr>:noh<cr>j^
 nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Change case
-nnoremap <C-u> gUiw
-inoremap <C-u> <esc>gUiwea
+" nnoremap <C-u> gUiw
+" inoremap <C-u> <esc>gUiwea
 
 " Formatting, TextMate-style
 " Use Q for formatting the current paragraph (or selection)

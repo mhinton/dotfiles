@@ -17,7 +17,7 @@
   autosetuprebase = always
 
 [pull]
-	rebase = preserve
+	# rebase = preserve
 
 [push]
   default = upstream

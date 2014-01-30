@@ -178,8 +178,8 @@ nnoremap K h/[^ ]<cr>"zd$jyyP^v$h"zpJk:s/\v +$//<cr>:noh<cr>j^
 nnoremap <leader>w :%s/\s\+$//<cr>:let @/=''<cr>
 
 " Change case
-nnoremap <C-u> gUiw
-inoremap <C-u> <esc>gUiwea
+" nnoremap <C-u> gUiw
+" inoremap <C-u> <esc>gUiwea
 
 " Formatting, TextMate-style
 " Use Q for formatting the current paragraph (or selection)
@@ -351,3 +351,5 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
+" Look up a work in Dictionary.app
+nmap <silent> <leader>d :!open dict://<cword><CR><CR>

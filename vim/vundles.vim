@@ -90,7 +90,7 @@ Bundle 'itspriddle/vim-marked'
 " Bundle 'terryma/vim-multiple-cursors'
 
 " Experimental plugins
-Bundle 'Valloric/YouCompleteMe'
+" Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'mattdbridges/bufkill.vim'
 " trying out a replacement for Tabular

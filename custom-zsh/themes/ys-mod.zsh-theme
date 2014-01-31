@@ -18,22 +18,21 @@ else
   fi
 fi
 
+git_commit_id() {
+  git rev-parse --short HEAD 2>/dev/null
+}
+
 # Git info.
-local git_info='$(git_prompt_info)'
-ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[white]%}on%{$reset_color%} %{$fg[cyan]%}"
+local git_info='$(git_prompt_info):%{$fg[cyan]%}$(git_commit_id)%{$reset_color%}'
+ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%} %{$fg[cyan]%}"
 ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}x"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}o"
 
 # Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $
 PROMPT="
-%{$fg[cyan]%}%n\
-%{$fg[white]%}@\
-%{$fg[green]%}%m \
-%{$fg[white]%}in \
 %{$terminfo[bold]$fg[yellow]%}${current_dir}%{$reset_color%} \
-%{$fg[white]%}using \
-${RUBY_PROMPT} \
+${RUBY_PROMPT}\
 ${git_info} \
 %{$fg[gray]%}[%*]
 %{$fg[white]%}$ %{$reset_color%}"

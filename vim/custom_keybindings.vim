@@ -351,3 +351,5 @@ vnoremap <silent> # :<C-U>
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
 
+" Look up a work in Dictionary.app
+nmap <silent> <leader>d :!open dict://<cword><CR><CR>

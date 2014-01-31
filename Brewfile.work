@@ -1,0 +1,20 @@
+tap homebrew/versions
+install tig
+install ack
+install ctags
+install aspell
+install reattach-to-user-namespace
+install emacs
+install trash
+install tree
+install cmake
+install node
+install wrk
+
+install phantomjs
+install graphviz
+install boost
+
+install homebrew/versions/postgresql92
+install rabbitmq
+install sphinx --without-mysql --with-pgsql=/usr/local --pgsql

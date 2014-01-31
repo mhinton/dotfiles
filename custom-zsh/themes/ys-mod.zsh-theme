@@ -23,9 +23,9 @@ git_commit_id() {
 }
 
 # Git info.
-local git_info='$(git_prompt_info):%{$fg[cyan]%}$(git_commit_id)%{$reset_color%}'
+local git_info='$(git_prompt_info)'
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$reset_color%} %{$fg[cyan]%}"
-ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
+ZSH_THEME_GIT_PROMPT_SUFFIX="%{$fg[cyan]%}:$(git_commit_id)%{$reset_color%}"
 ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}x"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}o"
 

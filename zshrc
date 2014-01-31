@@ -9,6 +9,7 @@ ZSH=$HOME/.oh-my-zsh
 #ZSH_THEME="mhinton"
 # ZSH_THEME="bira-mod"
 ZSH_THEME="../../custom-zsh/themes/steeef-mod"
+ZSH_THEME="ys-mod"
 
 # Set to this to use case-sensitive completion
 # CASE_SENSITIVE="true"
@@ -125,16 +126,18 @@ export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
 # Setup rvm
-rvm_project_rvmrc=1
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+# rvm_project_rvmrc=1
+# [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+# PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
+# export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
+export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
-
+export PATH="$HOME/.bin:$PATH"
+eval "$(rbenv init - --no-rehash)"
 
 # remove duplicates in $PATH
 typeset -aU path

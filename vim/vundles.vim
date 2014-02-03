@@ -41,7 +41,7 @@ Bundle 'amix/vim-zenroom2'
 Bundle 'reedes/vim-pencil'
 Bundle 'reedes/vim-wordy'
 Bundle 'reedes/vim-lexical'
-Bundle 'reedes/vim-quotable'
+" Bundle 'reedes/vim-quotable'
 Bundle 'reedes/vim-textobj-sentence'
 
 " Programming

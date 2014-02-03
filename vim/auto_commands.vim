@@ -64,12 +64,12 @@ augroup lexical
   autocmd FileType textile call lexical#init()
   autocmd FileType text call lexical#init({ 'spell': 0 })
 augroup END
-augroup quotable
-  autocmd!
-  autocmd FileType markdown call quotable#init()
-  autocmd FileType textile call quotable#init()
-  autocmd FileType python call quotable#init({ 'educate': 0 })
-augroup END
+" augroup quotable
+"   autocmd!
+"   autocmd FileType markdown call quotable#init()
+"   autocmd FileType textile call quotable#init()
+"   autocmd FileType python call quotable#init({ 'educate': 0 })
+" augroup END
 augroup textobj_sentence
   autocmd!
   autocmd FileType markdown call textobj#sentence#init()

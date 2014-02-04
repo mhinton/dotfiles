@@ -93,6 +93,8 @@
   ours   = "!f() { git commit --ours $@ && git add $@; }; f"
   theirs = "!f() { git commit --theirs $@ && git add $@; }; f"
 
+  #blame = blame -w -M
+
   # add
   a = add
   aa = add --all
@@ -222,6 +224,7 @@
   # git ksreview <- compares feature branch to master
   # git ksreview feature-branch-name-or-sha mainline-branch-name
   ksreview = "!f() { local SHA=${1:-HEAD}; local BRANCH=${2:-master}; if [ $SHA == $BRANCH ]; then SHA=HEAD; fi; git difftool -y -t Kaleidoscope $BRANCH...$SHA; }; f"
+	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
 
 [difftool "sourcetree"]
 	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE

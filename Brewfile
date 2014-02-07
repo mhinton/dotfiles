@@ -18,6 +18,7 @@ install heroku-toolbelt
 install curl
 install wget
 install wrk
+install goaccess
 
 install redis
 install phantomjs
@@ -27,4 +28,4 @@ install boost
 #install homebrew/versions/postgresql92
 #install postgresql
 #install rabbitmq
-#install sphinx
+#install sphinx --without-mysql --with-pgsql=/usr/local --pgsql

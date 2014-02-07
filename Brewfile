@@ -1,4 +1,5 @@
 tap homebrew/versions
+tap thoughtbot/formulae
 install git
 install zsh
 install tig
@@ -9,6 +10,7 @@ install aspell
 install macvim
 install tmux
 install reattach-to-user-namespace
+install rcm
 install emacs
 install trash
 install tree

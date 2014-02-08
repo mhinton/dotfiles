@@ -1,4 +1,5 @@
 tap homebrew/versions
+tap thoughtbot/formulae
 install git
 install zsh
 install tig
@@ -9,6 +10,7 @@ install aspell
 install macvim
 install tmux
 install reattach-to-user-namespace
+install rcm
 install emacs
 install trash
 install tree
@@ -18,6 +20,7 @@ install heroku-toolbelt
 install curl
 install wget
 install wrk
+install goaccess
 
 install redis
 install phantomjs
@@ -27,4 +30,4 @@ install boost
 #install homebrew/versions/postgresql92
 #install postgresql
 #install rabbitmq
-#install sphinx
+#install sphinx --without-mysql --with-pgsql=/usr/local --pgsql

@@ -37,6 +37,12 @@ Bundle 'bling/vim-airline'
 " Focused writing mode
 Bundle 'junegunn/goyo.vim'
 Bundle 'amix/vim-zenroom2'
+" Prose writing
+Bundle 'reedes/vim-pencil'
+Bundle 'reedes/vim-wordy'
+Bundle 'reedes/vim-lexical'
+" Bundle 'reedes/vim-quotable'
+Bundle 'reedes/vim-textobj-sentence'
 
 " Programming
 Bundle 'tpope/vim-rails'

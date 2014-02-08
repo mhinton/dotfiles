@@ -12,22 +12,22 @@ let g:colors_name = "spacegray"
 
 hi Cursor ctermfg=23 ctermbg=152 cterm=NONE guifg=#2b303b guibg=#c0c5ce gui=NONE
 " hi Visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#4f5b66 gui=NONE
-hi visual ctermfg=none ctermbg=59 cterm=none guifg=none guibg=#3a4d6c gui=none
-hi cursorline ctermfg=none ctermbg=59 cterm=none guifg=none guibg=#3a3f4a gui=none
-hi cursorcolumn ctermfg=none ctermbg=59 cterm=none guifg=none guibg=#3a3f4a gui=none
-hi colorcolumn ctermfg=none ctermbg=59 cterm=none guifg=none guibg=#3a3f4a gui=none
-" hi linenr ctermfg=102 ctermbg=59 cterm=none guifg=#767b85 guibg=#3a3f4a gui=none
-hi linenr ctermfg=102 ctermbg=59 cterm=none guifg=#767b85 guibg=#2a2f3a gui=none
-hi vertsplit ctermfg=59 ctermbg=59 cterm=none guifg=#565b66 guibg=#565b66 gui=none
-hi matchparen ctermfg=139 ctermbg=none cterm=underline guifg=#b48ead guibg=none gui=underline
+hi visual ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3a4d6c gui=NONE
+hi cursorline ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3a3f4a gui=NONE
+hi cursorcolumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3a3f4a gui=NONE
+hi colorcolumn ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#3a3f4a gui=NONE
+" hi linenr ctermfg=102 ctermbg=59 cterm=NONE guifg=#767b85 guibg=#3a3f4a gui=NONE
+hi linenr ctermfg=102 ctermbg=59 cterm=NONE guifg=#767b85 guibg=#2a2f3a gui=NONE
+hi vertsplit ctermfg=59 ctermbg=59 cterm=NONE guifg=#565b66 guibg=#565b66 gui=NONE
+hi matchparen ctermfg=139 ctermbg=NONE cterm=underline guifg=#b48ead guibg=NONE gui=underline
 hi statusline ctermfg=152 ctermbg=59 cterm=bold guifg=#c0c5ce guibg=#565b66 gui=bold
-hi statuslinenc ctermfg=152 ctermbg=59 cterm=none guifg=#c0c5ce guibg=#565b66 gui=none
-hi pmenu ctermfg=none ctermbg=none cterm=none guifg=none guibg=none gui=none
-hi pmenusel ctermfg=none ctermbg=59 cterm=none guifg=none guibg=#4f5b66 gui=none
-hi incsearch ctermfg=23 ctermbg=144 cterm=none guifg=#2b303b guibg=#a3be8c gui=none
-hi search ctermfg=none ctermbg=none cterm=underline guifg=none guibg=none gui=underline
-hi directory ctermfg=144 ctermbg=none cterm=none guifg=#a3be8c guibg=none gui=none
-hi folded ctermfg=60 ctermbg=23 cterm=none guifg=#65737e guibg=#2b303b gui=none
+hi statuslinenc ctermfg=152 ctermbg=59 cterm=NONE guifg=#c0c5ce guibg=#565b66 gui=NONE
+hi pmenu ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi pmenusel ctermfg=NONE ctermbg=59 cterm=NONE guifg=NONE guibg=#4f5b66 gui=NONE
+hi incsearch ctermfg=23 ctermbg=144 cterm=NONE guifg=#2b303b guibg=#a3be8c gui=NONE
+hi search ctermfg=NONE ctermbg=NONE cterm=underline guifg=NONE guibg=NONE gui=underline
+hi directory ctermfg=144 ctermbg=NONE cterm=NONE guifg=#a3be8c guibg=NONE gui=NONE
+hi folded ctermfg=60 ctermbg=23 cterm=NONE guifg=#65737e guibg=#2b303b gui=NONE
 
 " hi Normal ctermfg=152 ctermbg=23 cterm=NONE guifg=#c0c5ce guibg=#2b303b gui=NONE
 hi Normal ctermfg=152 ctermbg=23 cterm=NONE guifg=#c5cace guibg=#1d2027 gui=NONE
@@ -99,10 +99,14 @@ hi javaScriptFunction ctermfg=139 ctermbg=NONE cterm=NONE guifg=#b48ead guibg=NO
 hi javaScriptRailsFunction ctermfg=109 ctermbg=NONE cterm=NONE guifg=#96b5b4 guibg=NONE gui=NONE
 hi javaScriptBraces ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
 
-hi htmlTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi htmlEndTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi htmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
-hi htmlArg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" hi htmlTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi htmlTag ctermfg=139 ctermbg=NONE cterm=NONE guifg=#b48ead guibg=NONE gui=NONE
+" hi htmlEndTag ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi htmlEndTag ctermfg=139 ctermbg=NONE cterm=NONE guifg=#b48ead guibg=NONE gui=NONE
+" hi htmlTagName ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+" hi htmlTagName ctermfg=139 ctermbg=NONE cterm=NONE guifg=#b48ead guibg=NONE gui=NONE
+" hi htmlArg ctermfg=NONE ctermbg=NONE cterm=NONE guifg=NONE guibg=NONE gui=NONE
+hi htmlArg ctermfg=109 ctermbg=NONE cterm=NONE guifg=#8fa1b3 guibg=NONE gui=NONE
 hi htmlSpecialChar ctermfg=173 ctermbg=NONE cterm=NONE guifg=#d08770 guibg=NONE gui=NONE
 
 hi cssURL ctermfg=131 ctermbg=NONE cterm=NONE guifg=#bf616a guibg=NONE gui=NONE

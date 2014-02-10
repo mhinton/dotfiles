@@ -21,6 +21,8 @@ install curl
 install wget
 install wrk
 install goaccess
+install psgrep
+install pstree
 
 install redis
 install phantomjs

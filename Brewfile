@@ -1,5 +1,6 @@
 tap homebrew/versions
 tap thoughtbot/formulae
+tap jimbojsb/launchrocket
 install git
 install zsh
 install tig
@@ -11,7 +12,7 @@ install macvim
 install tmux
 install reattach-to-user-namespace
 install rcm
-install emacs
+install emacs --cocoa --srgb
 install trash
 install tree
 install cmake
@@ -33,3 +34,7 @@ install boost
 #install postgresql
 #install rabbitmq
 #install sphinx --without-mysql --with-pgsql=/usr/local --pgsql
+
+tap phinze/cask
+install brew-cask
+#cask install launchrocket

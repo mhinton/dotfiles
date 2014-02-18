@@ -39,7 +39,8 @@ if has("gui_running")
   " colorscheme badwolf
   " colorscheme smyck+
   " colorscheme grb256+
-  colorscheme spacegray
+  " colorscheme spacegray
+  colorscheme base16-tomorrow
   let g:airline_theme='jellybeans'
 else
   " if &t_Co >= 8
@@ -50,7 +51,9 @@ else
     let g:solarized_termcolors=256
     " colorscheme solarized
     " colorscheme badwolf
-    colorscheme grb256+
+    " colorscheme grb256+
+    colorscheme base16-tomorrow
+    hi LineNr ctermfg=245 ctermbg=16
     let g:airline_theme='kolor'
   endif
 endif

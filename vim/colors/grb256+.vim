@@ -12,7 +12,7 @@ hi LineNr guifg=#a0a097 guibg=#2e2e2e ctermfg=gray
 
 hi pythonSpaceError ctermbg=red guibg=red
 
-hi Comment ctermfg=darkgray
+hi Comment ctermfg=242 cterm=NONE
 
 hi Identifier     guifg=#d2b8e5     guibg=NONE        gui=NONE      ctermfg=11       term=underline
 " hi Identifier     guifg=#e7a9f1     guibg=NONE        gui=NONE      ctermfg=11       term=underline
@@ -23,14 +23,14 @@ hi StatusLineNC   ctermbg=black ctermfg=lightgrey
 hi VertSplit      ctermbg=black ctermfg=lightgrey
 hi CursorLine     guifg=NONE        guibg=#121212     gui=NONE      ctermfg=NONE        ctermbg=234
 hi Function       guifg=#FFD2A7     guibg=NONE        gui=NONE      ctermfg=yellow       ctermbg=NONE        cterm=NONE
-hi Visual         guifg=NONE        guibg=#262D51     gui=NONE      ctermfg=NONE        ctermbg=236    cterm=NONE
+hi Visual         guifg=NONE        guibg=#262D51     gui=NONE      ctermfg=NONE        ctermbg=59    cterm=NONE
 
 hi Error          guifg=NONE        guibg=NONE        gui=undercurl ctermfg=16       ctermbg=red         cterm=NONE     guisp=#FF6C60 " undercurl color
 hi ErrorMsg       guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16       ctermbg=red         cterm=NONE
 hi WarningMsg     guifg=white       guibg=#FF6C60     gui=BOLD      ctermfg=16       ctermbg=red         cterm=NONE
 hi SpellBad       guifg=NONE        guibg=NONE        gui=BOLD,undercurl      ctermfg=NONE     ctermbg=NONE        cterm=underline
-hi PreProc        guifg=#96CBFE ctermfg=9 
-hi Conditional    guifg=#96CBFE ctermfg=9 
+hi PreProc        guifg=#96CBFE ctermfg=9
+hi Conditional    guifg=#96CBFE ctermfg=9
 hi Function       guifg=#e7b15d ctermfg=166
 
 hi htmlTagName     guifg=#64a2df    ctermfg=26

@@ -53,9 +53,9 @@ else
     " colorscheme solarized
     " colorscheme badwolf
     " colorscheme grb256+
-    colorscheme base16-tomorrow
-    hi LineNr ctermfg=245 ctermbg=16
-    let g:airline_theme='kolor'
+    colorscheme base16-tomorrow+
+    " let g:airline_theme='kolor'
+    let g:airline_theme='bubblegum'
   endif
 endif
 

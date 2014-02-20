@@ -21,6 +21,7 @@ source ~/.vim/auto_commands.vim
 set t_Co=256
 set background=dark
 
+let g:airline_theme='tomorrow'
 " COLOR SUPPORT
 if has("gui_running")
   " colorscheme vwilight
@@ -39,8 +40,9 @@ if has("gui_running")
   " colorscheme badwolf
   " colorscheme smyck+
   " colorscheme grb256+
-  colorscheme spacegray
-  let g:airline_theme='jellybeans'
+  " colorscheme spacegray
+  colorscheme base16-tomorrow
+  " let g:airline_theme='jellybeans'
 else
   " if &t_Co >= 8
   " colorscheme vividchalk
@@ -50,7 +52,9 @@ else
     let g:solarized_termcolors=256
     " colorscheme solarized
     " colorscheme badwolf
-    colorscheme grb256+
+    " colorscheme grb256+
+    colorscheme base16-tomorrow
+    hi LineNr ctermfg=245 ctermbg=16
     let g:airline_theme='kolor'
   endif
 endif

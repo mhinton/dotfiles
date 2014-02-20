@@ -205,4 +205,4 @@ let g:airline#extensions#hunks#non_zero_only = 1
 let g:airline#extensions#hunks#hunk_symbols = ['+', '~', '-']
 
 " TrailerTrash:
-let g:trailertrash_blacklist = ['__Calendar', '^http:', 'md', 'markdown']
+let g:trailertrash_blacklist = ['__Calendar', '^http:', '.*md', '.*markdown']

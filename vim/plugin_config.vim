@@ -116,6 +116,8 @@ let g:UltiSnipsSnippetDirectories=["ultisnips"]
 " Emmet:
 let g:use_emmet_complete_tag = 1
 
+" JavascriptLibs:
+let g:used_javascript_libs = 'jquery,underscore,angularjs,jasmine,backbone'
 
 " Gundo:
 let g:gundo_width = 45

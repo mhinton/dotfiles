@@ -31,7 +31,7 @@ Bundle 'majutsushi/tagbar'
 " Bundle 'sjl/gundo.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kana/vim-textobj-user'
-" Bundle 'SirVer/ultisnips'
+Bundle 'SirVer/ultisnips'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'bling/vim-airline'
 " Focused writing mode

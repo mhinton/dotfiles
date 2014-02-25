@@ -102,20 +102,22 @@ let g:ycm_min_num_of_chars_for_completion = 3
 
 
 " UltiSnips:
-" let g:UltiSnipsExpandTrigger="<tab>" " default
-" let g:UltiSnipsListSnippets="<c-tab>"
-" let g:UltiSnipsJumpForwardTrigger="<tab>" " default
-" let g:UltiSnipsJumpBackwardTrigger="<s-tab>" " default
-" let g:UltiSnipsDontReverseSearchPath="1"
-let g:UltiSnipsExpandTrigger="<c-j>"
-let g:UltiSnipsJumpForwardTrigger="<c-j>"
-let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+let g:UltiSnipsExpandTrigger="<tab>" " default
+let g:UltiSnipsListSnippets="<c-tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>" " default
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>" " default
+let g:UltiSnipsDontReverseSearchPath="1"
+" let g:UltiSnipsExpandTrigger="<c-j>"
+" let g:UltiSnipsJumpForwardTrigger="<c-j>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
 
 
 " Emmet:
 let g:use_emmet_complete_tag = 1
 
+" JavascriptLibs:
+let g:used_javascript_libs = 'jquery,underscore,angularjs,jasmine,backbone'
 
 " Gundo:
 let g:gundo_width = 45

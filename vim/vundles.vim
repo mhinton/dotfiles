@@ -98,7 +98,7 @@ Bundle 'itspriddle/vim-marked'
 " Bundle 'terryma/vim-multiple-cursors'
 
 " Experimental plugins
-" Bundle 'Valloric/YouCompleteMe'
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'marijnh/tern_for_vim'
 Bundle 'mattdbridges/bufkill.vim'
 " trying out a replacement for Tabular
@@ -111,10 +111,10 @@ Bundle 'junegunn/vim-easy-align'
 " Clojure related packages
 " removed for now to see if these are slowing vim down
 " http://clojure-doc.org/articles/tutorials/vim_fireplace.html
+" Bundle 'kien/rainbow_parentheses.vim'
+" Bundle 'tpope/vim-classpath'
 " Bundle 'guns/vim-clojure-static'
 " Bundle 'tpope/vim-fireplace'
-" Bundle 'tpope/vim-classpath'
-" Bundle 'kien/rainbow_parentheses.vim'
 " Bundle 'dgrnbrg/vim-redl' " new vim integration with clojure
 
 " Colorschemes:

@@ -117,9 +117,10 @@ zstyle ':completion:*:manuals'       separate-sections true
 zstyle ':completion:*:manuals.(^1*)' insert-sections   true
 
 
-
 # ruby perf settings
+export CONFIGURE_OPTS="--with-openssl-dir=`brew --prefix openssl` "
 export RUBY_HEAP_MIN_SLOTS=1000000
+export RUBY_GC_HEAP_INIT_SLOTS=1000000
 export RUBY_HEAP_SLOTS_INCREMENT=1000000
 export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
@@ -130,7 +131,6 @@ export RUBY_HEAP_FREE_MIN=500000
 # [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 # PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
-# export PATH=/usr/local/share/npm/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
 export PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 
 ### Added by the Heroku Toolbelt

@@ -41,7 +41,7 @@ if has("gui_running")
   " colorscheme smyck+
   " colorscheme grb256+
   " colorscheme spacegray
-  colorscheme base16-tomorrow
+  colorscheme base16-tomorrow+
   " let g:airline_theme='jellybeans'
 else
   " if &t_Co >= 8
@@ -86,4 +86,3 @@ hi! def link markdownError  Normal
 
 " reset the SignColumn colors vim-gitgutter uses
 hi clear SignColumn
-

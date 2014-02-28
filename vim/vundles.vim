@@ -127,7 +127,7 @@ Bundle 'gregsexton/Muon'
 Bundle 'jnurmine/Zenburn'
 Bundle 'thinkpixellab/flatland', {'rtp': 'Vim/'}
 Bundle 'chriskempson/base16-vim'
-Bundle 'daylerees/colour-schemes', { 'rtp': 'vim-themes/' }
+Bundle 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 " check this occasionally for new colorschemes
 " don't use it all the time because some are duplicates
 "Bundle 'flazz/vim-colorschemes'

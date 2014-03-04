@@ -126,6 +126,10 @@ export RUBY_HEAP_SLOTS_GROWTH_FACTOR=1
 export RUBY_GC_MALLOC_LIMIT=1000000000
 export RUBY_HEAP_FREE_MIN=500000
 
+# Java settings
+export JBOSS_HOME=/usr/local/opt/jboss-as/libexec
+export PATH=${PATH}:${JBOSS_HOME}/bin
+
 # Setup rvm
 # rvm_project_rvmrc=1
 # [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

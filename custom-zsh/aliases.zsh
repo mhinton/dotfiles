@@ -112,6 +112,7 @@ alias glr="git log -10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cre
 alias cds='cd /Users/matthew/Sites/scholar'
 
 alias octo='cd /Users/matthew/Dropbox/Sites/octopress'
+alias dev='cd /Users/matthew/Dropbox/dev'
 alias projects='cd /Users/matthew/Dropbox/Projects'
 alias dsites='cd /Users/matthew/Dropbox/Sites'
 alias dotfiles='cd /Users/matthew/.dotfiles'

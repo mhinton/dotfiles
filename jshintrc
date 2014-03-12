@@ -1,20 +1,20 @@
 {
     "maxerr"        : 100,
 
-    "bitwise"       : true, 
+    "bitwise"       : true,
     "camelcase"     : false,
-    "curly"         : true, 
-    "eqeqeq"        : true, 
-    "forin"         : true, 
+    "curly"         : true,
+    "eqeqeq"        : true,
+    "forin"         : true,
     "immed"         : false,
     "latedef"       : false,
     "newcap"        : false,
-    "noarg"         : true, 
-    "noempty"       : true, 
+    "noarg"         : true,
+    "noempty"       : true,
     "nonew"         : false,
     "plusplus"      : false,
-    "undef"         : true, 
-    "unused"        : true, 
+    "undef"         : true,
+    "unused"        : true,
     "strict"        : false,
     "trailing"      : false,
     "maxparams"     : false,
@@ -38,7 +38,7 @@
     "laxbreak"      : false,
     "laxcomma"      : false,
     "loopfunc"      : false,
-    "multistr"      : true, 
+    "multistr"      : true,
     "proto"         : false,
     "scripturl"     : false,
     "smarttabs"     : false,
@@ -47,10 +47,10 @@
     "supernew"      : false,
     "validthis"     : false,
 
-    "browser"       : true, 
-    "devel"         : true, 
-    "jquery"        : true, 
-    "node"          : true, 
+    "browser"       : true,
+    "devel"         : true,
+    "jquery"        : true,
+    "node"          : true,
 
     "nomen"         : false,
     "onevar"        : false,
@@ -64,6 +64,8 @@
       "xit",
       "beforeEach",
       "afterEach",
-      "expect"
-    ]   
+      "expect",
+      "Backbone",
+      "_"
+    ]
 }

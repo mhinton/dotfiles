@@ -32,6 +32,7 @@ Bundle 'majutsushi/tagbar'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'kana/vim-textobj-user'
 Bundle 'SirVer/ultisnips'
+Bundle 'honza/vim-snippets'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'bling/vim-airline'
 " Focused writing mode
@@ -46,6 +47,8 @@ Bundle 'amix/vim-zenroom2'
 
 " Programming
 Bundle 'tpope/vim-rails'
+Bundle 'Keithbsmiley/rspec.vim'
+Bundle 'thoughtbot/vim-rspec'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-ragtag'
 " Bundle 'tpope/vim-rvm'

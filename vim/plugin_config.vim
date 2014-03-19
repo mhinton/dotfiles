@@ -100,19 +100,21 @@ let g:ackprg = "ag --nogroup --nocolor --column"
 
 
 " YouCompleteMe:
+let g:ycm_key_list_previous_completion=['<Up>']
+let g:ycm_key_list_select_completion = ['<Tab>', '<Down>']
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_min_num_of_chars_for_completion = 3
 
 
 " UltiSnips:
-let g:UltiSnipsExpandTrigger="<tab>" " default
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-j>" " custom
 let g:UltiSnipsListSnippets="<c-tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>" " default
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>" " default
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" let g:UltiSnipsExpandTrigger="<c-tab>"
+" let g:UltiSnipsListSnippets="<c-s-tab>"
 let g:UltiSnipsDontReverseSearchPath="1"
-" let g:UltiSnipsExpandTrigger="<c-j>"
-" let g:UltiSnipsJumpForwardTrigger="<c-j>"
-" let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
 
 

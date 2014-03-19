@@ -18,6 +18,9 @@ map <leader>mm :NERDTreeMirrorToggle<CR>
 " Focus in the main content window
 let g:nerdtree_tabs_focus_on_files = 1
 
+" Markdown:
+let g:markdown_folding = 1
+
 
 " via: http://whynotwiki.com/Vim
 " Ruby

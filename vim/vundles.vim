@@ -91,7 +91,7 @@ Bundle 'itspriddle/vim-marked'
 
 " Bundle 'ervandew/supertab'  " Remove SuperTab when using YouCompleteMe
 " Bundle 'tpope/vim-obsession'
-" Bundle 'tpope/vim-dispatch'
+Bundle 'tpope/vim-dispatch'
 
 " Deactivated plugins
 " Bundle 'skalnik/vim-vroom'

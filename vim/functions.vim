@@ -16,7 +16,7 @@ endfunc
 
 
 " Window Killer
-" Use Q to intelligently close a window 
+" Use Q to intelligently close a window
 " (if there are multiple windows into the same buffer)
 " or kill the buffer entirely if it's the last window looking into that buffer
 function! CloseWindowOrKillBuffer()
@@ -31,8 +31,8 @@ endfunction
 
 
 " run the rspec spec on the cursor line
-function! RunSingleSpec()
-  exec '!rspec % -l ' . line('.')
-endfunction
-map <leader>rt :call RunSingleSpec()<CR>
+" function! RunSingleSpec()
+"   exec '!rspec % -l ' . line('.')
+" endfunction
+" map <leader>rt :call RunSingleSpec()<CR>
 

@@ -1,0 +1,8 @@
+ls
+cd elpa/better-defaults-20130422.1322/
+ls
+less better-defaults.el
+less better-defaults-autoloads.el 
+less better-defaults.el
+..
+ls

@@ -12,7 +12,7 @@ install macvim
 install tmux
 install reattach-to-user-namespace
 install rcm
-install emacs --cocoa --srgb
+install --cocoa --srgb emacs
 install trash
 install tree
 install cmake

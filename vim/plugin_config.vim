@@ -56,17 +56,15 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_error_symbol = '✗'
 let g:syntastic_warning_symbol = '!'
 " let g:syntastic_javascript_jshint_conf = '~/.jshintrc'
-
-
-" VCS:
-"" NERDCommenter overrides <leader>cc so map it to something else
-" map <leader>vc :VCSCommit<CR>
-" map <leader>vu :VCSUpdate<CR>
-" map <leader>vr :VCSRevert<CR>
-" map <leader>vs :VCSStatus<CR>
-" map <leader>va :VCSAdd<CR>
-" map <leader>vb :VCSBlame<CR>
-" map <leader>vd :VCSVimDiff<CR>
+let g:syntastic_html_tidy_ignore_errors = [
+    \"is not recognized!",
+    \"trimming empty <i>",
+    \"trimming empty <span>",
+    \"<input> proprietary attribute \"autocomplete\"",
+    \"proprietary attribute \"role\"",
+    \"proprietary attribute \"hidden\"",
+    \"proprietary attribute \"ng-\"",
+    \]
 
 
 " Fugitive:

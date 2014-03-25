@@ -2,3 +2,4 @@ vim/bundle/
 !vim/bundle/vundle/
 vim/ftplugin/
 vim/yankring_history_v2.txt
+emacs.d/places

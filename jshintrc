@@ -58,6 +58,7 @@
     "white"         : false,
 
     "predef"        : [
+      "app",
       "jasmine",
       "describe",
       "it",

@@ -84,43 +84,39 @@ nnoremap <leader>gr :Gremove<cr>
 let g:ackprg = "ag --nogroup --nocolor --column"
 
 
-" SuperTab:
-"" let g:SuperTabDefaultCompletionType = "context" "<- this was my default
-"" let g:SuperTabContextDefaultCompletionType = "<c-n>"
-" let g:SuperTabLongestHighlight = 0
-
-" Remove SuperTab when using YouCompleteMe
-"let g:SuperTabDefaultCompletionType = "<c-x><c-n>" " testing setting
-"let g:SuperTabLongestEnhanced = 1
-"let g:SuperTabCompletionContexts = ['s:ContextText', 's:ContextDiscover']
-"let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
-"let g:SuperTabContextDiscoverDiscovery = ["&completefunc:<c-x><c-n>", "&omnifunc:<c-x><c-o>"]
-
-
 " YouCompleteMe:
-let g:ycm_key_list_previous_completion=['<Up>']
-let g:ycm_key_list_select_completion = ['<Tab>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<Up>']
+let g:ycm_key_list_select_completion = ['<Down>']
 let g:ycm_collect_identifiers_from_tags_files = 1
 let g:ycm_min_num_of_chars_for_completion = 3
+let g:ycm_add_preview_to_completeopt = 1
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 
 " UltiSnips:
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+" default values
+" let g:UltiSnipsExpandTrigger               <tab>
+" let g:UltiSnipsListSnippets                <c-tab>
+" let g:UltiSnipsJumpForwardTrigger          <c-j>
+" let g:UltiSnipsJumpBackwardTrigger         <c-k>
 let g:UltiSnipsExpandTrigger="<c-j>" " custom
-let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
-" let g:UltiSnipsExpandTrigger="<c-tab>"
-" let g:UltiSnipsListSnippets="<c-s-tab>"
+let g:UltiSnipsListSnippets="<c-tab>"
 let g:UltiSnipsDontReverseSearchPath="1"
 let g:UltiSnipsSnippetDirectories=["ultisnips"]
 
 
 " Emmet:
 let g:use_emmet_complete_tag = 1
+let g:emmet_expandabbr = "<c-j>"
+
 
 " JavascriptLibs:
 let g:used_javascript_libs = 'jquery,underscore,angularjs,jasmine,backbone'
+
 
 " Gundo:
 let g:gundo_width = 45

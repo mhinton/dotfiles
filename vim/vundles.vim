@@ -19,9 +19,11 @@ Bundle 'tpope/vim-repeat'
 " Bundle 'tpope/vim-eunuch'
 
 " Improvements
+" Bundle 'terryma/vim-expand-region'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
+Bundle 'tpope/vim-projectile'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 Bundle 'mileszs/ack.vim'

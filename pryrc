@@ -4,9 +4,9 @@ Pry.config.color = true
 Pry.config.history.should_save = true
 Pry.config.should_load_local_rc = Dir.pwd != Dir.home
 
-if Readline::VERSION =~ /editline/i
-  warn "Warning: Using Editline instead of Readline."
-end
+# if Readline::VERSION =~ /editline/i
+#   warn "Warning: Using Editline instead of Readline."
+# end
 
 # tell Readline when the window resizes
 # old_winch = trap 'WINCH' do

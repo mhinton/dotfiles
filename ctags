@@ -2,6 +2,7 @@
 --tag-relative=yes
 --fields=+l
 --exclude=.git
+--exclude=.svn
 --exclude=coverage
 --exclude=log
 --exclude=tmp

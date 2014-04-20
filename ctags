@@ -3,6 +3,8 @@
 --fields=+l
 --exclude=.git
 --exclude=.svn
+--exclude=.meteor
+--exclude=.idea
 --exclude=coverage
 --exclude=log
 --exclude=tmp

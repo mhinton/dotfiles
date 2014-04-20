@@ -67,6 +67,7 @@
       "afterEach",
       "expect",
       "Backbone",
-      "_"
+      "_",
+      "Meteor"
     ]
 }

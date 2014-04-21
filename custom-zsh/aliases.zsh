@@ -67,6 +67,25 @@ alias ds='du -ks * | sort -n'
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
+# SVN
+# set your editor
+export SVN_EDITOR="/usr/local/bin/vim"
+
+# WARNING: add everything that needs to be added based on results of svn status
+# alias svnadd="svn st | grep \? | awk ''{print \"svn add \"$2 }'' | bash"
+
+# show svn status, sans the noise from externals
+alias svnst='svn st --ignore-externals'
+
+# edit svn:externals for the current folder in the editor
+alias svnext='svn pe svn:externals .'
+
+# edit svn:ignore for the current folder in the editor
+alias svnign='svn pe svn:ignore .'
+
+# recursively delete .svn folders from current directory
+alias delsvn="find . -name .svn | xargs rm -rf"
+
 
 # Functions
 #

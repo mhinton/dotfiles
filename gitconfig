@@ -1,6 +1,6 @@
 [user]
 	name = Matthew Hinton
-	email = matthew.hinton@commongroundpublishing.com
+	email = mhinton@gmail.com
 
 [core]
 	quotepath = false
@@ -227,8 +227,8 @@
 	springcleaning = for-each-ref --sort=-committerdate --format='%(refname:short) %(committerdate:short)'
 
 [difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff $LOCAL $REMOTE
-	path =
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
 [mergetool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff --merge --output $MERGED --base \"$BASE\" -- \"$LOCAL\" \"$REMOTE\"
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true

@@ -24,11 +24,14 @@ endfunction
 
 function! CustomJavaScriptSettings()
   set filetype=javascript
+  set tabstop=4
+  set shiftwidth=4
+  set softtabstop=4
 endfunction
 
 autocmd BufEnter,BufWritePost *.clj   call CustomClojureSettings()
 " autocmd BufEnter *.markdown,*.md call CustomMarkdownSettings()
-" autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
+autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
 autocmd BufEnter *.erb,*.html call CustomMarkupSettings()
 
 " autocmd FileType javascript setlocal ts=4 sts=4 sw=4

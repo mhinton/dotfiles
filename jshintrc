@@ -13,7 +13,7 @@
     "noempty"       : true,
     "nonew"         : false,
     "plusplus"      : false,
-    "undef"         : true,
+    "undef"         : false,
     "unused"        : true,
     "strict"        : false,
     "trailing"      : false,

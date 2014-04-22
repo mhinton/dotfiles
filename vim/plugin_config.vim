@@ -130,10 +130,35 @@ if has("mac")
 endif
 
 
-" TabBar:
+" TagBar:
 let g:tagbar_ctags_bin="/usr/local/bin/ctags"
 nnoremap <leader>l :TagbarToggle<CR>
-
+let g:tagbar_type_javascript = {
+    \ 'ctagstype' : 'JavaScript',
+    \ 'kinds'     : [
+        \ 'o:object',
+        \ 'v:variable',
+        \ 'e:export',
+        \ 'p:property',
+        \ 'f:function'
+    \ ]
+\ }
+let g:tagbar_type_clojure = {
+    \ 'ctagstype' : 'Clojure',
+    \ 'kinds'     : [
+        \ 'n:namespace',
+        \ 'd:definition',
+        \ 'f:function',
+        \ 'm:macro',
+        \ 'i:inline',
+        \ 'a:multimethod definition',
+        \ 'b:multimethod instance',
+        \ 'c:definition (once)',
+        \ 's:struct',
+        \ 'v:intern',
+        \ 'n:namespace'
+    \ ]
+\ }
 
 " ShowMarks:
 " Tell showmarks to not include the various brace marks (),{}, etc

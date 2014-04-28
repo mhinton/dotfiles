@@ -24,9 +24,9 @@ endfunction
 
 function! CustomJavaScriptSettings()
   set filetype=javascript
-  set tabstop=4
-  set shiftwidth=4
-  set softtabstop=4
+  set tabstop=2
+  set shiftwidth=2
+  set softtabstop=2
 endfunction
 
 autocmd BufEnter,BufWritePost *.clj   call CustomClojureSettings()

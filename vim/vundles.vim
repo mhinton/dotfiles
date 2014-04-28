@@ -77,15 +77,18 @@ Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'mattn/emmet-vim'
 " Bundle 'godlygeek/tabular.git'
 Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'StanAngeloff/php.vim'
-" PHP debug interface
-Bundle 'joonty/vdebug'
 Bundle 'pangloss/vim-javascript'
 " Bundle 'elzr/vim-json'
 Bundle 'tpope/vim-jdaddy'
 Bundle 'csexton/trailertrash.vim'
 Bundle 'sjl/strftimedammit.vim'
 Bundle 'othree/javascript-libraries-syntax.vim'
+
+Bundle 'StanAngeloff/php.vim'
+" PHP debug interface
+Bundle 'joonty/vdebug'
+" add next plugin if omnicomplete is funky
+" Bundle 'shawncplus/phpcomplete.vim'
 
 " Additional Syntax
 Bundle 'tpope/vim-markdown'

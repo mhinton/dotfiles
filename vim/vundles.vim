@@ -23,7 +23,8 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-unimpaired'
 Bundle 'tpope/vim-vinegar'
-Bundle 'tpope/vim-projectile'
+" Bundle 'tpope/vim-projectile'
+Bundle 'tpope/vim-projectionist'
 Bundle 'kien/ctrlp.vim'
 Bundle 'jasoncodes/ctrlp-modified.vim'
 Bundle 'mileszs/ack.vim'
@@ -58,6 +59,7 @@ Bundle 'tpope/vim-rbenv'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-git'
 Bundle 'tpope/vim-fugitive'
+Bundle 'vim-scripts/vcscommand.vim'
 " Bundle 'gregsexton/gitv'
 " Bundle 'airblade/vim-gitgutter'
 "vim-signify a superset of vim-gitgutter
@@ -140,6 +142,7 @@ Bundle 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 "Bundle 'flazz/vim-colorschemes'
 
 " vim-scripts repos
+" scripts from http://vim-scripts.org/vim/scripts.html
 Bundle 'L9'
 
 " non github repos

@@ -143,6 +143,6 @@ function mcd() { mkdir -p $1 && cd $1 }
 function cdf() { cd *$1*/ } # stolen from @topfunky
 
 
-// Mac specific
+# Mac specific
 spd='mdfind -onlyin ./ '
 sp='mdfind '

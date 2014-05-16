@@ -39,8 +39,8 @@ Bundle 'honza/vim-snippets'
 Bundle 'maxbrunsfeld/vim-yankstack'
 Bundle 'bling/vim-airline'
 " Focused writing mode
-Bundle 'junegunn/goyo.vim'
-Bundle 'amix/vim-zenroom2'
+" Bundle 'junegunn/goyo.vim'
+" Bundle 'amix/vim-zenroom2'
 " Prose writing
 " Bundle 'reedes/vim-pencil'
 " Bundle 'reedes/vim-wordy'

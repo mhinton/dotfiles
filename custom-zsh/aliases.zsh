@@ -130,24 +130,19 @@ alias glr="git log -10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cre
 
 alias cds='cd /Users/matthew/Sites/scholar'
 
-alias octo='cd /Users/matthew/Dropbox/Sites/octopress'
-# alias dev='cd /Users/matthew/Dropbox/dev'
+# directory shortcuts
 alias dev='cd /Users/matthew/dev'
 alias projects='cd /Users/matthew/Dropbox/Projects'
 alias dsites='cd /Users/matthew/Dropbox/Sites'
 alias dotfiles='cd /Users/matthew/.dotfiles'
 
-alias cm='console-mux -f scholar-processes.rb'
-alias rsa='rs -p 3001'
-alias rsp='rs -p 3002'
-alias usa='bundle exec unicorn_rails -p 3001'
-alias usp='bundle exec unicorn_rails -p 3002'
 
-alias rls='bundle exec rails s -p 4000'
-alias rlp='bundle exec puma -p 4000'
-
-alias t="script/test $*"
-alias f="script/features $*"
+# alias t="script/test $*"
+# alias f="script/features $*"
 function mcd() { mkdir -p $1 && cd $1 }
 function cdf() { cd *$1*/ } # stolen from @topfunky
 
+
+// Mac specific
+spd='mdfind -onlyin ./ '
+sp='mdfind '

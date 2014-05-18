@@ -128,21 +128,18 @@ alias cdb='cd -'
 
 alias glr="git log -10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative"
 
-alias cds='cd /Users/matthew/Sites/scholar'
-
 # directory shortcuts
 alias dev='cd /Users/matthew/dev'
 alias projects='cd /Users/matthew/Dropbox/Projects'
 alias dsites='cd /Users/matthew/Dropbox/Sites'
 alias dotfiles='cd /Users/matthew/.dotfiles'
 
+# Mac specific
+alias mfd='mdfind -onlyin ./ '
+alias mf='mdfind '
 
 # alias t="script/test $*"
 # alias f="script/features $*"
 function mcd() { mkdir -p $1 && cd $1 }
 function cdf() { cd *$1*/ } # stolen from @topfunky
 
-
-# Mac specific
-spd='mdfind -onlyin ./ '
-sp='mdfind '

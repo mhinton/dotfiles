@@ -130,6 +130,7 @@ alias glr="git log -10 --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cre
 
 # directory shortcuts
 alias dev='cd /Users/matthew/dev'
+alias 2wav='cd /Users/matthew/dev/2wav'
 alias projects='cd /Users/matthew/Dropbox/Projects'
 alias dsites='cd /Users/matthew/Dropbox/Sites'
 alias dotfiles='cd /Users/matthew/.dotfiles'

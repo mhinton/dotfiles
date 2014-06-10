@@ -83,6 +83,7 @@ Bundle 'tpope/vim-jdaddy'
 Bundle 'csexton/trailertrash.vim'
 Bundle 'sjl/strftimedammit.vim'
 Bundle 'othree/javascript-libraries-syntax.vim'
+Bundle 'mustache/vim-mustache-handlebars'
 
 Bundle 'StanAngeloff/php.vim'
 " PHP debug interface

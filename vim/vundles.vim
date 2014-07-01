@@ -1,158 +1,159 @@
 " Brief help
-" :BundleList          - list configured bundles
-" :BundleInstall(!)    - install(update) bundles
-" :BundleSearch(!) foo - search(or refresh cache first) for foo
-" :BundleClean(!)      - confirm(or auto-approve) removal of unused bundles
+" :PluginList          - list configured bundles
+" :PluginInstall(!)    - install(update) bundles
+" :PluginSearch(!) foo - search(or refresh cache first) for foo
+" :PluginClean(!)      - confirm(or auto-approve) removal of unused bundles
 "
 " see :h vundle for more details or wiki for FAQ
-" NOTE: comments after Bundle command are not allowed..
+" NOTE: comments after Plugin command are not allowed..
 
-" My Bundles here:
+" My Plugins here:
 "
 " original repos on github
 
 " Basics
-Bundle 'tpope/vim-sensible'
-Bundle 'tpope/vim-rsi'
-Bundle 'tpope/vim-speeddating'
-Bundle 'tpope/vim-repeat'
-" Bundle 'tpope/vim-eunuch'
+Plugin 'tpope/vim-sensible'
+Plugin 'tpope/vim-rsi'
+Plugin 'tpope/vim-speeddating'
+Plugin 'tpope/vim-repeat'
+" Plugin 'tpope/vim-eunuch'
 
 " Improvements
-" Bundle 'terryma/vim-expand-region'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-unimpaired'
-Bundle 'tpope/vim-vinegar'
-" Bundle 'tpope/vim-projectile'
-Bundle 'tpope/vim-projectionist'
-Bundle 'kien/ctrlp.vim'
-Bundle 'jasoncodes/ctrlp-modified.vim'
-Bundle 'mileszs/ack.vim'
-Bundle 'scrooloose/nerdtree'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'majutsushi/tagbar'
-" Bundle 'sjl/gundo.vim'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'kana/vim-textobj-user'
-Bundle 'SirVer/ultisnips'
-Bundle 'honza/vim-snippets'
-Bundle 'maxbrunsfeld/vim-yankstack'
-Bundle 'bling/vim-airline'
+" Plugin 'terryma/vim-expand-region'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
+Plugin 'tpope/vim-vinegar'
+" Plugin 'tpope/vim-projectile'
+Plugin 'tpope/vim-projectionist'
+Plugin 'kien/ctrlp.vim'
+Plugin 'jasoncodes/ctrlp-modified.vim'
+Plugin 'mileszs/ack.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'majutsushi/tagbar'
+" Plugin 'sjl/gundo.vim'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'kana/vim-textobj-user'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+Plugin 'maxbrunsfeld/vim-yankstack'
+Plugin 'bling/vim-airline'
 " Focused writing mode
-" Bundle 'junegunn/goyo.vim'
-" Bundle 'amix/vim-zenroom2'
+" Plugin 'junegunn/goyo.vim'
+" Plugin 'amix/vim-zenroom2'
 " Prose writing
-" Bundle 'reedes/vim-pencil'
-" Bundle 'reedes/vim-wordy'
-" Bundle 'reedes/vim-lexical'
-" Bundle 'reedes/vim-textobj-quote'
-" Bundle 'reedes/vim-textobj-sentence'
+" Plugin 'reedes/vim-pencil'
+" Plugin 'reedes/vim-wordy'
+" Plugin 'reedes/vim-lexical'
+" Plugin 'reedes/vim-textobj-quote'
+" Plugin 'reedes/vim-textobj-sentence'
 
 " Programming
-Bundle 'tpope/vim-rails'
-Bundle 'Keithbsmiley/rspec.vim'
-Bundle 'thoughtbot/vim-rspec'
-Bundle 'tpope/vim-endwise'
-Bundle 'tpope/vim-ragtag'
-" Bundle 'tpope/vim-rvm'
-Bundle 'tpope/vim-rbenv'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-git'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/vcscommand.vim'
-" Bundle 'gregsexton/gitv'
-" Bundle 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-rails'
+Plugin 'Keithbsmiley/rspec.vim'
+Plugin 'thoughtbot/vim-rspec'
+Plugin 'tpope/vim-endwise'
+Plugin 'tpope/vim-ragtag'
+" Plugin 'tpope/vim-rvm'
+Plugin 'tpope/vim-rbenv'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-git'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-scripts/vcscommand.vim'
+" Plugin 'gregsexton/gitv'
+" Plugin 'airblade/vim-gitgutter'
 "vim-signify a superset of vim-gitgutter
-Bundle 'mhinz/vim-signify'
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'tpope/vim-commentary'
-Bundle 'scrooloose/syntastic'
-Bundle 'wookiehangover/jshint.vim'
-Bundle 'Raimondi/delimitMate'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'AndrewRadev/switch.vim'
-" Bundle 'ap/vim-css-color'
-Bundle 'robmiller/vim-movar'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'mattn/emmet-vim'
-" Bundle 'godlygeek/tabular.git'
-Bundle 'michaeljsmith/vim-indent-object'
-Bundle 'pangloss/vim-javascript'
-" Bundle 'elzr/vim-json'
-Bundle 'tpope/vim-jdaddy'
-Bundle 'csexton/trailertrash.vim'
-Bundle 'sjl/strftimedammit.vim'
-Bundle 'othree/javascript-libraries-syntax.vim'
-Bundle 'mustache/vim-mustache-handlebars'
+Plugin 'mhinz/vim-signify'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'tpope/vim-commentary'
+Plugin 'scrooloose/syntastic'
+Plugin 'wookiehangover/jshint.vim'
+Plugin 'Raimondi/delimitMate'
+Plugin 'nelstrom/vim-textobj-rubyblock'
+Plugin 'AndrewRadev/switch.vim'
+" Plugin 'ap/vim-css-color'
+Plugin 'robmiller/vim-movar'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'mattn/emmet-vim'
+" Plugin 'godlygeek/tabular.git'
+Plugin 'michaeljsmith/vim-indent-object'
+Plugin 'pangloss/vim-javascript'
+" Plugin 'elzr/vim-json'
+Plugin 'tpope/vim-jdaddy'
+Plugin 'csexton/trailertrash.vim'
+Plugin 'sjl/strftimedammit.vim'
+Plugin 'othree/javascript-libraries-syntax.vim'
+Plugin 'mustache/vim-mustache-handlebars'
+Plugin 'fatih/vim-go'
 
-Bundle 'StanAngeloff/php.vim'
+Plugin 'StanAngeloff/php.vim'
 " PHP debug interface
-Bundle 'joonty/vdebug'
+Plugin 'joonty/vdebug'
 " add next plugin if omnicomplete is funky
-" Bundle 'shawncplus/phpcomplete.vim'
+" Plugin 'shawncplus/phpcomplete.vim'
 
 " Additional Syntax
-Bundle 'tpope/vim-markdown'
-Bundle 'othree/html5.vim'
-" Bundle 'jc00ke/vim-tomdoc'
-" Bundle 'mutewinter/tomdoc.vim'
-" Bundle 'kchmck/vim-coffee-script'
-Bundle 'mutewinter/nginx.vim'
+Plugin 'tpope/vim-markdown'
+Plugin 'othree/html5.vim'
+" Plugin 'jc00ke/vim-tomdoc'
+" Plugin 'mutewinter/tomdoc.vim'
+" Plugin 'kchmck/vim-coffee-script'
+Plugin 'mutewinter/nginx.vim'
 
 " Integration with other programs
-Bundle 'itspriddle/vim-marked'
+Plugin 'itspriddle/vim-marked'
 
-" Bundle 'ervandew/supertab'  " Remove SuperTab when using YouCompleteMe
-" Bundle 'tpope/vim-obsession'
-Bundle 'tpope/vim-dispatch'
+" Plugin 'ervandew/supertab'  " Remove SuperTab when using YouCompleteMe
+" Plugin 'tpope/vim-obsession'
+Plugin 'tpope/vim-dispatch'
 
 " Deactivated plugins
-" Bundle 'skalnik/vim-vroom'
-" Bundle 'danchoi/virb'
-" Bundle 'vim-scripts/YankRing.vim'
-" Bundle 't9md/vim-ruby-xmpfilter'
-" Bundle 'terryma/vim-multiple-cursors'
+" Plugin 'skalnik/vim-vroom'
+" Plugin 'danchoi/virb'
+" Plugin 'vim-scripts/YankRing.vim'
+" Plugin 't9md/vim-ruby-xmpfilter'
+" Plugin 'terryma/vim-multiple-cursors'
 
 " Experimental plugins
-Bundle 'Valloric/YouCompleteMe'
-Bundle 'marijnh/tern_for_vim'
-Bundle 'mattdbridges/bufkill.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'marijnh/tern_for_vim'
+Plugin 'mattdbridges/bufkill.vim'
 " trying out a replacement for Tabular
-Bundle 'junegunn/vim-easy-align'
+Plugin 'junegunn/vim-easy-align'
 " CoVim is collabrative editing inside vim, requires some setup so this a placeholder in case I want to use it
-" Bundle 'FredKSchott/CoVim'
+" Plugin 'FredKSchott/CoVim'
 " this requires to work http://robots.thoughtbot.com/post/53022241323/seamlessly-navigate-vim-and-tmux-splits
-" Bundle 'christoomey/vim-tmux-navigator' " this broke vim window nav for me
+" Plugin 'christoomey/vim-tmux-navigator' " this broke vim window nav for me
 
 " Clojure related packages
 " removed for now to see if these are slowing vim down
 " http://clojure-doc.org/articles/tutorials/vim_fireplace.html
-" Bundle 'kien/rainbow_parentheses.vim'
-" Bundle 'tpope/vim-classpath'
-" Bundle 'guns/vim-clojure-static'
-" Bundle 'tpope/vim-fireplace'
-" Bundle 'dgrnbrg/vim-redl' " new vim integration with clojure
+" Plugin 'kien/rainbow_parentheses.vim'
+" Plugin 'tpope/vim-classpath'
+" Plugin 'guns/vim-clojure-static'
+" Plugin 'tpope/vim-fireplace'
+" Plugin 'dgrnbrg/vim-redl' " new vim integration with clojure
 
 " Colorschemes:
-" Bundle 'altercation/vim-colors-solarized'
-Bundle 'sjl/badwolf'
-Bundle 'w0ng/vim-hybrid'
-Bundle 'jonathanfilip/vim-lucius'
-Bundle 'goatslacker/mango.vim'
-Bundle 'gregsexton/Muon'
-Bundle 'jnurmine/Zenburn'
-Bundle 'thinkpixellab/flatland', {'rtp': 'Vim/'}
-Bundle 'chriskempson/base16-vim'
-Bundle 'daylerees/colour-schemes', { 'rtp': 'vim/' }
+" Plugin 'altercation/vim-colors-solarized'
+Plugin 'sjl/badwolf'
+Plugin 'w0ng/vim-hybrid'
+Plugin 'jonathanfilip/vim-lucius'
+Plugin 'goatslacker/mango.vim'
+Plugin 'gregsexton/Muon'
+Plugin 'jnurmine/Zenburn'
+Plugin 'thinkpixellab/flatland', {'rtp': 'Vim/'}
+Plugin 'chriskempson/base16-vim'
+Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 " check this occasionally for new colorschemes
 " don't use it all the time because some are duplicates
-"Bundle 'flazz/vim-colorschemes'
+"Plugin 'flazz/vim-colorschemes'
 
 " vim-scripts repos
 " scripts from http://vim-scripts.org/vim/scripts.html
-Bundle 'L9'
+Plugin 'L9'
 
 " non github repos
-"Bundle 'git://git.wincent.com/command-t.git'
+"Plugin 'git://git.wincent.com/command-t.git'
 
 filetype plugin indent on     " required!

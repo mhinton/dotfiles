@@ -130,6 +130,9 @@ export RUBY_HEAP_FREE_MIN=500000
 export JBOSS_HOME=/usr/local/opt/jboss-as/libexec
 export PATH=${PATH}:${JBOSS_HOME}/bin
 
+# Go settings
+export GOPATH=$HOME/dev/go
+
 # Setup rvm
 # rvm_project_rvmrc=1
 # [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm

@@ -353,3 +353,16 @@ vnoremap <silent> # :<C-U>
 
 " Look up a work in Dictionary.app
 nmap <silent> <leader>d :!open dict://<cword><CR><CR>
+
+" Switch to the previous file
+noremap <leader>ss <C-^>
+
+" Clone and paste paragraph
+noremap cp yap<S-}>p
+
+" Align current paragraph
+noremap <leader>a =ip
+
+" Shift + direction to change tabs
+" noremap <S-l> gt
+" noremap <S-h> gT

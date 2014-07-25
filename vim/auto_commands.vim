@@ -27,6 +27,7 @@ function! CustomJavaScriptSettings()
   set tabstop=2
   set shiftwidth=2
   set softtabstop=2
+  au FileType javascript call JavaScriptFold()
 endfunction
 
 autocmd BufEnter,BufWritePost *.clj   call CustomClojureSettings()

@@ -150,7 +150,7 @@ Plugin 'chriskempson/base16-vim'
 Plugin 'daylerees/colour-schemes', { 'rtp': 'vim/' }
 " check this occasionally for new colorschemes
 " don't use it all the time because some are duplicates
-"Plugin 'flazz/vim-colorschemes'
+Plugin 'flazz/vim-colorschemes'
 
 " vim-scripts repos
 " scripts from http://vim-scripts.org/vim/scripts.html

@@ -27,14 +27,14 @@ function! CustomJavaScriptSettings()
   set tabstop=2
   set shiftwidth=2
   set softtabstop=2
-  au FileType javascript call JavaScriptFold()
 endfunction
 
 autocmd BufEnter,BufWritePost *.clj   call CustomClojureSettings()
 " autocmd BufEnter *.markdown,*.md call CustomMarkdownSettings()
-autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
+" autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
 autocmd BufEnter *.erb,*.html call CustomMarkupSettings()
 
+autocmd FileType javascript call JavaScriptFold()
 " autocmd FileType javascript setlocal ts=4 sts=4 sw=4
 
 autocmd FileType gitcommit setlocal spell textwidth=72

@@ -7,11 +7,11 @@ function! CustomMarkdownSettings()
   set linebreak
   set textwidth=80
   set formatoptions+=l
-  " syntax region markdownFold start="^\z(#\+\) " end="\(^#\(\z1#*\)\@!#*[^#]\)\@=" transparent fold
-  " autocmd FileType markdown set foldmethod=syntax
+  syntax region markdownFold start="^\z(#\+\) " end="\(^#\(\z1#*\)\@!#*[^#]\)\@=" transparent fold
+  autocmd FileType markdown set foldmethod=syntax
 
-  setlocal nofoldenable
-  setlocal foldlevel=0
+  "setlocal nofoldenable
+  "setlocal foldlevel=0
   setlocal foldcolumn=0
 
   " use tabs in markdown for correct rendering
@@ -24,6 +24,7 @@ endfunction
 
 function! CustomJavaScriptSettings()
   set filetype=javascript
+  setlocal foldlevel=99
   set tabstop=2
   set shiftwidth=2
   set softtabstop=2
@@ -31,10 +32,10 @@ endfunction
 
 autocmd BufEnter,BufWritePost *.clj   call CustomClojureSettings()
 " autocmd BufEnter *.markdown,*.md call CustomMarkdownSettings()
-" autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
 autocmd BufEnter *.erb,*.html call CustomMarkupSettings()
 
 autocmd FileType javascript call JavaScriptFold()
+autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
 " autocmd FileType javascript setlocal ts=4 sts=4 sw=4
 
 autocmd FileType gitcommit setlocal spell textwidth=72

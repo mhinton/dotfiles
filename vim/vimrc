@@ -42,7 +42,7 @@ if has("gui_running")
   " colorscheme grb256+
   " colorscheme spacegray
   " colorscheme base16-tomorrow+
-  colorscheme base16-monokai
+  colorscheme base16-monokai+
   " colorscheme lucius
   " let g:airline_theme='jellybeans'
 else

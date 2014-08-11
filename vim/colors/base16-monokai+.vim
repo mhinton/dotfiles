@@ -259,7 +259,8 @@ call <sid>hi("javaScriptBraces",  s:gui05, "", s:cterm05, "", "")
 call <sid>hi("javaScriptNumber",  s:gui09, "", s:cterm09, "", "")
 call <sid>hi("jsObjectKey",       s:gui0D, "", s:cterm09, "", "")
 call <sid>hi("jsConditional",     s:gui08, "", s:cterm08, "", "")
-call <sid>hi("jsFuncCall",        s:gui09, "", s:cterm08, "", "")
+" call <sid>hi("jsFuncCall",        s:gui09, "", s:cterm08, "", "")
+call <sid>hi("jsFuncCall",        s:gui0D, "", s:cterm0D, "", "")
 
 " Python highlighting
 call <sid>hi("pythonOperator",  s:gui0E, "", s:cterm0E, "", "")

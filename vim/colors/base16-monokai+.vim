@@ -21,6 +21,7 @@ let s:gui0E = "ae81ff"
 let s:gui0F = "cc6633"
 
 let s:gui10 = "325e81"
+let s:gui11 = "dcdae3"
 
 " Terminal color definitions
 let s:cterm00 = "00"
@@ -272,7 +273,7 @@ call <sid>hi("pythonRepeat",    s:gui0E, "", s:cterm0E, "", "")
 " Markdown highlighting
 call <sid>hi("markdownCode",              s:gui0B, "", s:cterm0B, "", "")
 call <sid>hi("markdownError",             s:gui05, s:gui00, s:cterm05, s:cterm00, "")
-call <sid>hi("markdownCodeBlock",         s:gui0B, "", s:cterm0B, "", "")
+call <sid>hi("markdownCodeBlock",         s:gui11, "", s:cterm0B, "", "")
 call <sid>hi("markdownHeadingDelimiter",  s:gui0D, "", s:cterm0D, "", "")
 
 " Git highlighting
@@ -300,5 +301,5 @@ delf <sid>gui
 delf <sid>cterm
 
 " Remove color variables
-unlet s:gui00 s:gui01 s:gui02 s:gui03  s:gui04  s:gui05  s:gui06  s:gui07  s:gui08  s:gui09 s:gui0A  s:gui0B  s:gui0C  s:gui0D  s:gui0E  s:gui0F
+unlet s:gui00 s:gui01 s:gui02 s:gui03  s:gui04  s:gui05  s:gui06  s:gui07  s:gui08  s:gui09 s:gui0A  s:gui0B  s:gui0C  s:gui0D  s:gui0E  s:gui0F s:gui10 s:gui11
 unlet s:cterm00 s:cterm01 s:cterm02 s:cterm03 s:cterm04 s:cterm05 s:cterm06 s:cterm07 s:cterm08 s:cterm09 s:cterm0A s:cterm0B s:cterm0C s:cterm0D s:cterm0E s:cterm0F

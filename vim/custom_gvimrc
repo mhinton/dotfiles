@@ -4,7 +4,7 @@
 " set guifont=Meslo\ LG\ M\ DZ\ for\ Powerline:h13
 " set guifont=Source\ Code\ Pro\ for\ Powerline:h15
 
-set linespace=2
+set linespace=1
 set antialias
 
 " Maximize: Vert and Horiz by default

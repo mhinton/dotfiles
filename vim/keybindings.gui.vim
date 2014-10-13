@@ -1,7 +1,7 @@
 " OSX: Specific keybindings
 if has("mac")
   set macmeta
-  
+
   " TABS: safari style tab navigation
   nmap <D-S-[> :tabprevious<CR>
   nmap <D-S-]> :tabnext<CR>
@@ -20,7 +20,7 @@ if has("mac")
   map <silent> <D-7> :tabn 7<CR>
   map <silent> <D-8> :tabn 8<CR>
   map <silent> <D-9> :tabn 9<CR>
-  
+
   " TextMateLikeIndent: bind command-] to shift right
   nmap <D-]> >>
   nmap <D-[> <<

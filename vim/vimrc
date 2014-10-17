@@ -21,7 +21,8 @@ source ~/.vim/auto_commands.vim
 set t_Co=256
 set background=dark
 
-let g:airline_theme='tomorrow'
+" let g:airline_theme='tomorrow'
+let g:airline_theme='molokai'
 " COLOR SUPPORT
 if has("gui_running")
   " colorscheme vwilight

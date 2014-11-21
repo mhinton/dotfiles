@@ -235,6 +235,9 @@ call <sid>hi("rubyInterpolationDelimiter",  s:gui0F, "", s:cterm0F, "", "")
 call <sid>hi("rubyRegexp",                  s:gui0C, "", s:cterm0C, "", "")
 call <sid>hi("rubySymbol",                  s:gui0C, "", s:cterm0B, "", "")
 call <sid>hi("rubyStringDelimiter",         s:gui0B, "", s:cterm0B, "", "")
+call <sid>hi("rubyRailsARMethod",           s:gui08, "", s:cterm0D, "", "")
+" call <sid>hi("rubyRailsARAssociationMethod", s:gui08, "", s:cterm0D, "", "")
+" call <sid>hi("rubyRailsARValidationMethod", s:gui08, "", s:cterm0D, "", "")
 
 " PHP highlighting
 call <sid>hi("phpMemberSelector",  s:gui05, "", s:cterm05, "", "")

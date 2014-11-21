@@ -34,7 +34,7 @@ autocmd BufEnter,BufWritePost *.clj   call CustomClojureSettings()
 " autocmd BufEnter *.markdown,*.md call CustomMarkdownSettings()
 autocmd BufEnter *.erb,*.html call CustomMarkupSettings()
 
-autocmd FileType javascript call JavaScriptFold()
+" autocmd FileType javascript call JavaScriptFold()
 autocmd BufEnter *.json,*.js call CustomJavaScriptSettings()
 " autocmd FileType javascript setlocal ts=4 sts=4 sw=4
 

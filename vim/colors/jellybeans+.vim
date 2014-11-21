@@ -18,3 +18,7 @@ let g:jellybeans_overrides = {
 \              'ctermfg': 'Black', 'ctermbg': 'Yellow',
 \              'attr': 'bold' },
 \}
+
+" it seems remove highlight settings has to be done this way
+hi SpellBad ctermbg=none guibg=NONE
+hi SpellCap ctermbg=none guibg=NONE

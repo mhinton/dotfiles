@@ -47,6 +47,11 @@ setopt auto_pushd
 # COMPLETION
 zmodload -i zsh/complist
 
+# Access the online help
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help
+
 # zstyle ':completion:*' use-perl on
 zstyle ':completion:*' menu select
 zstyle ':completion:*' accept-exact '*(N)'

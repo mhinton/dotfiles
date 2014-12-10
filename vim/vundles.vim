@@ -88,6 +88,7 @@ Plugin 'jelera/vim-javascript-syntax'
 Plugin 'mustache/vim-mustache-handlebars'
 " Plugin '1995eaton/vim-better-javascript-completion'
 Plugin 'fatih/vim-go'
+Plugin 'wellle/targets.vim'
 
 Plugin 'StanAngeloff/php.vim'
 " PHP debug interface

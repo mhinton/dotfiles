@@ -273,6 +273,7 @@ nnoremap <leader>z zMzvzz
 " make resizing window splits via the keyboard a little easier
 nnoremap <silent> <leader>+ :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> <leader>= :exe "resize " . (winheight(0) * 2/3)<CR>
+
 " Resize windows with arrow keys
 nnoremap <D-Up> <C-w>+
 nnoremap <D-Down> <C-w>-

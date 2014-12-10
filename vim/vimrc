@@ -26,7 +26,6 @@ set background=dark
 " let g:airline_theme='powerlineish'
 let g:airline_theme='bubblegum'
 " COLOR SUPPORT
-colorscheme jellybeans+
 if has("gui_running")
   " colorscheme vwilight
 
@@ -50,26 +49,28 @@ if has("gui_running")
   " colorscheme lucius
   " colorscheme base16-monokai+
   " colorscheme grb256+
-  " colorscheme jellybeans+
+  colorscheme jellybeans+
+  " colorscheme base16-chalk
 else
   " if &t_Co >= 8
   " colorscheme vividchalk
   " endif
 
-  " if &t_Co == 256
-  "   let g:solarized_termcolors=256
-  "   " colorscheme solarized
-  "   " colorscheme badwolf
-  "   " colorscheme grb256+
-  "   " colorscheme base16-tomorrow+
-  "   " colorscheme jellybeans
-  "   let g:airline_theme='bubblegum'
-  "   " colorscheme Monokai
-  "   " let g:airline_theme='kolor'
-  "   let g:lucius_style='dark'
-  "   let g:lucius_contrast_bg='high'
-  "   colorscheme lucius
-  " endif
+  if &t_Co == 256
+    let g:solarized_termcolors=256
+    " let g:airline_theme='bubblegum'
+    " colorscheme solarized
+    " colorscheme badwolf
+    " colorscheme grb256+
+    " colorscheme base16-tomorrow+
+    " colorscheme jellybeans
+    " colorscheme Monokai
+    " let g:airline_theme='kolor'
+    " let g:lucius_style='dark'
+    " let g:lucius_contrast_bg='high'
+    " colorscheme lucius
+    colorscheme jellybeans+
+  endif
 endif
 
 

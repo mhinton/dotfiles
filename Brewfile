@@ -1,6 +1,5 @@
 tap homebrew/versions
 tap thoughtbot/formulae
-tap jimbojsb/launchrocket
 install git
 install zsh
 install tig
@@ -25,16 +24,35 @@ install goaccess
 install psgrep
 install pstree
 
-install redis
-install phantomjs
+#install redis
+#install phantomjs
 install graphviz
-install boost
 
 #install homebrew/versions/postgresql92
 #install postgresql
 #install rabbitmq
 #install sphinx --without-mysql --with-pgsql=/usr/local --pgsql
 
-tap phinze/cask
-install brew-cask
-#cask install launchrocket
+
+# Matt's awesome caskfile
+# Install Cask
+install caskroom/cask/brew-cask
+
+# Install Casks
+cask install virtualbox
+cask install vagrant
+
+cask install google-chrome
+cask install iterm2
+cask install sequel-pro
+
+cask install rdio
+cask install vlc
+cask install the-unarchiver
+
+cask install font-clear-sans
+cask install font-roboto
+
+cask install qlcolorcode
+cask install qlmarkdown
+cask install quicklook-json

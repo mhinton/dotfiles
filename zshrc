@@ -153,3 +153,5 @@ eval "$(rbenv init - --no-rehash)"
 
 # remove duplicates in $PATH
 typeset -aU path
+
+eval "ssh-add ~/.ssh/id_rsa_2wav 2>/dev/null"
